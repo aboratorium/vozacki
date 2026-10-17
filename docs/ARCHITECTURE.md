@@ -101,3 +101,9 @@ python3 tools/build_pwa.py                   # → index.html, sw.js, manifest (
 2. [Novosti.rs — Nova pravila u Crnoj Gori za polaganje vozačkih ispita (43 pitanja)](https://www.novosti.rs/crna-gora/vesti/1236160/nova-pravila-crnoj-gori-polaganje-vozackih-ispita-voznju-ocenjuje-20-clanova-komisije-testovi-prevedeni-albanski-engleski-jezik), 10.05.2023.
 3. [gov.me — Katalog ispitnih pitanja za polaganje teorijskog dijela vozačkog ispita](https://www.gov.me/dokumenta/c4096c73-e71d-4b03-931b-a8809c971772), 25.05.2023.
 4. [PyMuPDF — документация](https://pymupdf.readthedocs.io/).
+
+### Что не хранится в репозитории
+
+- **PDF-источники.** Билеты GAS — материал автошколы с её водяным знаком, в публичный репозиторий не кладём. Официальный каталог (20 МБ) — по ссылке [3]. Обе копии лежат у владельца в `05.VD`.
+- **Исходные картинки** (`data/img/`, ~42 МБ PNG) — восстанавливаются `tools/extract.py` из PDF; в приложении они уже встроены в `index.html` (WebP).
+- **Tailwind:** конфиг и входной CSS — `tools/tailwind/`; сборка: `npx tailwindcss@3.4.17 -c tools/tailwind/tailwind.config.js -i tools/tailwind/in.css -o out.css --minify`.
