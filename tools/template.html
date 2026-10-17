@@ -1,0 +1,298 @@
+<title>Vozački test</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: single-column trainer card under mode tabs. Road-sign blue accent on asphalt neutrals. */
+:root{
+  --bg:#eef1f5; --surface:#ffffff; --fg:#17202b; --muted:#5b6878; --line:#d5dbe3;
+  --accent:#1f5fae; --accent-ink:#ffffff; --ok:#1d7f4a; --ok-bg:#e3f4ea; --bad:#c2352b; --bad-bg:#fbe6e3;
+  --hint:#fff4cc; --hint-ink:#5a4600;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12171e; --surface:#1b222c; --fg:#e7ecf2; --muted:#93a0b0; --line:#2c3643;
+  --accent:#5b9be6; --accent-ink:#0b1420; --ok:#5cc58b; --ok-bg:#16301f; --bad:#ef7a6f; --bad-bg:#3a1c19;
+  --hint:#3a3212; --hint-ink:#f2dc8a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12171e; --surface:#1b222c; --fg:#e7ecf2; --muted:#93a0b0; --line:#2c3643;
+  --accent:#5b9be6; --accent-ink:#0b1420; --ok:#5cc58b; --ok-bg:#16301f; --bad:#ef7a6f; --bad-bg:#3a1c19;
+  --hint:#3a3212; --hint-ink:#f2dc8a; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.g{border-bottom:1.5px dotted var(--accent);cursor:pointer}
+</style>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { bg:'var(--bg)', surface:'var(--surface)', fg:'var(--fg)', muted:'var(--muted)', line:'var(--line)',
+    accent:'var(--accent)', 'accent-ink':'var(--accent-ink)', ok:'var(--ok)', 'ok-bg':'var(--ok-bg)',
+    bad:'var(--bad)', 'bad-bg':'var(--bad-bg)', hint:'var(--hint)', 'hint-ink':'var(--hint-ink)' },
+  fontFamily: { display:['"Roboto Condensed"','"Arial Narrow"','system-ui','sans-serif'],
+    body:['"IBM Plex Sans"','system-ui','-apple-system','"Segoe UI"','sans-serif'] } } } };
+</script>
+
+<div class="font-body text-[15px] leading-relaxed py-3 pb-10">
+<div class="max-w-xl mx-auto grid gap-3">
+  <header class="flex items-baseline justify-between gap-2 flex-wrap">
+    <h1 class="font-display font-bold text-[22px] leading-none uppercase tracking-wide m-0">Vozački test
+      <span class="font-body font-medium text-[13px] text-muted normal-case tracking-normal ml-1">тренажёр, кат. B</span></h1>
+    <span id="stat" class="font-display font-medium text-[13px] text-muted tabular-nums"></span>
+  </header>
+  <nav id="modes" class="flex gap-1.5 overflow-x-auto pb-0.5"></nav>
+  <div id="sections" class="flex gap-1.5 flex-wrap"></div>
+  <div class="h-1 bg-line rounded overflow-hidden"><i id="prog" class="block h-full bg-ok w-0 transition-all"></i></div>
+  <main id="view"></main>
+  <footer id="foot" class="text-xs text-muted"></footer>
+</div>
+</div>
+
+<script>
+const DATA = /*DATA*/[];
+const GLOSS = /*GLOSS*/[];
+const META = /*META*/{};
+
+// ---- progress store: local cache + cloud (artifact db, private per user) ----
+let st = {}, exams = [], ruAlways = false;
+try { st = JSON.parse(localStorage.getItem('vt-stats') || '{}'); exams = JSON.parse(localStorage.getItem('vt-exams') || '[]'); ruAlways = localStorage.getItem('vt-ru') === '1'; } catch(e) {}
+let cloud = null, sync = 'local', saveTimer = null, writing = false, dirty = false;
+const localSave = () => { try { localStorage.setItem('vt-stats', JSON.stringify(st)); localStorage.setItem('vt-exams', JSON.stringify(exams)); localStorage.setItem('vt-ru', ruAlways ? '1' : '0'); } catch(e) {} };
+async function flush() {
+  if (!cloud || writing) { dirty = true; return; }
+  writing = true; dirty = false;
+  try { await cloud.set({ v: 1, stats: st, exams: exams.slice(-50), ru: ruAlways, updatedAt: Date.now() }); sync = 'cloud'; }
+  catch (e) { sync = e && e.code === 'invalid_argument' ? 'local' : 'error'; if (sync === 'local') cloud = null; }
+  writing = false; syncBadge();
+  if (dirty) flush();
+}
+const save = () => { localSave(); clearTimeout(saveTimer); saveTimer = setTimeout(flush, 1200); };
+function merge(remote) {
+  const rs = remote.stats || {};
+  for (const id in rs) if (!st[id] || (rs[id].t || 0) > (st[id].t || 0)) st[id] = rs[id];
+  const seen = new Set(exams.map(e => e.at));
+  (remote.exams || []).forEach(e => { if (!seen.has(e.at)) exams.push(e); });
+  exams.sort((a, b) => a.at - b.at);
+  if (typeof remote.ru === 'boolean') ruAlways = remote.ru;
+}
+async function connectCloud() {
+  try {
+    const db = await window.claude?.use?.('db'); const user = await window.claude?.use?.('user');
+    const uid = db && user ? await user.id() : null;
+    if (!uid) { sync = 'local'; syncBadge(); return; }
+    cloud = db.doc('data/users/' + uid + '/progress');
+    const snap = await cloud.get();
+    if (snap.exists) merge(snap.data());
+    localSave(); sync = 'cloud'; syncBadge();
+    await flush(); if (mode === 'stats') render(); else chrome();
+  } catch (e) { cloud = null; sync = 'local'; syncBadge(); }
+}
+function syncBadge() {
+  const el = document.getElementById('sync'); if (!el) return;
+  const m = { cloud: ['Сохраняется в облаке', 'text-ok'], local: ['Только на этом устройстве', 'text-muted'], error: ['Нет связи, сохранено локально', 'text-bad'] }[sync];
+  el.textContent = m[0]; el.className = 'text-xs ' + m[1];
+}
+
+const SECTIONS = [...new Set(DATA.map(q => q.sec))];
+const MODES = [['learn','Учёба'],['mist','Ошибки'],['exam','Экзамен'],['stats','Прогресс'],['gloss','Словарь']];
+let mode = 'learn', sec = 'all', queue = [], idx = 0, exam = null;
+
+const $ = s => document.querySelector(s);
+const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const learned = q => (st[q.id]?.streak || 0) >= 2;
+const isMistake = q => st[q.id] && st[q.id].wrong > 0 && !learned(q);
+const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; };
+
+// class sets
+const PILL = 'shrink-0 rounded-full border px-3 py-1.5 font-medium cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent';
+const pill = on => PILL + (on ? ' bg-accent text-accent-ink border-accent' : ' bg-surface text-fg border-line');
+const CARD = 'bg-surface border border-line rounded-xl p-3.5 grid gap-3 min-w-0';
+const BTN = 'rounded-lg bg-accent text-accent-ink px-5 py-2.5 font-display font-bold uppercase tracking-wide cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent';
+const OPT = 'opt grid grid-cols-[24px_1fr] gap-2 w-full text-left rounded-lg border-[1.5px] border-line bg-surface px-3 py-2.5 cursor-pointer transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent disabled:cursor-default';
+const NOTE = 'bg-hint text-hint-ink rounded-lg px-3 py-2.5 text-sm';
+const RUC = 'ru text-muted text-sm mt-1';
+
+const GRE = GLOSS.map((g, i) => ({ i, re: new RegExp('(^|[^\\p{L}])(' + g.p + '\\p{L}*)', 'giu') }));
+function gloss(text) {
+  const marks = [];
+  GRE.forEach(({ i, re }) => { re.lastIndex = 0; let m;
+    while ((m = re.exec(text))) { const s = m.index + m[1].length, e = s + m[2].length;
+      if (!marks.some(k => s < k.e && e > k.s)) marks.push({ s, e, i }); } });
+  marks.sort((a, b) => a.s - b.s);
+  let out = '', p = 0;
+  for (const k of marks) { out += esc(text.slice(p, k.s)) + `<span class="g" data-g="${k.i}" tabindex="0">${esc(text.slice(k.s, k.e))}</span>`; p = k.e; }
+  return out + esc(text.slice(p));
+}
+
+function buildQueue() {
+  let pool = DATA.filter(q => sec === 'all' || q.sec === sec);
+  if (mode === 'mist') pool = pool.filter(isMistake);
+  if (mode === 'learn') { const nl = pool.filter(q => !learned(q)); pool = nl.length ? nl : pool; }
+  queue = mode === 'learn' ? pool : shuffle(pool.slice());
+  if (mode === 'exam') {
+    // proportional sample across sections, like the real ticket mix
+    const N = Math.min(META.examN, pool.length), by = {};
+    pool.forEach(q => (by[q.sec] = by[q.sec] || []).push(q));
+    let pick = [];
+    Object.values(by).forEach(arr => pick.push(...shuffle(arr.slice()).slice(0, Math.round(arr.length / pool.length * N))));
+    const rest = shuffle(pool.filter(q => !pick.includes(q)));
+    while (pick.length < N) pick.push(rest.pop());
+    queue = shuffle(pick.slice(0, N)); exam = { pts: 0, max: 0, right: 0, wrong: [] };
+  }
+  idx = 0;
+}
+
+function chrome() {
+  const pool = DATA.filter(q => sec === 'all' || q.sec === sec);
+  const n = pool.filter(learned).length;
+  $('#stat').textContent = `выучено ${n} / ${pool.length}`;
+  $('#prog').style.width = (pool.length ? n / pool.length * 100 : 0) + '%';
+  const mc = DATA.filter(isMistake).length;
+  $('#modes').innerHTML = MODES.map(([k, t]) =>
+    `<button data-m="${k}" aria-pressed="${k === mode}" class="${pill(k === mode)} text-sm">${k === 'mist' && mc ? `${t} · ${mc}` : t}</button>`).join('');
+  const box = $('#sections');
+  box.hidden = mode === 'gloss' || mode === 'stats';
+  box.innerHTML = ['all', ...SECTIONS].map(s =>
+    `<button data-s="${esc(s)}" aria-pressed="${s === sec}" class="${pill(s === sec)} text-[13px] !px-2.5 !py-1">${s === 'all' ? 'Все разделы' : esc(s)}</button>`).join('');
+}
+
+function render() {
+  chrome();
+  const v = $('#view');
+  if (mode === 'stats') { v.innerHTML = statsView(); syncBadge(); return; }
+  if (mode === 'gloss') {
+    v.innerHTML = `<div class="${CARD}"><div class="grid gap-2.5 text-sm">${GLOSS.map(g =>
+      `<div class="border-l-[3px] border-accent pl-2"><b>${esc(g.w)}</b> — ${esc(g.ru)}</div>`).join('')}</div></div>`;
+    return;
+  }
+  if (idx >= queue.length) {
+    if (mode === 'exam' && exam && queue.length) {
+      v.innerHTML = `<div class="${CARD}">
+        <div class="font-display font-medium text-xs uppercase tracking-widest text-muted">Результат экзамена</div>
+        ${(() => { const sc = Math.round(exam.pts / exam.max * META.examPts), pass = sc >= META.examPass;
+          return `<div class="flex items-baseline gap-3 flex-wrap"><span class="font-display font-bold text-5xl tabular-nums ${pass ? 'text-ok' : 'text-bad'}">${sc} / ${META.examPts}</span>
+          <span class="font-display font-bold uppercase tracking-wide ${pass ? 'text-ok' : 'text-bad'}">${pass ? 'Сдал' : 'Не сдал'}</span></div>
+          <div class="text-sm text-muted">Порог ${META.examPass} из ${META.examPts}. Верных ответов ${exam.right} из ${queue.length}.</div>`; })()}
+        ${exam.wrong.length ? `<div class="grid gap-1.5 text-sm">${exam.wrong.map(q => `<div class="border-l-[3px] border-bad pl-2">${esc(q.q)}<div class="text-muted">${esc(q.qr || '')}</div></div>`).join('')}</div>` : '<div>Без ошибок.</div>'}
+        <div><button class="${BTN}" id="again">Новый экзамен</button></div></div>`;
+    } else {
+      v.innerHTML = `<div class="${CARD} text-center text-muted py-8">${mode === 'mist' ? 'Ошибок нет — всё отработано.' : 'Раздел пройден.'}
+        <div><button class="${BTN}" id="again">Ещё раз</button></div></div>`;
+    }
+    $('#again').onclick = () => { buildQueue(); render(); };
+    return;
+  }
+  const q = queue[idx];
+  const showRu = ruAlways && mode !== 'exam';
+  const opts = q.order ? '' : `<div class="grid gap-2">${q.o.map((o, i) =>
+    `<button class="${OPT}" data-i="${i}"><b class="font-display font-bold text-muted">${'ABC'[i]}</b><span>${gloss(o.t)}<div class="${RUC}" ${showRu ? '' : 'hidden'}>${esc(o.r || '')}</div></span></button>`).join('')}</div>`;
+  const nums = q.order ? [...q.order].sort() : [];
+  const order = q.order ? `<div class="text-muted text-sm">Нажимайте номера ТС в порядке проезда</div>
+    <div id="seq" class="font-display font-bold text-2xl tracking-[.2em] min-h-[28px] tabular-nums">&nbsp;</div>
+    <div class="flex gap-2 flex-wrap items-center">${nums.map(n => `<button data-n="${n}" class="w-11 h-11 rounded-full border-[1.5px] border-line bg-surface font-display font-bold text-lg disabled:opacity-35">${n}</button>`).join('')}
+    <button id="reset" class="h-11 px-4 rounded-lg border border-line text-muted font-display font-bold uppercase text-sm">Сброс</button></div>` : '';
+  v.innerHTML = `<div class="${CARD}">
+    <div class="flex justify-between items-center gap-2 font-display font-medium text-xs uppercase tracking-widest text-muted">
+      <span>${esc(q.sec)} · ${idx + 1} / ${queue.length}</span>
+      ${mode === 'exam' ? '' : `<button id="ru" aria-pressed="${showRu}" class="rounded-md border border-accent px-2.5 py-1 font-bold text-[13px] tracking-wider ${showRu ? 'bg-accent text-accent-ink' : 'text-accent'}">RU</button>`}</div>
+    ${q.img ? `<div class="flex justify-center bg-white rounded-md overflow-hidden"><img src="${q.img}" alt="Иллюстрация к вопросу" class="max-h-[300px] object-contain"></div>` : ''}
+    <div><p class="font-semibold text-[17px] leading-snug m-0">${gloss(q.q)}</p><div id="qru" class="${RUC}" ${showRu ? '' : 'hidden'}>${esc(q.qr || 'перевод появится в полной версии')}</div></div>
+    <div id="gl" class="${NOTE} py-1.5" hidden></div>
+    ${opts}${order}
+    <div id="after"></div></div>`;
+  wire(q);
+}
+
+function statsView() {
+  const secs = SECTIONS.map(s => { const p = DATA.filter(q => q.sec === s); const l = p.filter(learned).length;
+    const seen = p.filter(q => st[q.id]).length; return { s, n: p.length, l, seen, pct: Math.round(l / p.length * 100) }; });
+  const tot = DATA.filter(learned).length, seen = DATA.filter(q => st[q.id]).length, mist = DATA.filter(isMistake).length;
+  const last = exams.slice(-10).reverse();
+  const passN = exams.filter(e => e.pass).length;
+  const fmt = t => new Date(t).toLocaleString('ru-RU', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+  const worst = DATA.filter(q => st[q.id] && st[q.id].wrong > 0).sort((a, b) => st[b.id].wrong - st[a.id].wrong).slice(0, 5);
+  return `<div class="grid gap-3">
+  <div class="${CARD}">
+    <div class="flex justify-between items-baseline gap-2 flex-wrap"><span class="font-display font-medium text-xs uppercase tracking-widest text-muted">Общий прогресс</span><span id="sync"></span></div>
+    <div class="grid grid-cols-3 gap-2 text-center">
+      <div><div class="font-display font-bold text-3xl tabular-nums">${tot}</div><div class="text-xs text-muted">выучено из ${DATA.length}</div></div>
+      <div><div class="font-display font-bold text-3xl tabular-nums">${seen}</div><div class="text-xs text-muted">видел</div></div>
+      <div><div class="font-display font-bold text-3xl tabular-nums ${mist ? 'text-bad' : ''}">${mist}</div><div class="text-xs text-muted">в ошибках</div></div>
+    </div>
+    <div class="grid gap-2">${secs.map(x => `<div class="grid gap-1"><div class="flex justify-between text-sm"><span>${esc(x.s)}</span><span class="tabular-nums text-muted">${x.l} / ${x.n}</span></div>
+      <div class="h-1.5 bg-line rounded overflow-hidden"><i class="block h-full bg-ok" style="width:${x.pct}%"></i></div></div>`).join('')}</div>
+    <div class="text-xs text-muted">Вопрос считается выученным после двух верных ответов подряд.</div>
+  </div>
+  <div class="${CARD}">
+    <div class="flex justify-between items-baseline"><span class="font-display font-medium text-xs uppercase tracking-widest text-muted">Экзамены</span><span class="text-sm tabular-nums text-muted">сдано ${passN} из ${exams.length}</span></div>
+    ${last.length ? `<div class="grid gap-1.5">${last.map(e => `<div class="flex justify-between text-sm tabular-nums border-b border-line pb-1"><span class="text-muted">${fmt(e.at)}</span><span class="${e.pass ? 'text-ok' : 'text-bad'} font-semibold">${e.score} / ${META.examPts} · ${e.pass ? 'сдал' : 'не сдал'}</span></div>`).join('')}</div>`
+      : '<div class="text-sm text-muted">Пробных экзаменов ещё не было. Начни во вкладке «Экзамен».</div>'}
+  </div>
+  ${worst.length ? `<div class="${CARD}"><span class="font-display font-medium text-xs uppercase tracking-widest text-muted">Чаще всего ошибаюсь</span>
+    <div class="grid gap-1.5 text-sm">${worst.map(q => `<div class="border-l-[3px] border-bad pl-2">${esc(q.qr || q.q)} <span class="text-muted tabular-nums">· ошибок ${st[q.id].wrong}</span></div>`).join('')}</div></div>` : ''}
+  </div>`;
+}
+
+function setRu(on) {
+  document.querySelectorAll('#view .ru').forEach(e => e.hidden = !on);
+  const b = $('#ru'); if (!b) return;
+  b.setAttribute('aria-pressed', on);
+  b.classList.toggle('bg-accent', on); b.classList.toggle('text-accent-ink', on); b.classList.toggle('text-accent', !on);
+}
+
+function finish(q, ok, picked) {
+  const s = st[q.id] || (st[q.id] = { right: 0, wrong: 0, streak: 0 });
+  if (ok) { s.right++; s.streak++; } else { s.wrong++; s.streak = 0; }
+  s.t = Date.now();
+  if (mode === 'exam' && idx === queue.length - 1) {
+    const w = q.sec === 'Ситуации' ? 2 : 1, pts = exam.pts + (ok ? w : 0), max = exam.max + w;
+    const score = Math.round(pts / max * META.examPts); exams.push({ at: Date.now(), score, pass: score >= META.examPass, n: queue.length });
+  }
+  save();
+  if (mode === 'exam') { const w = q.sec === 'Ситуации' ? 2 : 1; exam.max += w; if (ok) { exam.right++; exam.pts += w; } else exam.wrong.push(q); }
+  if (!q.order) document.querySelectorAll('.opt').forEach((b, i) => {
+    b.disabled = true;
+    if (q.o[i].ok) { b.classList.remove('border-line', 'bg-surface'); b.classList.add('border-ok', 'bg-ok-bg'); }
+    else if (i === picked) { b.classList.remove('border-line', 'bg-surface'); b.classList.add('border-bad', 'bg-bad-bg'); }
+  });
+  if (mode !== 'exam') setRu(true);
+  const right = q.order ? `<div>Правильно: <b>${[...q.order].join(' → ')}</b></div>` : '';
+  $('#after').innerHTML = `<div class="grid gap-2.5">
+    ${mode === 'exam' ? '' : `<div class="font-display font-bold uppercase tracking-wide ${ok ? 'text-ok' : 'text-bad'}">${ok ? 'Верно' : 'Неверно'}</div>${right}`}
+    ${q.n && mode !== 'exam' ? `<div class="${NOTE}">${esc(q.n)}</div>` : ''}
+    ${q.f && mode !== 'exam' ? `<div class="${NOTE}"><b>Спорный ключ.</b> На экзамене отвечай как в ключе. ${esc(q.f)}</div>` : ''}
+    <div class="flex justify-end"><button class="${BTN}" id="next">Дальше</button></div></div>`;
+  $('#next').onclick = () => { idx++; render(); window.scrollTo({ top: 0 }); };
+  $('#next').focus({ preventScroll: true });
+  chrome();
+}
+
+function wire(q) {
+  const ru = $('#ru');
+  if (ru) ru.onclick = () => { ruAlways = ru.getAttribute('aria-pressed') !== 'true'; save(); setRu(ruAlways); };
+  document.querySelectorAll('#view .g').forEach(el => {
+    const show = ev => { ev.stopPropagation(); const g = GLOSS[el.dataset.g]; const box = $('#gl');
+      box.innerHTML = `<b>${esc(g.w)}</b> — ${esc(g.ru)}`; box.hidden = false; };
+    el.addEventListener('click', show);
+    el.addEventListener('keydown', e => { if (e.key === 'Enter') show(e); });
+  });
+  if (!q.order) {
+    document.querySelectorAll('.opt').forEach(b => b.onclick = e => {
+      if (e.target.closest('.g')) return;
+      const i = +b.dataset.i; finish(q, q.o[i].ok, i);
+    });
+  } else {
+    let seq = '';
+    const upd = () => { $('#seq').innerHTML = seq ? [...seq].join(' → ') : '&nbsp;'; };
+    document.querySelectorAll('[data-n]').forEach(b => b.onclick = () => {
+      seq += b.dataset.n; b.disabled = true; upd();
+      if (seq.length === q.order.length) { document.querySelectorAll('[data-n],#reset').forEach(x => x.disabled = true); finish(q, seq === q.order); }
+    });
+    $('#reset').onclick = () => { seq = ''; upd(); document.querySelectorAll('[data-n]').forEach(x => x.disabled = false); };
+  }
+}
+
+$('#modes').onclick = e => { const b = e.target.closest('button'); if (!b) return; mode = b.dataset.m; buildQueue(); render(); };
+$('#sections').onclick = e => { const b = e.target.closest('button'); if (!b) return; sec = b.dataset.s; buildQueue(); render(); };
+$('#foot').textContent = META.foot || '';
+buildQueue(); render();
+connectCloud();
+</script>

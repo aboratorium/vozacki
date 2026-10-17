@@ -1,0 +1,9002 @@
+[
+ {
+  "page": 1,
+  "q": "Kretanje vozilom unazad dozvoljeno je:",
+  "opts": [
+   {
+    "t": "na kratkom dijelu puta u nepreglednoj krivini",
+    "ok": false
+   },
+   {
+    "t": "na kratkom dijelu puta u tunelu",
+    "ok": false
+   },
+   {
+    "t": "na kratkom dijelu puta",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 1
+ },
+ {
+  "page": 1,
+  "q": "Na magistralnom putu van naselja, gdje nema znaka ograničenja brzine, vozač ne smije vozilom da se kreće brzinom većom od:",
+  "opts": [
+   {
+    "t": "60 km/h",
+    "ok": false
+   },
+   {
+    "t": "70 km/h",
+    "ok": false
+   },
+   {
+    "t": "80 km/h",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 2
+ },
+ {
+  "page": 1,
+  "q": "Pješačko ostrvo koje se nalazi na sredini kolovoza, gdje se saobraćaj odvija u oba smjera, obilazi se vozilom:",
+  "opts": [
+   {
+    "t": "uvijek sa desne strane",
+    "ok": true
+   },
+   {
+    "t": "uvijek sa lijeve strane",
+    "ok": false
+   },
+   {
+    "t": "sa bilo koje strane",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 3
+ },
+ {
+  "page": 1,
+  "q": "Na putu sa prvenstvom prolaza neposredno ispred raskrnice koja nije regulisana semaforom ili saobraćajnim znacima vozač:",
+  "opts": [
+   {
+    "t": "može da pretiče bicikl, moped ili motocikl",
+    "ok": true
+   },
+   {
+    "t": "može da pretiče sva vozila koja zadržavaju pravac kretanja",
+    "ok": false
+   },
+   {
+    "t": "može da pretiče putnička vozila koja zadržavaju pravac kretanja",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 4
+ },
+ {
+  "page": 1,
+  "q": "Prolaženje vozilom pored drugog vozila koje dolazi iz suprotnog smjera je radnja:",
+  "opts": [
+   {
+    "t": "preticanja",
+    "ok": false
+   },
+   {
+    "t": "obilaženja",
+    "ok": false
+   },
+   {
+    "t": "mimoilaženja",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 5
+ },
+ {
+  "page": 1,
+  "q": "Vozač je dužan da bez odlaganja ukloni sa kolovoza:",
+  "opts": [
+   {
+    "t": "sve predmete koji su na kolovozu",
+    "ok": false
+   },
+   {
+    "t": "predmete i materije koji potiču sa vozila kojim upravlja",
+    "ok": true
+   },
+   {
+    "t": "sve predmete koji se nalaze na saobraćajnoj traci kojom se kreće",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 6
+ },
+ {
+  "page": 1,
+  "q": "Dva prsluka sa svjetlosno reflektujućim osobinama mora imati:",
+  "opts": [
+   {
+    "t": "putničko motorno vozilo",
+    "ok": false
+   },
+   {
+    "t": "četvorocikl",
+    "ok": false
+   },
+   {
+    "t": "teretno motorno vozilo",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 7
+ },
+ {
+  "page": 1,
+  "q": "Vozač na putu za saobraćaj vozila u oba smjera na kojem postoje najmanje četiri saobraćajne trake:",
+  "opts": [
+   {
+    "t": "mora da koristi desnu kolovoznu traku",
+    "ok": true
+   },
+   {
+    "t": "mora da koristi samo desnu saobraćajnu traku",
+    "ok": false
+   },
+   {
+    "t": "mora da koristi samo lijevu saobraćajnu traku",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 8
+ },
+ {
+  "page": 1,
+  "q": "Brzina kretanja motornih vozila na putu, pod normalnim uslovima saobraćaja, ne smije da se ograniči saobraćajnim znakom ispod:",
+  "opts": [
+   {
+    "t": "40 km/h",
+    "ok": true
+   },
+   {
+    "t": "50 km/h",
+    "ok": false
+   },
+   {
+    "t": "60 km/h",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 9
+ },
+ {
+  "page": 1,
+  "q": "Na putu na kojem postoje dvije saobraćajne trake namijenjene za saobraćaj vozila u istom smjeru, brže kretanje vozila u jednoj traci od kretanja vozila u drugoj traci:",
+  "opts": [
+   {
+    "t": "smatra se preticanjem",
+    "ok": false
+   },
+   {
+    "t": "ne smatra se preticanjem",
+    "ok": true
+   },
+   {
+    "t": "smatra se obilaženjem",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 10
+ },
+ {
+  "page": 2,
+  "q": "Vozilo na motorni pogon koje na putu vuče neispravno vozilo ne smije se kretati brzinom većom od:",
+  "opts": [
+   {
+    "t": "40 km/h",
+    "ok": true
+   },
+   {
+    "t": "50 km/h",
+    "ok": false
+   },
+   {
+    "t": "60 km/h",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 11
+ },
+ {
+  "page": 2,
+  "q": "Saobraćajnu traku namijenjenu za kretanje vozila za javni prevoz putnika, mogu koristiti:",
+  "opts": [
+   {
+    "t": "vozila pod pratnjom",
+    "ok": true
+   },
+   {
+    "t": "vozila komunalne službe",
+    "ok": false
+   },
+   {
+    "t": "putnička vozila",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 12
+ },
+ {
+  "page": 2,
+  "q": "Vozač je dužan da zvučni znak upozorenja daje:",
+  "opts": [
+   {
+    "t": "više puta u naizmjeničnim intervalima",
+    "ok": false
+   },
+   {
+    "t": "bez prekida u trajanju od 5 sekundi",
+    "ok": false
+   },
+   {
+    "t": "u mjeri koja je dovoljna da se drugi učesnici u saobraćaju upozore",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 13
+ },
+ {
+  "page": 2,
+  "q": "Zvučni znak upozorenja vozač je dužan da upotrijebi na javnom putu:",
+  "opts": [
+   {
+    "t": "pri sustizanju vozila koja se sporo kreću niz nagib",
+    "ok": false
+   },
+   {
+    "t": "kada se obilazi vozilo parkirano sa desne strane kolovoza",
+    "ok": false
+   },
+   {
+    "t": "kada se pored kolovoza nalaze djeca koja ne obraćaju pažnju na kretanje vozača",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 14
+ },
+ {
+  "page": 2,
+  "q": "Uzdužni dio kolovoza namijenjen za saobraćaj vozila u jednom smjeru, sa jednom ili više saobraćajnih traka zove se:",
+  "opts": [
+   {
+    "t": "saobraćajna traka",
+    "ok": false
+   },
+   {
+    "t": "kolovozna traka",
+    "ok": true
+   },
+   {
+    "t": "kolovoz",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 15
+ },
+ {
+  "page": 2,
+  "q": "Kada ovlašćeni policijski službenik daje naredbe koje odstupaju od pravila saobraćaja, učesnik u saobraćaju:",
+  "opts": [
+   {
+    "t": "dužan je da postupi po naredbama ovlašćenog policijskog službenika",
+    "ok": true
+   },
+   {
+    "t": "dužan je da postupi po pravilima saobraćaja",
+    "ok": false
+   },
+   {
+    "t": "nije dužan da postupi po naredbama ovlašćenog policijskog službenika",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 16
+ },
+ {
+  "page": 2,
+  "q": "Ukoliko se ne prevozi u bezbjednosnom sjedištu, u motornom vozilu na prednjem sjedištu, ne smije da se prevozi dijete:",
+  "opts": [
+   {
+    "t": "mlađe od 10 godina",
+    "ok": false
+   },
+   {
+    "t": "mlađe od 12 godina",
+    "ok": true
+   },
+   {
+    "t": "mlađe od 14 godina",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 17
+ },
+ {
+  "page": 2,
+  "q": "Kretanje vozila unazad u uslovima smanjene vidljivosti:",
+  "opts": [
+   {
+    "t": "dozvoljeno je u naselju",
+    "ok": false
+   },
+   {
+    "t": "dozvoljeno je na kratkom dijelu puta",
+    "ok": false
+   },
+   {
+    "t": "nije dozvoljeno",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 18
+ },
+ {
+  "page": 2,
+  "q": "U naselju se saobraćajnim znakom motornim vozilima može dozvoliti brzina kretanja najviše do:",
+  "opts": [
+   {
+    "t": "80 km/h",
+    "ok": true
+   },
+   {
+    "t": "50 km/h",
+    "ok": false
+   },
+   {
+    "t": "60 km/h",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 19
+ },
+ {
+  "page": 2,
+  "q": "Kada vozač naiđe na organizovanu kolonu pješaka koja prelazi kolovoz:",
+  "opts": [
+   {
+    "t": "ne smije vozilom da presijeca organizovanu kolonu pješaka",
+    "ok": true
+   },
+   {
+    "t": "smije vozilom da presijeca organizovanu kolonu pješaka uz upotrebu zvučnog znaka upozorenja",
+    "ok": false
+   },
+   {
+    "t": "smije vozilom da presjeca organizovanu kolonu pješaka, ako kolonu ne čine djeca",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 20
+ },
+ {
+  "page": 3,
+  "q": "Vučenim motornim vozilom, osim vozača koji njime upravlja:",
+  "opts": [
+   {
+    "t": "dozvoljen je prevoz putnika u skladu sa brojem putničkih mjesta",
+    "ok": false
+   },
+   {
+    "t": "dozvoljen je prevoz samo jednog putnika",
+    "ok": false
+   },
+   {
+    "t": "zabranjen je prevoz putnika",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 21
+ },
+ {
+  "page": 3,
+  "q": "Prelaženje vozilom iz jedne u drugu saobraćajnu traku namijenjenu za saobraćaj u istom smjeru je:",
+  "opts": [
+   {
+    "t": "prestrojavanje",
+    "ok": true
+   },
+   {
+    "t": "preticanje",
+    "ok": false
+   },
+   {
+    "t": "obilaženje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 22
+ },
+ {
+  "page": 3,
+  "q": "Mladi vozač i vozač početnik ne smije upravljati vozilom na autoputu brzinom većom od:",
+  "opts": [
+   {
+    "t": "70 km/h",
+    "ok": false
+   },
+   {
+    "t": "100 km/h",
+    "ok": true
+   },
+   {
+    "t": "110 km/h",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 23
+ },
+ {
+  "page": 3,
+  "q": "Da li je učesnik u saobraćaju dužan da postupa u skladu sa saobraćajnom signalizacijom i kad time odstupa od pravila saobraćaja:",
+  "opts": [
+   {
+    "t": "nije dužan",
+    "ok": false
+   },
+   {
+    "t": "dužan je",
+    "ok": true
+   },
+   {
+    "t": "dužan je samo u naselju",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 24
+ },
+ {
+  "page": 3,
+  "q": "Naglo mijenjanje brzine vozila po putu je dozvoljeno:",
+  "opts": [
+   {
+    "t": "u slučaju uključivanja sa zemljanog puta na javni put",
+    "ok": false
+   },
+   {
+    "t": "u slučaju izbjegavanja neposredne opasnosti",
+    "ok": true
+   },
+   {
+    "t": "u slučaju bržeg isključivanja iz saobraćaja",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 25
+ },
+ {
+  "page": 3,
+  "q": "Osim traktora, ostala vozila na motorni pogon:",
+  "opts": [
+   {
+    "t": "ne smiju da vuku priključno vozilo za traktor",
+    "ok": true
+   },
+   {
+    "t": "smiju da vuku priključno vozilo za traktor",
+    "ok": false
+   },
+   {
+    "t": "ne smiju da vuku priključno vozilo za traktor, ako masa skupa vozila prelazi -500 kg",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 26
+ },
+ {
+  "page": 3,
+  "q": "Vozač je dužan da upotrijebi zvučni znak upozorenja:",
+  "opts": [
+   {
+    "t": "prije ulaska u tunel koji nema osvjetljenje",
+    "ok": false
+   },
+   {
+    "t": "na putu u naselja prije ulaska u raskrsnicu",
+    "ok": false
+   },
+   {
+    "t": "na putu van naselja prije nailaska u nepreglednu i uzanu krivinu",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 27
+ },
+ {
+  "page": 3,
+  "q": "Vozilo na motorni pogon ne smije da vuče:",
+  "opts": [
+   {
+    "t": "motocikl, moped, kao ni laki ni teški tricikl",
+    "ok": true
+   },
+   {
+    "t": "teretno vozilo",
+    "ok": false
+   },
+   {
+    "t": "putničko vozilo",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 28
+ },
+ {
+  "page": 3,
+  "q": "Pješak na javnom putu van naselja:",
+  "opts": [
+   {
+    "t": "ne smije se kretati desnom stranom kolovoza",
+    "ok": false
+   },
+   {
+    "t": "ne smije se kretati u koloni",
+    "ok": false
+   },
+   {
+    "t": "ne smije se kretati po kolovozu autoputa",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 29
+ },
+ {
+  "page": 3,
+  "q": "Vozilo koje se kreće po šinama postavljenim na sredini kolovoza:",
+  "opts": [
+   {
+    "t": "smije da se pretiče sa lijeve strane",
+    "ok": false
+   },
+   {
+    "t": "smije da se pretiče sa bilo koje strane",
+    "ok": false
+   },
+   {
+    "t": "smije da se pretiče sa desne strane",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 30
+ },
+ {
+  "page": 3,
+  "q": "Da li na brzoj saobraćajnici vozač smije da vrši polukružno okretanje:",
+  "opts": [
+   {
+    "t": "da, ako ne ugrožava druge učesnike u saobraćaju",
+    "ok": false
+   },
+   {
+    "t": "da, ako ima uključene sve pokazivače pravca",
+    "ok": false
+   },
+   {
+    "t": "ne smije",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 31
+ },
+ {
+  "page": 4,
+  "q": "Crveno i plavo trepćuće svijetlo koja se naizmjenično pale na vozilu su svjetlosni znaci koje daju:",
+  "opts": [
+   {
+    "t": "vozila sa prvenstvom prolaza",
+    "ok": false
+   },
+   {
+    "t": "vozila pod pratnjom",
+    "ok": true
+   },
+   {
+    "t": "specijalna vozila",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 32
+ },
+ {
+  "page": 4,
+  "q": "Vozač vozila dok ga drugo vozilo pretiče:",
+  "opts": [
+   {
+    "t": "ne smije da povećava brzinu kretanja",
+    "ok": true
+   },
+   {
+    "t": "smije da poveća brzinu kretanja",
+    "ok": false
+   },
+   {
+    "t": "ne smije da smanji brzinu kretanja",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 33
+ },
+ {
+  "page": 4,
+  "q": "Okretanje vozila za 180° iz dotadašnjeg smjera kretanja radi uključivanja u suprotni saobraćajni tok je:",
+  "opts": [
+   {
+    "t": "kružno okretanje",
+    "ok": false
+   },
+   {
+    "t": "lijevo skretanje",
+    "ok": false
+   },
+   {
+    "t": "polukružno okretanje",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 34
+ },
+ {
+  "page": 4,
+  "q": "Mladi vozač na magistralnom putu ne smije upravljati vozilom brzinom većom od:",
+  "opts": [
+   {
+    "t": "50 km/h",
+    "ok": false
+   },
+   {
+    "t": "60 km/h",
+    "ok": false
+   },
+   {
+    "t": "70 km/h",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 35
+ },
+ {
+  "page": 4,
+  "q": "Noću vozаč može upotrijebiti svjetlosni znаk upozorenjа na putu u naselju, prilikom:",
+  "opts": [
+   {
+    "t": "mimoilaženja sa drugim vozilom",
+    "ok": false
+   },
+   {
+    "t": "mimoilaženja sa pješakom",
+    "ok": false
+   },
+   {
+    "t": "preticanja drugog vozila",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 36
+ },
+ {
+  "page": 4,
+  "q": "Na raskrsnici postoji horizontalna i svjetlosna signalizacija, vozač će postupiti prema:",
+  "opts": [
+   {
+    "t": "pravilu propuštanja vozila sa desne strane",
+    "ok": false
+   },
+   {
+    "t": "značenju svjetlosne signalizacije",
+    "ok": true
+   },
+   {
+    "t": "oznakama na kolovozu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 37
+ },
+ {
+  "page": 4,
+  "q": "Mladi vozač ne smije upravljati vozilom, osim na autoputu, brzinom većom od:",
+  "opts": [
+   {
+    "t": "100 km/h",
+    "ok": false
+   },
+   {
+    "t": "80 km/h",
+    "ok": false
+   },
+   {
+    "t": "70 km/h",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 38
+ },
+ {
+  "page": 4,
+  "q": "Vozač koji se približava obilježenom pješačkom prelazu, mora:",
+  "opts": [
+   {
+    "t": "smanjiti brzinu kretanja vozila do 30 km/h",
+    "ok": false
+   },
+   {
+    "t": "smanjiti brzinu i nastaviti kretanje sa vozilom bez obzira na saobraćajnu situaciju",
+    "ok": false
+   },
+   {
+    "t": "prilagoditi brzinu kretanja vozila tako da se u svakoj situaciji može bezbjedno zaustaviti",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 39
+ },
+ {
+  "page": 4,
+  "q": "Brzina kretanja teretnog motornog vozila čija je najveća dozvoljena masa do -7.500 kg ograničena je na:",
+  "opts": [
+   {
+    "t": "80 km/h",
+    "ok": true
+   },
+   {
+    "t": "70 km/h",
+    "ok": false
+   },
+   {
+    "t": "60 km/h",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 40
+ },
+ {
+  "page": 4,
+  "q": "Prekid kretanja vozila u trajanju dužem od pet minuta, osim prekida koji se vrši da bi se postupilo po znaku ili pravilu kojim se reguliše saobraćaj je:",
+  "opts": [
+   {
+    "t": "zaustavljanje vozila",
+    "ok": false
+   },
+   {
+    "t": "parkiranje vozila",
+    "ok": true
+   },
+   {
+    "t": "isključenje vozila",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 41
+ },
+ {
+  "page": 4,
+  "q": "Brzina kretanja autobusa u javnom gradskom prevozu putnika ograničena je do:",
+  "opts": [
+   {
+    "t": "50 km/h",
+    "ok": true
+   },
+   {
+    "t": "60 km/h",
+    "ok": false
+   },
+   {
+    "t": "70 km/h",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 42
+ },
+ {
+  "page": 5,
+  "q": "Vozač umjesto zvučnog znaka upozorenja noću može da upotrijebi:",
+  "opts": [
+   {
+    "t": "dnevna svijetla",
+    "ok": false
+   },
+   {
+    "t": "svjetlosni znak upozorenja",
+    "ok": true
+   },
+   {
+    "t": "svijetla za maglu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 43
+ },
+ {
+  "page": 5,
+  "q": "Površina koja nije namjenjena za saobraćaj vozila, koja se nalazi na sredini kolovoza sa jednosmjernim saobraćajem, ako saobraćajnim znakom nije drugačije određeno:",
+  "opts": [
+   {
+    "t": "može se obilaziti sa lijeve ili desne strane",
+    "ok": true
+   },
+   {
+    "t": "može da se obilazi samo sa desne strane",
+    "ok": false
+   },
+   {
+    "t": "može da se obilazi samo sa lijeve strane",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 44
+ },
+ {
+  "page": 5,
+  "q": "Na putu za saobraćaj vozila u oba smjera na kojem postoje tri saobraćajne trake vozač:",
+  "opts": [
+   {
+    "t": "smije da koristi bilo koju saobraćajnu traku",
+    "ok": false
+   },
+   {
+    "t": "ne smije da koristi saobraćajnu traku uz desnu ivicu kolovoza",
+    "ok": false
+   },
+   {
+    "t": "ne smije da koristi saobraćajnu traku uz lijevu ivicu kolovoza",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 45
+ },
+ {
+  "page": 5,
+  "q": "Na raskrsnici vozač je dužan:",
+  "opts": [
+   {
+    "t": "da propusti vozilo koje nailazi sa njegove lijeve strane",
+    "ok": false
+   },
+   {
+    "t": "da propusti vozilo koje nailazi sa njegove desne strane",
+    "ok": true
+   },
+   {
+    "t": "da propusti sva vozila",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 46
+ },
+ {
+  "page": 5,
+  "q": "Odstojanje između vučnog i vučenog putničkog vozila, ako se vuče pomoću užeta iznosi:",
+  "opts": [
+   {
+    "t": "od 1 do 2 metara",
+    "ok": false
+   },
+   {
+    "t": "od 3 do 5 metara",
+    "ok": true
+   },
+   {
+    "t": "preko 5 metara",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 47
+ },
+ {
+  "page": 5,
+  "q": "U vozilu u kojem su ugrađeni sigurnosni pojasevi u toku vožnje sigurnosni pojas mora da koristi:",
+  "opts": [
+   {
+    "t": "samo vozač",
+    "ok": false
+   },
+   {
+    "t": "vozač i putnici",
+    "ok": true
+   },
+   {
+    "t": "samo vozač i suvozač",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 48
+ },
+ {
+  "page": 5,
+  "q": "Kad se vozilo za organizovani prevoz djece zaustavi na kolovozu radi ulaska, odnosno izlaska djece, vozač:",
+  "opts": [
+   {
+    "t": "mora uključiti lijevi pokazivač pravca",
+    "ok": false
+   },
+   {
+    "t": "mora uključiti desni pokazivač pravca",
+    "ok": false
+   },
+   {
+    "t": "mora uključiti sve pokazivače pravca",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 49
+ },
+ {
+  "page": 5,
+  "q": "U naselju se saobraćajnim znakom motornim vozilima može ograničiti brzina kretanja najviše do:",
+  "opts": [
+   {
+    "t": "80 km/h",
+    "ok": true
+   },
+   {
+    "t": "50 km/h",
+    "ok": false
+   },
+   {
+    "t": "60 km/h",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 50
+ },
+ {
+  "page": 5,
+  "q": "Vozač vozila za organizovani prevoz djece kad zaustavi vozilo na kolovozu radi ulaska-izlaska djece mora:",
+  "opts": [
+   {
+    "t": "uključiti lijevi pokazivač pravca",
+    "ok": false
+   },
+   {
+    "t": "uključiti sve pokazivače pravca",
+    "ok": true
+   },
+   {
+    "t": "uključiti desni pokazivač pravca",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 51
+ },
+ {
+  "page": 5,
+  "q": "Kada vozila na rаskrsnicu dolаze iz suprotnih smjerovа i skreću ulijevo mimoilaze se:",
+  "opts": [
+   {
+    "t": "sa desne strane",
+    "ok": true
+   },
+   {
+    "t": "sa lijeve strane",
+    "ok": false
+   },
+   {
+    "t": "po dogovoru",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 52
+ },
+ {
+  "page": 5,
+  "q": "Prilikom uključivanja u saobraćaj vozač je dužan:",
+  "opts": [
+   {
+    "t": "da upotrijebi zvučni znak upozorenja i da uključi odgovarajući pokazivač pravca",
+    "ok": false
+   },
+   {
+    "t": "da uključi sve pokazivače pravca",
+    "ok": false
+   },
+   {
+    "t": "da se uvjeri da to može učiniti na bezbjedan način i da uključi odgovarajući pokazivač pravca",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 53
+ },
+ {
+  "page": 6,
+  "q": "Vozilo koje se kreće po šinama postavljenim na sredini kolovoza:",
+  "opts": [
+   {
+    "t": "smije da se pretiče sa desne strane",
+    "ok": true
+   },
+   {
+    "t": "smije da se pretiče sa lijeve strane",
+    "ok": false
+   },
+   {
+    "t": "ne smije da se pretiče",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 54
+ },
+ {
+  "page": 6,
+  "q": "Prilikom mimoilaženja sa pješakom, vozač je dužan da:",
+  "opts": [
+   {
+    "t": "drži bezbjedno rastojanje između svog vozila i pješaka",
+    "ok": true
+   },
+   {
+    "t": "sirenom upozori pješaka kako bi pješak napustio kolovoz",
+    "ok": false
+   },
+   {
+    "t": "ubrza vozilo da se što prije mimoiđe sa pješakom",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 55
+ },
+ {
+  "page": 6,
+  "q": "Odstojanje između vučnog i vučenog motornog vozila, ako se vuče pomoću krute veze inosi:",
+  "opts": [
+   {
+    "t": "od 3 do 5 metara",
+    "ok": false
+   },
+   {
+    "t": "preko 5 metra",
+    "ok": false
+   },
+   {
+    "t": "do 3 m",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 56
+ },
+ {
+  "page": 6,
+  "q": "Prolaženje vozilom pored drugog vozila koje se ne pomjera je radnja:",
+  "opts": [
+   {
+    "t": "preticanja",
+    "ok": false
+   },
+   {
+    "t": "obilaženja",
+    "ok": true
+   },
+   {
+    "t": "prestrojavanja",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 57
+ },
+ {
+  "page": 6,
+  "q": "Brzina kretanja teretnog vozila sa priključnim vozilom ograničena je na:",
+  "opts": [
+   {
+    "t": "60 km/h",
+    "ok": false
+   },
+   {
+    "t": "70 km/h",
+    "ok": true
+   },
+   {
+    "t": "80 km/h",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 58
+ },
+ {
+  "page": 6,
+  "q": "Vozač kome je dat znak za preticanje:",
+  "opts": [
+   {
+    "t": "dužan je da pomjeri svoje vozilo ka desnoj ivici kolovoza",
+    "ok": true
+   },
+   {
+    "t": "dužan je da pomjeri svoje vozilo ka razdjelnoj liniji",
+    "ok": false
+   },
+   {
+    "t": "dužan je da pomjeri vozilo ka lijevoj ivici kolovoza",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 59
+ },
+ {
+  "page": 6,
+  "q": "Da li vozila pod pratnjom smiju presijecati kolonu pješaka:",
+  "opts": [
+   {
+    "t": "ne, ako je kolona duža od 30 metara",
+    "ok": false
+   },
+   {
+    "t": "ne, bez obzira na dužinu kolone",
+    "ok": false
+   },
+   {
+    "t": "da, bez obzira na dužinu kolone",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 60
+ },
+ {
+  "page": 6,
+  "q": "U priključnom vozilu za stanovanje – kamp-prikolici:",
+  "opts": [
+   {
+    "t": "smiju se prevoziti lica",
+    "ok": false
+   },
+   {
+    "t": "ne smiju se prevoziti lica",
+    "ok": true
+   },
+   {
+    "t": "ne smije se prevoziti više od pet lica",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 61
+ },
+ {
+  "page": 6,
+  "q": "Teret na motornom vozilu može da pređe najudaljeniju tačku na prednjoj strani vozila:",
+  "opts": [
+   {
+    "t": "do 1,5 metara",
+    "ok": false
+   },
+   {
+    "t": "do 1 metar",
+    "ok": true
+   },
+   {
+    "t": "nije ograničeno, ali se mora označiti propisanom tablom",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 62
+ },
+ {
+  "page": 6,
+  "q": "Mladi vozač je vozač:",
+  "opts": [
+   {
+    "t": "koji ima manje od 12 mjeseci vozačkog iskustva",
+    "ok": false
+   },
+   {
+    "t": "do 24 godine života",
+    "ok": true
+   },
+   {
+    "t": "do 21 godinu života",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 63
+ },
+ {
+  "page": 6,
+  "q": "Ako u kretanju vozilom na putu naiđete na saobraćajni znak djeca na putu postupićete tako što ćete:",
+  "opts": [
+   {
+    "t": "sa naročitom opreznošću nastaviti kretanje kako bi mogli blagovremeno zaustaviti vozilo",
+    "ok": true
+   },
+   {
+    "t": "prilagoditi brzinu prema opštem ograničenju za datu dionicu puta",
+    "ok": false
+   },
+   {
+    "t": "prilagoditi brzinu vremenskim uslovima",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 64
+ },
+ {
+  "page": 7,
+  "q": "Kada se vozilom krećeš pored autobusa zaustavljenog na stajalištu postupićeš tako:",
+  "opts": [
+   {
+    "t": "što ćeš zaustaviti vozilo i sačekati ulaz putnika u autobus, a zatim nastaviti kretanje",
+    "ok": false
+   },
+   {
+    "t": "što ćeš uključiti sirenu i nastaviti kretanje bez dodatne pažnje na lica koja ulaze u autobus, odnosno izlaze",
+    "ok": false
+   },
+   {
+    "t": "što ću se kretati smanjenom brzinom da ne ugrožavam lica koja u autobus ulaze, odnosno izlaze",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 65
+ },
+ {
+  "page": 7,
+  "q": "Vozač dok upravlja putničkim motornim vozilom u saobraćaju mora u vozilu:",
+  "opts": [
+   {
+    "t": "imati najmanje dva prsluka sa reflektujućim osobinama",
+    "ok": false
+   },
+   {
+    "t": "imati prsluka sa reflektujućim osobinama koliko ima i mjesta za sjedenje",
+    "ok": false
+   },
+   {
+    "t": "imati jedan prsluk sa reflektujućim osobinama",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 66
+ },
+ {
+  "page": 7,
+  "q": "Na putu u naselju na kojem brzina nije ograničena saobraćajnim znakom, vozač ne smije da se kreće brže od:",
+  "opts": [
+   {
+    "t": "50 km/h",
+    "ok": true
+   },
+   {
+    "t": "60 km/h",
+    "ok": false
+   },
+   {
+    "t": "70 km/h",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 67
+ },
+ {
+  "page": 7,
+  "q": "Kada se vozač uključuje vozilom sa zemljanog puta na put sa asfaltnim zastorom, potrebno je:",
+  "opts": [
+   {
+    "t": "da zaustavi vozilo i ukloni blato sa točkova nakon uključenja",
+    "ok": false
+   },
+   {
+    "t": "da naizmjenično ubrza i smanji brzinu vozila nakon uključenja, kako bi blato spalo sa točkova",
+    "ok": false
+   },
+   {
+    "t": "da zaustavi vozilo i ukloni blato sa točkova prije uključenja",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 68
+ },
+ {
+  "page": 7,
+  "q": "Prilikom kretanja vozilom po kolovozu vozač je dužan da vozilo drži:",
+  "opts": [
+   {
+    "t": "što bliže desnoj ivici kolovoza",
+    "ok": true
+   },
+   {
+    "t": "sredinom kolovozne trake",
+    "ok": false
+   },
+   {
+    "t": "bliže razdjelnoj liniji",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 69
+ },
+ {
+  "page": 7,
+  "q": "Saobraćajnu traku namijenjenu za kretanje vozila za gradski prevoz putnika mogu koristiti:",
+  "opts": [
+   {
+    "t": "vozila za odvoz smeća",
+    "ok": false
+   },
+   {
+    "t": "vozila sa prevenstvom prolaza",
+    "ok": true
+   },
+   {
+    "t": "putnička vozila pri preticanju",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 70
+ },
+ {
+  "page": 7,
+  "q": "Kada se iza vozila zbog spore vožnje formira kolona vozila, vozač je dužan da:",
+  "opts": [
+   {
+    "t": "nastavi kretanje bez obaveze prema drugim učesnicima u saobraćaju",
+    "ok": false
+   },
+   {
+    "t": "na odgovarajućem mjestu na putu omogući vozilima da ga bezbjedno preteknu, obiđu ili prođu",
+    "ok": true
+   },
+   {
+    "t": "nastavi kretanje do prve raskrsnice sa lokalnim putem i isključi se iz saobraćaja",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 71
+ },
+ {
+  "page": 7,
+  "q": "Vozač smije da zaustavi ili parkira svoje vozilo na trotoaru:",
+  "opts": [
+   {
+    "t": "ako trotoar ima širinu veću od 1,6 metara",
+    "ok": false
+   },
+   {
+    "t": "ako je saobraćajnim znakom dozvoljeno, bez obzira na širinu trotoara i prolaza za pješake",
+    "ok": false
+   },
+   {
+    "t": "ako je dozvoljeno saobraćajnom signalizacijom, i ako ostane prolaz za pješake najmanje širine 1,6 metara, koji ne smije biti uz ivicu kolovoza",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 72
+ },
+ {
+  "page": 7,
+  "q": "Vozilo koje se kreće po šinama postavljenim uz desnu ivicu kolovoza pretiče se:",
+  "opts": [
+   {
+    "t": "sa bilo koje strane",
+    "ok": false
+   },
+   {
+    "t": "sa lijeve strane",
+    "ok": true
+   },
+   {
+    "t": "sa desne strane",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 73
+ },
+ {
+  "page": 7,
+  "q": "Za vrijeme kretanja vozila unazad:",
+  "opts": [
+   {
+    "t": "moraju biti uključeni svi pokazivači pravca",
+    "ok": true
+   },
+   {
+    "t": "ne moraju biti uključeni svi pokazivači pravca",
+    "ok": false
+   },
+   {
+    "t": "mora biti uključen samo desni pokazivač pravca",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 74
+ },
+ {
+  "page": 7,
+  "q": "Vozačka dozvola za kategoriju B može se izdati licu koje je navršilo:",
+  "opts": [
+   {
+    "t": "17 godina",
+    "ok": false
+   },
+   {
+    "t": "17 godina i 6 mjeseci",
+    "ok": false
+   },
+   {
+    "t": "18 godina",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 75
+ },
+ {
+  "page": 8,
+  "q": "Vozač koji na kolovozu bez ulične rasvjete zaustavi ili parkira vozilo, noću ili u uslovima smanjene vidljivosti, mora na vozilu uključiti:",
+  "opts": [
+   {
+    "t": "oborena svijetla",
+    "ok": false
+   },
+   {
+    "t": "parkirna, odnosno poziciona svijetla",
+    "ok": true
+   },
+   {
+    "t": "svijetla za maglu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 76
+ },
+ {
+  "page": 8,
+  "q": "Odstojanje na kojem učesnik u saobraćaju može jasno vidjeti kolovoz je:",
+  "opts": [
+   {
+    "t": "preglednost",
+    "ok": false
+   },
+   {
+    "t": "vidno polje",
+    "ok": false
+   },
+   {
+    "t": "vidljivost",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 77
+ },
+ {
+  "page": 8,
+  "q": "Za vožnju bicikla, gdje ne postoji posebna staza, odnosno traka, može da se koristi kolovoz:",
+  "opts": [
+   {
+    "t": "u širini do 1 metra od desne ivice kolovoza",
+    "ok": true
+   },
+   {
+    "t": "u širini do 1,5 metara od desne ivice kolovoza",
+    "ok": false
+   },
+   {
+    "t": "u širini do 1,2 metra od desne ivice kolovoza",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 78
+ },
+ {
+  "page": 8,
+  "q": "Brzina kretanja vozila na javnom putu kada prevozi opasne materije van naselja ograničena je:",
+  "opts": [
+   {
+    "t": "na 60 km/h",
+    "ok": false
+   },
+   {
+    "t": "na 70 km/h",
+    "ok": true
+   },
+   {
+    "t": "na 80 km/h",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 79
+ },
+ {
+  "page": 8,
+  "q": "Vozač može da se uključi vozilom u saobraćaj kada:",
+  "opts": [
+   {
+    "t": "uključi zvučni signal i sve pokazivače pravca",
+    "ok": false
+   },
+   {
+    "t": "uključi samo pokazivač pravca",
+    "ok": false
+   },
+   {
+    "t": "se uvjeri da ne ometa i na propisan način obavijesti ostale učesnike",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 80
+ },
+ {
+  "page": 8,
+  "q": "Kada se vozilom vrši prevoz djeteta u bezbjednosnom sjedištu:",
+  "opts": [
+   {
+    "t": "dijete ne mora biti vezano sigurnosnim pojasom",
+    "ok": false
+   },
+   {
+    "t": "dijete ne mora biti vezano, ako je sjedište pričvršćeno sigurnosnim pojasom",
+    "ok": false
+   },
+   {
+    "t": "dijete mora biti vezano sigurnosnim pojasom",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 81
+ },
+ {
+  "page": 8,
+  "q": "Na javnom putu gdje su kolovozne trake fizički odvojene, vozač smije vozilom da se kreće:",
+  "opts": [
+   {
+    "t": "kolovoznom trakom namijenjenom za saobraćaj vozila iz suprotnog smjera",
+    "ok": false
+   },
+   {
+    "t": "desnom kolovoznom trakom",
+    "ok": true
+   },
+   {
+    "t": "lijevom i desnom kolovoznom trakom",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 82
+ },
+ {
+  "page": 8,
+  "q": "Lice koje se prevozi vozilom ne smije:",
+  "opts": [
+   {
+    "t": "da piše poruke na telefonskom uređaju",
+    "ok": false
+   },
+   {
+    "t": "da ometa vozača u upravljanju",
+    "ok": true
+   },
+   {
+    "t": "da koristi slušalice",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 83
+ },
+ {
+  "page": 8,
+  "q": "Kad se vozilom kreće unazad vozač je:",
+  "opts": [
+   {
+    "t": "dužan da propusti vozilo koje dolazi iza njegovog vozila",
+    "ok": true
+   },
+   {
+    "t": "dužan da uključi lijevi pokazivač pravca",
+    "ok": false
+   },
+   {
+    "t": "nije dužan da propusti vozilo koje dolazi iza njegovog vozila",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 84
+ },
+ {
+  "page": 8,
+  "q": "Sredstvo kojim se ometa rad uređaja za mjerenje brzine kretanja vozila:",
+  "opts": [
+   {
+    "t": "ne smije se koristiti na dijelu puta gdje postoji dopunska tabla radarska kontrola",
+    "ok": false
+   },
+   {
+    "t": "smije se koristiti na dijelu puta gdje ne postoji dopunska tabla radarska kontrola",
+    "ok": false
+   },
+   {
+    "t": "ne smije se koristiti i nalaziti u vozilu",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 85
+ },
+ {
+  "page": 8,
+  "q": "Ako se vozač nalazi na kolovozu van svog vozila:",
+  "opts": [
+   {
+    "t": "dužan je da nosi prsluk sa svjetlosno reflektujućim osobinama",
+    "ok": true
+   },
+   {
+    "t": "nije dužan da nosi prsluk sa svjetlosno reflektujućim osobinama",
+    "ok": false
+   },
+   {
+    "t": "dužan je da položajem ruku upozori ostale učesnike o svom prisustvu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 86
+ },
+ {
+  "page": 9,
+  "q": "Kada na raskrsnici vozila dolaze iz suprotnih smjerova i skreću ulijevo mimoilaze se sa:",
+  "opts": [
+   {
+    "t": "desne strane",
+    "ok": true
+   },
+   {
+    "t": "lijeve strane",
+    "ok": false
+   },
+   {
+    "t": "lijeve i desne strane",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 87
+ },
+ {
+  "page": 9,
+  "q": "U toku kretanja za vrijeme magle na vozilu moraju da budu uključena:",
+  "opts": [
+   {
+    "t": "velika svijetla",
+    "ok": false
+   },
+   {
+    "t": "oborena svijetla",
+    "ok": true
+   },
+   {
+    "t": "pokazivači pravca",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 88
+ },
+ {
+  "page": 9,
+  "q": "Vozač koji se približava raskrsnici dužan je da:",
+  "opts": [
+   {
+    "t": "poveća brzinu kretanja da što brže prođe kroz raskrsnicu",
+    "ok": false
+   },
+   {
+    "t": "prilagodi vožnju uslovima saobraćaja na raskrsnici",
+    "ok": true
+   },
+   {
+    "t": "vozi brzinom koja je propisana opštim ograničenjem",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 89
+ },
+ {
+  "page": 10,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "zaustaviću se ispred raskrsnice",
+    "ok": true
+   },
+   {
+    "t": "propustiću vozilo koje skreće lijevo i nastaviti kretanje",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje pravo",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p10_54.png",
+  "id": 90
+ },
+ {
+  "page": 10,
+  "q": "U situaciji prikazanoj na slici dužni ste da postupate:",
+  "opts": [
+   {
+    "t": "po uključenom svijetlu na semaforu",
+    "ok": false
+   },
+   {
+    "t": "po vertikalnoj saobraćajnoj signalizaciji",
+    "ok": false
+   },
+   {
+    "t": "po znaku koji daje ovlašćeni policijski službenik",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p10_54.png",
+  "id": 91
+ },
+ {
+  "page": 10,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje pravo ne propuštajući vozilo 1",
+    "ok": false
+   },
+   {
+    "t": "propustiću vozilo 1 i nastaviti kretanje",
+    "ok": true
+   },
+   {
+    "t": "ubrzaću kretanje i prije vozila 1 proći kroz raskrsnicu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p10_56.png",
+  "id": 92
+ },
+ {
+  "page": 10,
+  "q": "Znak izričite naredbe u situaciji kao na slici ima značenje:",
+  "opts": [
+   {
+    "t": "ukrštanje sa putem sa prvenstvom prolaza",
+    "ok": true
+   },
+   {
+    "t": "prvenstvo u odnosu na vozila iz suprotnog smjera",
+    "ok": false
+   },
+   {
+    "t": "obavezno zaustavljanje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p10_56.png",
+  "id": 93
+ },
+ {
+  "page": 10,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici, ako sa vozilom 2 zadržavate pravac kretanja:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje bez propuštanja vozila",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje uz propuštanje samo vozila 1",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje uz propuštanje vozila 3 i 4",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p10_58.png",
+  "id": 94
+ },
+ {
+  "page": 10,
+  "q": "U situaciji prikazanoj na slici redoslijed prolaska vozila je:",
+  "opts": [],
+  "ans": null,
+  "order": "3 4 2 1",
+  "img": "p10_58.png",
+  "id": 95
+ },
+ {
+  "page": 10,
+  "q": "Ako je biciklista ušao u raskrsnicu na crveno svijetlo na semaforu u smjeru svog kretanja, kao na slici:",
+  "opts": [
+   {
+    "t": "propisno vrši radnju prolaska kroz raskrsnicu",
+    "ok": false
+   },
+   {
+    "t": "nepropisno jer treba da gura biciklo pored sebe",
+    "ok": false
+   },
+   {
+    "t": "nepropisno vrši radnju prolaska kroz raskrsnicu",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p10_60.png",
+  "id": 96
+ },
+ {
+  "page": 10,
+  "q": "U situaciji prikazanoj na slici biciklista prelazi kolovoz na:",
+  "opts": [
+   {
+    "t": "obilježenoj biciklističkoj stazi",
+    "ok": true
+   },
+   {
+    "t": "obilježenoj biciklističkoj traci",
+    "ok": false
+   },
+   {
+    "t": "obilježenoj razdjelnoj liniji pješačkog prelaza",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p10_60.png",
+  "id": 97
+ },
+ {
+  "page": 11,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "propustiću putničko vozilo 3 i nastaviti kretanje",
+    "ok": true
+   },
+   {
+    "t": "propustiću tramvaj 2 i nastaviti kretanje",
+    "ok": false
+   },
+   {
+    "t": "propustiću tramvaj 2 i putničko vozilo 3, pa nastaviti kretanje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p11_64.png",
+  "id": 98
+ },
+ {
+  "page": 11,
+  "q": "Redoslijed prolaska vozila kroz raskrsnicu je:",
+  "opts": [],
+  "ans": null,
+  "order": "3 1 2",
+  "img": "p11_64.png",
+  "id": 99
+ },
+ {
+  "page": 11,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje pravo",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje pravo uz propuštanje vozila 4 i 5",
+    "ok": false
+   },
+   {
+    "t": "zaustaviću vozilo",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p11_66.png",
+  "id": 100
+ },
+ {
+  "page": 11,
+  "q": "U prikazanoj situaciji vozilo 2 će:",
+  "opts": [
+   {
+    "t": "se zaustaviti i propustiti vozilo -",
+    "ok": false
+   },
+   {
+    "t": "nastaviti kretanje ulijevo bez propuštanja vozila 1",
+    "ok": true
+   },
+   {
+    "t": "se zaustaviti zbog znaka koji daje ovlašćeno lice",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p11_66.png",
+  "id": 101
+ },
+ {
+  "page": 11,
+  "q": "U situaciji prikazanoj na slici prvenstvo prolaza ima:",
+  "opts": [
+   {
+    "t": "vozilo 1 u odnosu na vozilo 2",
+    "ok": false
+   },
+   {
+    "t": "vozilo 2 u odnosu na vozilo 1",
+    "ok": true
+   },
+   {
+    "t": "vozilo 1 zbog pravila desne strane",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p11_68.png",
+  "id": 102
+ },
+ {
+  "page": 11,
+  "q": "U situaciji prikazanoj na slici redoslijed prolaska vozila regulisan je:",
+  "opts": [
+   {
+    "t": "pravilom propuštanja vozila sa desne strane",
+    "ok": false
+   },
+   {
+    "t": "pravilom propuštanja vozila sa lijeve strane",
+    "ok": false
+   },
+   {
+    "t": "vertikalnim saobraćajnim znakom",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p11_68.png",
+  "id": 103
+ },
+ {
+  "page": 11,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "propustiću vozilo koje skreće ulijevo",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje pravo jer imam prvenstvo prolaza",
+    "ok": true
+   },
+   {
+    "t": "zaustaviću se ispred raskrsnice zbog znaka STOP",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p11_70.png",
+  "id": 104
+ },
+ {
+  "page": 11,
+  "q": "U situaciji prikazanoj na slici postupićete po:",
+  "opts": [
+   {
+    "t": "saobraćajnom znaku STOP",
+    "ok": false
+   },
+   {
+    "t": "značenju svjetlosnih znakova na semaforu",
+    "ok": true
+   },
+   {
+    "t": "saobraćajnom pravilu ulaska u neregulisanu raskrsnicu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p11_70.png",
+  "id": 105
+ },
+ {
+  "page": 12,
+  "q": "U situaciji prikazanoj na slici redoslijed prolaska vozila je:",
+  "opts": [],
+  "ans": null,
+  "order": "1 3 2",
+  "img": "p12_74.png",
+  "id": 106
+ },
+ {
+  "page": 12,
+  "q": "U situaciji prikazanoj na slici redoslijed prolaska kroz raskrsnicu je regulisan:",
+  "opts": [
+   {
+    "t": "saobraćajnim znakom",
+    "ok": true
+   },
+   {
+    "t": "pravilom propuštanja vozila sa desne strane",
+    "ok": false
+   },
+   {
+    "t": "horizontalnim oznakama",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p12_74.png",
+  "id": 107
+ },
+ {
+  "page": 12,
+  "q": "U situaciji prikazanoj na slici prilikom skretanja ulijevo treba da:",
+  "opts": [
+   {
+    "t": "nastavim kretanje bez propuštanja vozila 2, 3 i 4",
+    "ok": false
+   },
+   {
+    "t": "propustim vozila 3 i 4",
+    "ok": false
+   },
+   {
+    "t": "propustim vozila 2, 3 i 4",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p12_76.png",
+  "id": 108
+ },
+ {
+  "page": 12,
+  "q": "U situaciji prikazanoj na slici strelice na kolovozu (bijele boje) obilježavaju:",
+  "opts": [
+   {
+    "t": "liniju usmjeravanja",
+    "ok": false
+   },
+   {
+    "t": "obavezan smjer samo za putnička vozila",
+    "ok": false
+   },
+   {
+    "t": "obavezan smjer kretanja",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p12_76.png",
+  "id": 109
+ },
+ {
+  "page": 12,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje pravo bez propuštanja tramvaja",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje pravo nakon propuštanja tramvaja",
+    "ok": true
+   },
+   {
+    "t": "uz povećanu opreznost nastaviću kretanje pravo",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p12_78.png",
+  "id": 110
+ },
+ {
+  "page": 12,
+  "q": "U situaciji prikazanoj na slici redoslijed prolaska kroz raskrsnicu je regulisan:",
+  "opts": [
+   {
+    "t": "vertikalnom signalizacijom",
+    "ok": false
+   },
+   {
+    "t": "primjenom pravila desne strane",
+    "ok": false
+   },
+   {
+    "t": "primjenom pravila prvenstva prolaza",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p12_78.png",
+  "id": 111
+ },
+ {
+  "page": 12,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "zaustaviću se ispred raskrsnice i propustiti vozilo 2",
+    "ok": true
+   },
+   {
+    "t": "nastaviću kretanje pravo uz povećanu pažnju",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje pravo bez propuštanja vozila 2",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p12_80.png",
+  "id": 112
+ },
+ {
+  "page": 12,
+  "q": "U situaciji prikazanoj na slici dopunska tabla označava:",
+  "opts": [
+   {
+    "t": "nailazak na obilaznicu",
+    "ok": false
+   },
+   {
+    "t": "da se krećem po putu sa prvenstvom prolaza",
+    "ok": false
+   },
+   {
+    "t": "spajanje sa putem sa prvenstvom prolaza",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p12_80.png",
+  "id": 113
+ },
+ {
+  "page": 13,
+  "q": "U situaciji kao na slici, kada prolazite pored vozila 2 koje se kreće iz suprotnog smjera je radnja:",
+  "opts": [
+   {
+    "t": "obilaženja",
+    "ok": false
+   },
+   {
+    "t": "mimoilaženja",
+    "ok": true
+   },
+   {
+    "t": "preticanja",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p13_84.png",
+  "id": 114
+ },
+ {
+  "page": 13,
+  "q": "U situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje pravo ne propuštajući pješaka",
+    "ok": false
+   },
+   {
+    "t": "ubrzaću kretanje vozila i proći ispred pješaka",
+    "ok": false
+   },
+   {
+    "t": "zaustaviću se i propustiti pješaka",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p13_84.png",
+  "id": 115
+ },
+ {
+  "page": 13,
+  "q": "U situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "smijem preticati",
+    "ok": false
+   },
+   {
+    "t": "ne smijem preticati",
+    "ok": true
+   },
+   {
+    "t": "smijem preticati zbog oznaka na kolovozu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p13_86.png",
+  "id": 116
+ },
+ {
+  "page": 13,
+  "q": "U situaciji prikazanoj na slici neisprekidana uzdužna linija uz desnu ivicu kolovoza označava:",
+  "opts": [
+   {
+    "t": "ivicu kolovoza",
+    "ok": false
+   },
+   {
+    "t": "ivičnu liniju",
+    "ok": true
+   },
+   {
+    "t": "razdjelnu liniju",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p13_86.png",
+  "id": 117
+ },
+ {
+  "page": 13,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "zaustaviću se ispred raskrsnice",
+    "ok": false
+   },
+   {
+    "t": "propustiću vozila iz suprotnog smjera pa nastaviti kretanje",
+    "ok": true
+   },
+   {
+    "t": "nastaviću kretanje ne propuštajući vozila iz suprotnog smjera",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p13_88.png",
+  "id": 118
+ },
+ {
+  "page": 13,
+  "q": "U situaciji prikazanoj na slici biciklisti se kreću:",
+  "opts": [
+   {
+    "t": "nepropisno, jer su napravili kolonu",
+    "ok": false
+   },
+   {
+    "t": "nepropisno, jer ne nose prsluk sa reflektujućim osobinama",
+    "ok": false
+   },
+   {
+    "t": "propisno",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p13_88.png",
+  "id": 119
+ },
+ {
+  "page": 13,
+  "q": "U situaciji kao na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje desno",
+    "ok": false
+   },
+   {
+    "t": "zaustaviću se ispred raskrsnice",
+    "ok": true
+   },
+   {
+    "t": "nastaviću kretanje pravo",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p13_90.png",
+  "id": 120
+ },
+ {
+  "page": 13,
+  "q": "U situaciji prikazanoj na slici postupićete po:",
+  "opts": [
+   {
+    "t": "svjetlosnom saobraćajnom znaku",
+    "ok": true
+   },
+   {
+    "t": "vertikalnom saobraćajnom znaku",
+    "ok": false
+   },
+   {
+    "t": "horizontalnim oznakama",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p13_90.png",
+  "id": 121
+ },
+ {
+  "page": 14,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje pravo",
+    "ok": false
+   },
+   {
+    "t": "zaustaviću vozilo",
+    "ok": true
+   },
+   {
+    "t": "nastaviću kretanje lijevo nakon prouštanja vozila 2 i 3",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p14_94.png",
+  "id": 122
+ },
+ {
+  "page": 14,
+  "q": "U situaciji prikazanoj na slici policijsko vozilo:",
+  "opts": [
+   {
+    "t": "može da nastavi kretanje pravo",
+    "ok": false
+   },
+   {
+    "t": "mora da se zaustavi",
+    "ok": true
+   },
+   {
+    "t": "može da nastavi kretanje u bilo kojem pravcu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p14_94.png",
+  "id": 123
+ },
+ {
+  "page": 14,
+  "q": "U situaciji prikazanoj na slici vozač:",
+  "opts": [
+   {
+    "t": "vozilo 1 treba da propusti vozilo 2",
+    "ok": false
+   },
+   {
+    "t": "vozilo 2 treba da ubrza kretanje i prođe ispred vozila 1",
+    "ok": false
+   },
+   {
+    "t": "vozilo 2 treba da propusti vozilo 1",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p14_96.png",
+  "id": 124
+ },
+ {
+  "page": 14,
+  "q": "U situaciji prikazanoj na slici vozilo 1:",
+  "opts": [
+   {
+    "t": "ne smije da se zaustavi ili parkira",
+    "ok": true
+   },
+   {
+    "t": "smije da se zaustavi",
+    "ok": false
+   },
+   {
+    "t": "smije da se zaustavi ili parkira",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p14_96.png",
+  "id": 125
+ },
+ {
+  "page": 14,
+  "q": "U situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "putničko vozilo 1 ima dozvoljen prolaz",
+    "ok": true
+   },
+   {
+    "t": "vozila 2, 3 i 4 imaju dozvoljen prolaz",
+    "ok": false
+   },
+   {
+    "t": "samo policijsko vozilo 4 ima dozvoljen prolaz",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p14_98.png",
+  "id": 126
+ },
+ {
+  "page": 14,
+  "q": "U situaciji prikazanoj na slici policijsko vozilo 4:",
+  "opts": [
+   {
+    "t": "može da nastavi kretanje pravo",
+    "ok": false
+   },
+   {
+    "t": "mora da se zaustavi",
+    "ok": true
+   },
+   {
+    "t": "može da nastavi kretanje pravo nakon prolaska vozila 1",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p14_98.png",
+  "id": 127
+ },
+ {
+  "page": 14,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici, ako upravljate vozilom 1:",
+  "opts": [
+   {
+    "t": "nakon propuštanja vozila 2 moram skrenuti udesno",
+    "ok": false
+   },
+   {
+    "t": "imam prvenstvo prolaza u odnosu na vozilo 2",
+    "ok": true
+   },
+   {
+    "t": "zaustaviću se ispred raskrsnice i propustiti sva vozila",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p14_100.png",
+  "id": 128
+ },
+ {
+  "page": 14,
+  "q": "Obavezan smjer u desno, u situaciji na slici, odnosi se:",
+  "opts": [
+   {
+    "t": "na teretna i priključna vozila",
+    "ok": false
+   },
+   {
+    "t": "na sva vozila osim teretna",
+    "ok": false
+   },
+   {
+    "t": "na teretna vozila",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p14_100.png",
+  "id": 129
+ },
+ {
+  "page": 15,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje pravo kroz raskrsnicu",
+    "ok": true
+   },
+   {
+    "t": "zaustaviću se ispred raskrnice i propustiti vozilo 2",
+    "ok": false
+   },
+   {
+    "t": "zaustaviću se ispred raskrsnice i propustiti vozilo 3",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p15_104.png",
+  "id": 130
+ },
+ {
+  "page": 15,
+  "q": "U situaciji prikazanoj na slici redoslijed prolaska vozila kroz raskrsnicu je:",
+  "opts": [],
+  "ans": null,
+  "order": "1 2 3",
+  "img": "p15_104.png",
+  "id": 131
+ },
+ {
+  "page": 15,
+  "q": "Kako ćete postupiti u sitaciji prikazanoj na slici, ako vozila zadržavaju pravac kretanja, a upravljate sa vozilom 2:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje bez propuštanja vozila",
+    "ok": true
+   },
+   {
+    "t": "nastaviću kretanje nakon propuštanja samo vozila 3 i 4",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje uz propuštanje vozila 1",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p15_106.png",
+  "id": 132
+ },
+ {
+  "page": 15,
+  "q": "U situaciji na slici kada vozila zadržavaju pravac kretanja redoslijed prolaska vozila je:",
+  "opts": [],
+  "ans": null,
+  "order": "2 1 3 4",
+  "img": "p15_106.png",
+  "id": 133
+ },
+ {
+  "page": 15,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje ulijevo bez zaustavljanja kroz raskrsnicu",
+    "ok": false
+   },
+   {
+    "t": "zaustaviću se ispred raskrsnice",
+    "ok": true
+   },
+   {
+    "t": "nastaviću kretanje pravo kroz raskrsnicu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p15_108.png",
+  "id": 134
+ },
+ {
+  "page": 15,
+  "q": "U situaciji prikazanoj na slici upaljeno žuto svijetlo na semaforu znači:",
+  "opts": [
+   {
+    "t": "zabranu prolaza samo pravo",
+    "ok": false
+   },
+   {
+    "t": "slobodan prolaz samo pravo",
+    "ok": false
+   },
+   {
+    "t": "zabranu prolaza kroz raskrsnicu",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p15_108.png",
+  "id": 135
+ },
+ {
+  "page": 15,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici, kada policijski službenik bočno ispruženih ruku i tijelom okrenutim prema vozilima 2 i 3 reguliše saobraćaj:",
+  "opts": [
+   {
+    "t": "propustiću samo vozila 2 i 3",
+    "ok": false
+   },
+   {
+    "t": "propustiću samo vozilo 4 i nastvaiti kretanja",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje bez propuštanja vozila 2, 3 i 4",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p15_110.png",
+  "id": 136
+ },
+ {
+  "page": 15,
+  "q": "U situaciji prikazanoj na slici redoslijed prolaska vozila kojima je dozvoljen prolazak je:",
+  "opts": [],
+  "ans": null,
+  "order": "1 4",
+  "img": "p15_110.png",
+  "id": 137
+ },
+ {
+  "page": 16,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje bez propuštanja vozila",
+    "ok": false
+   },
+   {
+    "t": "neću propustiti vozilo 3",
+    "ok": false
+   },
+   {
+    "t": "propustiću vozila 2 i 3",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p16_114.png",
+  "id": 138
+ },
+ {
+  "page": 16,
+  "q": "U situaciji prikazanoj na slici sa vozilom 4 se:",
+  "opts": [
+   {
+    "t": "mimoilazim sa desne strane",
+    "ok": true
+   },
+   {
+    "t": "mimoilazim sa lijeve strane",
+    "ok": false
+   },
+   {
+    "t": "obilazim sa desne strane",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p16_114.png",
+  "id": 139
+ },
+ {
+  "page": 16,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "zaustaviću se ispred raskrsnice zbog znaka STOP",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje, jer zadržavam pravac",
+    "ok": false
+   },
+   {
+    "t": "zaustaviću se ispred raskrsnice zbog svijetla na semaforu",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p16_116.png",
+  "id": 140
+ },
+ {
+  "page": 16,
+  "q": "U situaciji prikazanoj na slici prolazak kroz raskrsnicu regulisan je:",
+  "opts": [
+   {
+    "t": "svjetlosnim saobraćajnim znakom",
+    "ok": true
+   },
+   {
+    "t": "pravilom desne strane",
+    "ok": false
+   },
+   {
+    "t": "saobraćajnim znakom",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p16_116.png",
+  "id": 141
+ },
+ {
+  "page": 16,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje pravo jer zadržavam pravac kretanja",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje pravo jer ne radi semafor",
+    "ok": false
+   },
+   {
+    "t": "zaustaviću se ispred raskrsnice",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p16_118.png",
+  "id": 142
+ },
+ {
+  "page": 16,
+  "q": "U situaciji prikazanoj na slici dužni ste da postupate:",
+  "opts": [
+   {
+    "t": "po saobraćajnim znacima",
+    "ok": true
+   },
+   {
+    "t": "po semaforu",
+    "ok": false
+   },
+   {
+    "t": "po pravilu propuštanja vozila samo sa desne strane",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p16_118.png",
+  "id": 143
+ },
+ {
+  "page": 16,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "propustiću samo vozila koja dolaze sa desne strane",
+    "ok": false
+   },
+   {
+    "t": "propustiću samo vozila sa lijeve strane",
+    "ok": false
+   },
+   {
+    "t": "zaustaviću vozilo",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p16_120.png",
+  "id": 144
+ },
+ {
+  "page": 16,
+  "q": "U situaciji prikazanoj na slici redoslijed prolaska vozila kojima je dozvoljen prolazak je:",
+  "opts": [],
+  "ans": null,
+  "order": "4 3",
+  "img": "p16_120.png",
+  "id": 145
+ },
+ {
+  "page": 17,
+  "q": "U situaciji prikazanoj na slici vozač vozila 1 treba da:",
+  "opts": [
+   {
+    "t": "nastavi kretanje bez propuštanja vozila 2",
+    "ok": false
+   },
+   {
+    "t": "se zaustavi i nakon propuštanja vozila 2 nastavi kretanje",
+    "ok": true
+   },
+   {
+    "t": "se zaustavi i prestroji u desnu saobraćajnu traku",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p17_124.png",
+  "id": 146
+ },
+ {
+  "page": 17,
+  "q": "U situaciji prikazanoj na slici vozač vozila 1 postupiće po:",
+  "opts": [
+   {
+    "t": "pravilu mimoilaženja vozila različitih kategorija",
+    "ok": false
+   },
+   {
+    "t": "pravilu propuštanja vozila sa desne strane",
+    "ok": false
+   },
+   {
+    "t": "vertikalnoj i horizontalnoj saobraćajnoj signalizaciji",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p17_124.png",
+  "id": 147
+ },
+ {
+  "page": 17,
+  "q": "U situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "treba da nastavim kretanje ulijevo",
+    "ok": false
+   },
+   {
+    "t": "mogu izvršti prestrojavanje u desnu traku",
+    "ok": true
+   },
+   {
+    "t": "bez prestrojavanja nastaviću kretanje pravo",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p17_126.png",
+  "id": 148
+ },
+ {
+  "page": 17,
+  "q": "U prikazanoj situaciji strelice na kolovozu obelježavaju:",
+  "opts": [
+   {
+    "t": "obavezan smjer kretanja ulijevo",
+    "ok": false
+   },
+   {
+    "t": "namjenu saobraćajnih traka",
+    "ok": true
+   },
+   {
+    "t": "obavezan smjer kretanja udesno",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p17_126.png",
+  "id": 149
+ },
+ {
+  "page": 17,
+  "q": "U raskrsnici kao na slici:",
+  "opts": [
+   {
+    "t": "nijesam dužan da propustim vozila u kružnom toku",
+    "ok": false
+   },
+   {
+    "t": "dužan sam da propustim samo vozila koja mi dolaze sa desne strane",
+    "ok": false
+   },
+   {
+    "t": "dužan sam da propustim sva vozila koja se kreću u kružnom toku",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p17_128.png",
+  "id": 150
+ },
+ {
+  "page": 17,
+  "q": "U situaciji prikazanoj na slici teretno vozilo 2:",
+  "opts": [
+   {
+    "t": "propisno skreće udesno putanjom a",
+    "ok": false
+   },
+   {
+    "t": "nepropisno skreće udesno",
+    "ok": true
+   },
+   {
+    "t": "propisno skreće udesno putanjom b",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p17_128.png",
+  "id": 151
+ },
+ {
+  "page": 17,
+  "q": "Kako ćete postupiti u sitaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "zaustaviću se ispred raskrsnice i propustiti vozila 4 i 2",
+    "ok": true
+   },
+   {
+    "t": "zaustaviću se ispred raskrsnice i propustiti sva vozila",
+    "ok": false
+   },
+   {
+    "t": "propustiću samo vozilo 3",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p17_130.png",
+  "id": 152
+ },
+ {
+  "page": 17,
+  "q": "U situaciji prikazanoj na slici redoslijed prolaska vozila kroz raskrsnicu je:",
+  "opts": [],
+  "ans": null,
+  "order": "4 2 1 3",
+  "img": "p17_130.png",
+  "id": 153
+ },
+ {
+  "page": 18,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "propustiću vozilo 2 i nastaviti kretanje ulijevo",
+    "ok": true
+   },
+   {
+    "t": "nastaviću kretanje ulijevo ne propuštajući vozilo 2",
+    "ok": false
+   },
+   {
+    "t": "ubrzaću kretanje vozila i proći ispred vozila 2",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p18_134.png",
+  "id": 154
+ },
+ {
+  "page": 18,
+  "q": "U situaciji prikazanoj na slici vozilo 2 se kreće:",
+  "opts": [
+   {
+    "t": "propisno putanjom a",
+    "ok": false
+   },
+   {
+    "t": "propisno putanjom b",
+    "ok": true
+   },
+   {
+    "t": "propisno bliže desnoj ivici kolovoza",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p18_134.png",
+  "id": 155
+ },
+ {
+  "page": 18,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje pravo kroz raskrsnicu",
+    "ok": false
+   },
+   {
+    "t": "zaustaviću se ispred raskrsnice pa nastaviti kretanje pravo",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje u lijevo kroz raskrsnicu",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p18_136.png",
+  "id": 156
+ },
+ {
+  "page": 18,
+  "q": "U situaciji prikazanoj na slici strelice na kolovozu označavaju:",
+  "opts": [
+   {
+    "t": "obavezan smjer",
+    "ok": true
+   },
+   {
+    "t": "namjenu saobraćajnih traka",
+    "ok": false
+   },
+   {
+    "t": "putokaz",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p18_136.png",
+  "id": 157
+ },
+ {
+  "page": 18,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje ulijevo nakon propuštanja vozila 3",
+    "ok": true
+   },
+   {
+    "t": "nastaviću kretanje ulijevo bez propuštanja vozila 2 i 3",
+    "ok": false
+   },
+   {
+    "t": "zaustaviću se i propustiti vozila 2 i 3",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p18_138.png",
+  "id": 158
+ },
+ {
+  "page": 18,
+  "q": "U situaciji prikazanoj na slici redoslijed prolaska vozila je:",
+  "opts": [],
+  "ans": null,
+  "order": "3 1 2",
+  "img": "p18_138.png",
+  "id": 159
+ },
+ {
+  "page": 18,
+  "q": "U situaciji prikazanoj na slici vozilo:",
+  "opts": [
+   {
+    "t": "1 treba da nastavi kretanje bez propuštanja vozila 2",
+    "ok": false
+   },
+   {
+    "t": "2 treba da propusti vozilo 1 i nastavi kretanje",
+    "ok": false
+   },
+   {
+    "t": "1 treba da propusti vozilo 2 pa da nastavi kretanje",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p18_140.png",
+  "id": 160
+ },
+ {
+  "page": 18,
+  "q": "U situaciji prikazanoj na slici vozač vozila 1 postupiće po:",
+  "opts": [
+   {
+    "t": "pravilu propuštanja vozila samo sa desne strane",
+    "ok": false
+   },
+   {
+    "t": "pravilu prolaska kroz neregulisanu raskrsnicu",
+    "ok": false
+   },
+   {
+    "t": "saobraćajnom znakom",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p18_140.png",
+  "id": 161
+ },
+ {
+  "page": 19,
+  "q": "Kako ćete postupiti u sledećoj situaciji:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje pravo bez propuštanja tramvaja",
+    "ok": true
+   },
+   {
+    "t": "nastaviću kretanje pravo nakon propuštanja tramvaja",
+    "ok": false
+   },
+   {
+    "t": "zaustaviću se i propustiti tramvaj",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p19_144.png",
+  "id": 162
+ },
+ {
+  "page": 19,
+  "q": "U situaciji prikazanoj na slici prolazak vozila kroz raskrsnicu je regulisan:",
+  "opts": [
+   {
+    "t": "vertikalnom saobraćajnom signalizacijom",
+    "ok": true
+   },
+   {
+    "t": "prednošću prolaska šinskog vozila",
+    "ok": false
+   },
+   {
+    "t": "pravilom propuštanja vozila samo sa desne strane",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p19_144.png",
+  "id": 163
+ },
+ {
+  "page": 19,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje pravo jer imam prvenstvo prolaza",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje smanjenom brzinom",
+    "ok": false
+   },
+   {
+    "t": "zaustaviću se ispred raskrsnice i propustiti vozila iz suprotnog smjera",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p19_146.png",
+  "id": 164
+ },
+ {
+  "page": 19,
+  "q": "U situaciji prikazanoj na slici dužni ste da postupate po:",
+  "opts": [
+   {
+    "t": "svjetlosnoj saobraćajnoj signalizaciji",
+    "ok": false
+   },
+   {
+    "t": "vertikalnoj saobraćajnoj signalizaciji",
+    "ok": true
+   },
+   {
+    "t": "pravilu propuštanja vozila sa desne strane",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p19_146.png",
+  "id": 165
+ },
+ {
+  "page": 19,
+  "q": "U situaciji prikazanoj na slici redoslijed prolaska vozila kroz raskrsnicu je:",
+  "opts": [],
+  "ans": null,
+  "order": "1 2 3",
+  "img": "p19_148.png",
+  "id": 166
+ },
+ {
+  "page": 19,
+  "q": "U raskrsnici sa kružnim tokom saobraćaja, kretanje vozila vrši se:",
+  "opts": [
+   {
+    "t": "u bilo kojem smjeru",
+    "ok": false
+   },
+   {
+    "t": "u smjeru kazaljke na satu",
+    "ok": false
+   },
+   {
+    "t": "u suprotnom smjeru kazaljke na satu",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p19_148.png",
+  "id": 167
+ },
+ {
+  "page": 19,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "zaustaviću se i propustiti vozilo 3",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje pravo iza vozila 2",
+    "ok": true
+   },
+   {
+    "t": "smanjiću brzinu kretanja i propustiti vozilo 3",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p19_150.png",
+  "id": 168
+ },
+ {
+  "page": 19,
+  "q": "U situaciji prikazanoj na slici vučno vozilo 3 je tegljač, a vučeno vozilo je:",
+  "opts": [
+   {
+    "t": "prikolica",
+    "ok": false
+   },
+   {
+    "t": "laka prikolica",
+    "ok": false
+   },
+   {
+    "t": "poluprikolica",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p19_150.png",
+  "id": 169
+ },
+ {
+  "page": 20,
+  "q": "U situaciji prikazanoj na slici, putničko vozilo 1 skreće ulijevo, a traktor 2 zadržava pravac kretanja. Prvenstvo prolaza ima:",
+  "opts": [
+   {
+    "t": "traktor 2 jer ima uključeno žuto rotaciono svijetlo",
+    "ok": false
+   },
+   {
+    "t": "traktor 2 jer zadržava pravac kretanja",
+    "ok": false
+   },
+   {
+    "t": "putničko vozilo 1",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p20_154.png",
+  "id": 170
+ },
+ {
+  "page": 20,
+  "q": "Za vrijeme kretanja na traktoru se može nalaziti:",
+  "opts": [
+   {
+    "t": "vozač i jedno lice",
+    "ok": false
+   },
+   {
+    "t": "samo vozač",
+    "ok": true
+   },
+   {
+    "t": "vozač i dva lica",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p20_154.png",
+  "id": 171
+ },
+ {
+  "page": 20,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje pravo kroz raskrnicu jer, je na semaforu zeleno svijetlo",
+    "ok": false
+   },
+   {
+    "t": "neću ući u raskrsnicu zbog gustine saobraćaja",
+    "ok": true
+   },
+   {
+    "t": "nastaviću kretanje udesno kroz raskrnicu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p20_156.png",
+  "id": 172
+ },
+ {
+  "page": 20,
+  "q": "U situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "smijem da vršim polukružno okretanje",
+    "ok": false
+   },
+   {
+    "t": "smijem da se zaustavim u raskrsnici",
+    "ok": false
+   },
+   {
+    "t": "ne smijem da vršim polukružno okretanje vozila",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p20_156.png",
+  "id": 173
+ },
+ {
+  "page": 20,
+  "q": "Vozač putničkog vozila u situaciji kao na slici, treba da:",
+  "opts": [
+   {
+    "t": "nastavi kretanje u lijevo bez propuštanja teretnog vozila",
+    "ok": false
+   },
+   {
+    "t": "nastavi kretanje pravo bez propuštanja teretnog vozila",
+    "ok": false
+   },
+   {
+    "t": "se zaustavi ispred raskrsnice i propusti teretno vozilo",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p20_158.png",
+  "id": 174
+ },
+ {
+  "page": 20,
+  "q": "U situaciji prikazanoj na slici vozač putničkog vozila postupiće po:",
+  "opts": [
+   {
+    "t": "vertikalnoj saobraćajnoj signalizaciji",
+    "ok": true
+   },
+   {
+    "t": "pravilu propuštanja vozila sa desne strane",
+    "ok": false
+   },
+   {
+    "t": "pravilu propuštanja vozila veće kategorije",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p20_158.png",
+  "id": 175
+ },
+ {
+  "page": 20,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "zaustaviću vozilo i propustiti pješake",
+    "ok": true
+   },
+   {
+    "t": "nastaviću kretanje ne propuštajući pješake",
+    "ok": false
+   },
+   {
+    "t": "sirenom ću upozoriti pješake i nastaviti kretanje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p20_160.png",
+  "id": 176
+ },
+ {
+  "page": 20,
+  "q": "U situaciji prikazanoj na slici poprečne oznake na kolovozu označavaju:",
+  "opts": [
+   {
+    "t": "pješački prelaz",
+    "ok": true
+   },
+   {
+    "t": "pješačko ostrvo",
+    "ok": false
+   },
+   {
+    "t": "stazu za pješake",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p20_160.png",
+  "id": 177
+ },
+ {
+  "page": 21,
+  "q": "U situaciji prikazanoj na slici treba da:",
+  "opts": [
+   {
+    "t": "nastavim kretanje desnom saobraćajnom trakom",
+    "ok": false
+   },
+   {
+    "t": "izvršim preticanje policijskog vozila",
+    "ok": false
+   },
+   {
+    "t": "zaustavim vozilo",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p21_164.png",
+  "id": 178
+ },
+ {
+  "page": 21,
+  "q": "Znak koji daje ovlašćeni policijski službenik:",
+  "opts": [
+   {
+    "t": "obavezujući je za sve učesnike u saobraćaju",
+    "ok": true
+   },
+   {
+    "t": "ne obavezuje kada se daje iz vozila",
+    "ok": false
+   },
+   {
+    "t": "obavezujući je samo za bicikliste",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p21_164.png",
+  "id": 179
+ },
+ {
+  "page": 21,
+  "q": "U situaciji prikazanoj na slici vozilo 1 pretiče biciklistu:",
+  "opts": [
+   {
+    "t": "nepropisno, jer prelazi u suprotnu saobraćajnu traku",
+    "ok": false
+   },
+   {
+    "t": "nepropisno, jer ugrožava biciklistu",
+    "ok": false
+   },
+   {
+    "t": "propisno",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p21_166.png",
+  "id": 180
+ },
+ {
+  "page": 21,
+  "q": "Vozač vozila 1 nakon preticanja dužan je:",
+  "opts": [
+   {
+    "t": "da nastavi kretanje saobraćajnom trakom kojom je vršio preticanje",
+    "ok": false
+   },
+   {
+    "t": "da se vrati u svoju saobraćajnu traku i nastavi kretanje",
+    "ok": true
+   },
+   {
+    "t": "da nastavi kretanje uz lijevu ivicu kolovoza",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p21_166.png",
+  "id": 181
+ },
+ {
+  "page": 21,
+  "q": "U situaciji prikazanoj na slici brže kretanje vozila kojim upravljaš od vozila 1 i 2:",
+  "opts": [
+   {
+    "t": "je radnja preticanja vozila",
+    "ok": false
+   },
+   {
+    "t": "je radnja obilaženja vozila",
+    "ok": false
+   },
+   {
+    "t": "ne smatra se radnjom preticanja vozila",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p21_168.png",
+  "id": 182
+ },
+ {
+  "page": 21,
+  "q": "U situaciji prikazanoj na slici vozila 1 i 2, koja se kreću jedno iza drugog:",
+  "opts": [
+   {
+    "t": "čine kolonu vozila i ne smiju se preticati",
+    "ok": false
+   },
+   {
+    "t": "čine kolonu vozila i smiju se preticati",
+    "ok": false
+   },
+   {
+    "t": "ne čine kolonu vozila",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p21_168.png",
+  "id": 183
+ },
+ {
+  "page": 21,
+  "q": "Na poziciji prikazanoj na slici vozila 1, 2, 3 i 4:",
+  "opts": [
+   {
+    "t": "ne smiju da se zaustave ili parkiraju",
+    "ok": true
+   },
+   {
+    "t": "smiju da se zaustave, ali ne i da se parkiraju",
+    "ok": false
+   },
+   {
+    "t": "smiju da se zaustave i parkiraju",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p21_170.png",
+  "id": 184
+ },
+ {
+  "page": 21,
+  "q": "Vozač auto-taksi prevoza na ulazu, odnosno izlazu iz garaže:",
+  "opts": [
+   {
+    "t": "ne smije da se zaustavi",
+    "ok": false
+   },
+   {
+    "t": "smije da se zaustavi samo za ulazak ili izlazak putnika",
+    "ok": true
+   },
+   {
+    "t": "smije da se parkira najviše 15 minuta",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p21_170.png",
+  "id": 185
+ },
+ {
+  "page": 22,
+  "q": "Radnja u kojoj se vozila 1 i 2 kreću suprotnim smjerovima kao na slici je:",
+  "opts": [
+   {
+    "t": "ukrštanje",
+    "ok": false
+   },
+   {
+    "t": "obilaženje",
+    "ok": false
+   },
+   {
+    "t": "mimoilaženje",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p22_174.png",
+  "id": 186
+ },
+ {
+  "page": 22,
+  "q": "Teret na vozilu 2 prelazi 1,5 m najistureniju tačku na prednjoj strani vozila, a to je:",
+  "opts": [
+   {
+    "t": "dozvoljeno",
+    "ok": false
+   },
+   {
+    "t": "dozvoljeno, ali mora biti označeno crvenom tablom",
+    "ok": false
+   },
+   {
+    "t": "nije dozvoljeno",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p22_174.png",
+  "id": 187
+ },
+ {
+  "page": 22,
+  "q": "U situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "ubrzaćeš kretanje kako ne bi ometao pješake",
+    "ok": false
+   },
+   {
+    "t": "nećeš propustiti pješake, jer nisu na tvojoj saobraćajnoj traci",
+    "ok": false
+   },
+   {
+    "t": "zaustavićeš vozilo i propustiti pješake",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p22_176.png",
+  "id": 188
+ },
+ {
+  "page": 22,
+  "q": "U situaciji prikazanoj na slici oznake na kolovozu znače da se u blizini pješačkog prelaza nalazi:",
+  "opts": [
+   {
+    "t": "zona škole",
+    "ok": true
+   },
+   {
+    "t": "putokaz do škole",
+    "ok": false
+   },
+   {
+    "t": "dio kolovoza namijenjen za parkiranje školskog autobusa",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p22_176.png",
+  "id": 189
+ },
+ {
+  "page": 22,
+  "q": "U situaciji prikazanoj na slici, na dijelu kolovoza za dvosmjerni saobraćaj vozilo 2:",
+  "opts": [
+   {
+    "t": "smije da vrši preticanje",
+    "ok": false
+   },
+   {
+    "t": "smije da vrši preticanje, ako ne ometa vozila iz suprotnog smjera",
+    "ok": false
+   },
+   {
+    "t": "ne smije da vrši preticanje",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p22_178.png",
+  "id": 190
+ },
+ {
+  "page": 22,
+  "q": "U situaciji prikazanoj na slici razdjelna linija označava:",
+  "opts": [
+   {
+    "t": "zabranu prelaženja i gaženja preko ove linije",
+    "ok": true
+   },
+   {
+    "t": "dio kolovoza gdje je dozvoljeno gaženje ove linije",
+    "ok": false
+   },
+   {
+    "t": "dio kolovoza gdje je dozvoljeno prelaženje preko ove linije",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p22_178.png",
+  "id": 191
+ },
+ {
+  "page": 22,
+  "q": "U situaciji kao na slici vozilo 1 je:",
+  "opts": [
+   {
+    "t": "propisno parkirano",
+    "ok": false
+   },
+   {
+    "t": "propisno zaustavljeno",
+    "ok": false
+   },
+   {
+    "t": "nepropisno zaustavljeno ili parkirano",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p22_180.png",
+  "id": 192
+ },
+ {
+  "page": 22,
+  "q": "Na ulazu-izlazu iz dvorišta vozač:",
+  "opts": [
+   {
+    "t": "smije da zaustavi vozilo",
+    "ok": false
+   },
+   {
+    "t": "ne smije da se zaustavi ili parkira vozilo",
+    "ok": true
+   },
+   {
+    "t": "smije da parkira vozilo",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p22_180.png",
+  "id": 193
+ },
+ {
+  "page": 22,
+  "q": "U situaciji prikazanoj na slici, biciklista se kreće:",
+  "opts": [
+   {
+    "t": "propisno, jer nema biciklističku traku",
+    "ok": false
+   },
+   {
+    "t": "nepropisno",
+    "ok": true
+   },
+   {
+    "t": "propisno uz lijevu ivicu kolovoza",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p22_182.png",
+  "id": 194
+ },
+ {
+  "page": 22,
+  "q": "U situaciji prikazanoj na slici vozilo 1 je:",
+  "opts": [
+   {
+    "t": "propisno zaustavljeno",
+    "ok": false
+   },
+   {
+    "t": "propisno zaustavljeno ili parkirano",
+    "ok": false
+   },
+   {
+    "t": "nepropisno zaustavljeno ili parkirano",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p22_182.png",
+  "id": 195
+ },
+ {
+  "page": 23,
+  "q": "Kako ćete postupiti u situaciji kao na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje pravo bez propuštanja putničkog vozila 2",
+    "ok": true
+   },
+   {
+    "t": "propustiću putničko vozulo 2 jer mi dolazi sa desne strane",
+    "ok": false
+   },
+   {
+    "t": "pomjeriću vozilo ka lijevoj ivici kolovoza",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p23_186.png",
+  "id": 196
+ },
+ {
+  "page": 23,
+  "q": "Vozač vozila 2 prilikom skretanja ulijevo u situaciji kao na slici će:",
+  "opts": [
+   {
+    "t": "nastaviti kretanje bez propuštanja vozila koja se kreću putem na koji on nailazi",
+    "ok": false
+   },
+   {
+    "t": "nastaviti kretanje jer ima prednost u odnosu na vozilo 1",
+    "ok": false
+   },
+   {
+    "t": "zaustaviti vozilo i propustiti sva vozila koja se kreću putem na koji on nailazi",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p23_186.png",
+  "id": 197
+ },
+ {
+  "page": 23,
+  "q": "U situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "ne smijem preticati zbog oznaka na kolovozu",
+    "ok": false
+   },
+   {
+    "t": "smijem preticati",
+    "ok": true
+   },
+   {
+    "t": "smijem preticati ako ne prelazim u traku za suprotan smjer",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p23_188.png",
+  "id": 198
+ },
+ {
+  "page": 23,
+  "q": "U situaciji prikazanoj na slici, na putu van naselja, brzina kojom možete da pretičete:",
+  "opts": [
+   {
+    "t": "nije ograničena",
+    "ok": false
+   },
+   {
+    "t": "je do 80 km/h",
+    "ok": true
+   },
+   {
+    "t": "je do 20 km/h više od ograničenja",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p23_188.png",
+  "id": 199
+ },
+ {
+  "page": 23,
+  "q": "U situaciji prikazanoj na slici, putničko vozilo 3 uključiće se sa parkinga na kolovoz:",
+  "opts": [
+   {
+    "t": "nakon propuštanja putničkog vozila 2",
+    "ok": true
+   },
+   {
+    "t": "bez propuštanja putničkog vozila 2",
+    "ok": false
+   },
+   {
+    "t": "bez obaveze prema drugim učesnicima u saobraćaju",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p23_190.png",
+  "id": 200
+ },
+ {
+  "page": 23,
+  "q": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "zaustaviću se ispred rasksnice i propustiti pješake",
+    "ok": true
+   },
+   {
+    "t": "zvučnim signalom ću upozoriti pješake i nastaviti kretanje",
+    "ok": false
+   },
+   {
+    "t": "ubrzaću kretanje kako bih prošao prije pješaka",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p23_190.png",
+  "id": 201
+ },
+ {
+  "page": 23,
+  "q": "Vozilo 1 u situaciji prikazanoj na slici kreće se:",
+  "opts": [
+   {
+    "t": "nepropisno",
+    "ok": true
+   },
+   {
+    "t": "propisno sredinom kolovoza",
+    "ok": false
+   },
+   {
+    "t": "propisno, jer je lijeva saobraćajna traka zauzeta vozilom -",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p23_192.png",
+  "id": 202
+ },
+ {
+  "page": 23,
+  "q": "U situaciji kao na slici putničko vozilo 2:",
+  "opts": [
+   {
+    "t": "smije da se zaustavi ili parkira",
+    "ok": false
+   },
+   {
+    "t": "smije da se zaustavi",
+    "ok": false
+   },
+   {
+    "t": "ne smije da se zaustavi ili parkira",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p23_192.png",
+  "id": 203
+ },
+ {
+  "page": 24,
+  "q": "U situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "smijem izvršiti preticanje putničkog vozila",
+    "ok": true
+   },
+   {
+    "t": "ne smijem, jer je kolovoz u lijevoj krivini",
+    "ok": false
+   },
+   {
+    "t": "ne smijem, jer je oznakama na kolovozu zabranjeno",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p24_196.png",
+  "id": 204
+ },
+ {
+  "page": 24,
+  "q": "U situaciji prikazanoj na slici razdjelna isprekidana linija:",
+  "opts": [
+   {
+    "t": "razdvaja kolovoz i ne smije se prelaziti preko nje",
+    "ok": false
+   },
+   {
+    "t": "razdvaja kolovoz i smije se gaziti i prelaziti preko nje",
+    "ok": true
+   },
+   {
+    "t": "razdavaja kolovoznu traku i ne smije se prelaziti preko nje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p24_196.png",
+  "id": 205
+ },
+ {
+  "page": 24,
+  "q": "Kako ćete postupiti u situaciji kao na slici, kad vas pretiče putničko vozilo 2:",
+  "opts": [
+   {
+    "t": "povećaću brzinu kretanja",
+    "ok": false
+   },
+   {
+    "t": "pomjeriću vozilo ka desnoj ivici kolovoza",
+    "ok": true
+   },
+   {
+    "t": "pomjeriću vozilo ka lijevoj ivici kolovoza",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p24_198.png",
+  "id": 206
+ },
+ {
+  "page": 24,
+  "q": "Znak izričite naredbe prikazan na slici važi:",
+  "opts": [
+   {
+    "t": "do prve raskrsnice",
+    "ok": true
+   },
+   {
+    "t": "do prvog znaka obavještenja",
+    "ok": false
+   },
+   {
+    "t": "do prvog znaka opasnosti",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p24_198.png",
+  "id": 207
+ },
+ {
+  "page": 24,
+  "q": "U situaciji prikazanoj na slici vozač teretnog vozila 1 treba da:",
+  "opts": [
+   {
+    "t": "ubrza vozilo i nastavi kretanje ne propuštajuči pješake",
+    "ok": false
+   },
+   {
+    "t": "propusti samo pješaka označenog sa a i nastavi kretanje",
+    "ok": false
+   },
+   {
+    "t": "zaustavi se i propusti sve pješake",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p24_200.png",
+  "id": 208
+ },
+ {
+  "page": 24,
+  "q": "U situaciji prikazanoj na slici vozač teretnog vozila 1 neposredno nakon prolaska pješačkog prelaza:",
+  "opts": [
+   {
+    "t": "smije da se zaustavi ili parkira",
+    "ok": false
+   },
+   {
+    "t": "smije da se zaustavi",
+    "ok": false
+   },
+   {
+    "t": "ne smije da se zaustavi ili parkira",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p24_200.png",
+  "id": 209
+ },
+ {
+  "page": 24,
+  "q": "U poziciji prikazanoj na slici putničko vozilo 1 je:",
+  "opts": [
+   {
+    "t": "propisno zaustavljeno",
+    "ok": false
+   },
+   {
+    "t": "propisno zaustavljeno ili parkirano",
+    "ok": false
+   },
+   {
+    "t": "nepropisno zaustavljeno ili parkirano",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p24_202.png",
+  "id": 210
+ },
+ {
+  "page": 24,
+  "q": "Na slici prikazani znak obavještenja je:",
+  "opts": [
+   {
+    "t": "udaljenost parkinga",
+    "ok": false
+   },
+   {
+    "t": "vremensko ograničenje parkiranja",
+    "ok": true
+   },
+   {
+    "t": "parking samo u određenom vremenu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p24_202.png",
+  "id": 211
+ },
+ {
+  "page": 25,
+  "q": "U situaciji kao na slici putničko vozilo 1:",
+  "opts": [
+   {
+    "t": "smije da se parkira",
+    "ok": false
+   },
+   {
+    "t": "ne smije da se zaustavi ili parkira",
+    "ok": false
+   },
+   {
+    "t": "smije da se zaustavi",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p25_214.png",
+  "id": 212
+ },
+ {
+  "page": 25,
+  "q": "Na kom odstojanju od obilježenog pješačkog prelaza vozač smije da se zaustavi ili parkira:",
+  "opts": [
+   {
+    "t": "najmanje 10 metara",
+    "ok": false
+   },
+   {
+    "t": "najmanje 5 metara",
+    "ok": true
+   },
+   {
+    "t": "najmanje 7 metra",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p25_214.png",
+  "id": 213
+ },
+ {
+  "page": 25,
+  "q": "U situaciji prikazanoj na slici vozilo 2 kreće se:",
+  "opts": [
+   {
+    "t": "propisno, ako ne ometa vozila iz suprotnog smjera",
+    "ok": false
+   },
+   {
+    "t": "propisno",
+    "ok": false
+   },
+   {
+    "t": "nepropisno",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p25_208.png",
+  "id": 214
+ },
+ {
+  "page": 25,
+  "q": "U situaciji prikazanoj na slici vozač vozila 2 treba da:",
+  "opts": [
+   {
+    "t": "se kreće što bliže razdjelnoj liniji",
+    "ok": false
+   },
+   {
+    "t": "se kreće što bliže desnoj ivici kolovoza",
+    "ok": true
+   },
+   {
+    "t": "se kreće po sredini saobraćajne trake",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p25_208.png",
+  "id": 215
+ },
+ {
+  "page": 25,
+  "q": "U situaciji kao na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje lijevo kroz raskrsnicu",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje desno kroz raskrsnicu",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje pravo kroz raskrsnicu",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p25_210.png",
+  "id": 216
+ },
+ {
+  "page": 25,
+  "q": "Horizontalne oznake na kolovozu znače:",
+  "opts": [
+   {
+    "t": "namjenu saobraćajnih traka",
+    "ok": false
+   },
+   {
+    "t": "obavezan smjer",
+    "ok": true
+   },
+   {
+    "t": "linije usmjeravanja",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p25_210.png",
+  "id": 217
+ },
+ {
+  "page": 25,
+  "q": "U situaciji prikazanoj na slici kroz raskrnicu proći ćete:",
+  "opts": [
+   {
+    "t": "putanjom 1 bez propuštanja pješaka",
+    "ok": false
+   },
+   {
+    "t": "putanjom 2 nakon propuštanja pješaka",
+    "ok": false
+   },
+   {
+    "t": "putanjom 1 nakon propuštanja pješaka",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p25_212.png",
+  "id": 218
+ },
+ {
+  "page": 25,
+  "q": "U situaciji kao na slici vozilo 3:",
+  "opts": [
+   {
+    "t": "smije da se zaustavi",
+    "ok": false
+   },
+   {
+    "t": "ne smije da se zaustavli ili parkira",
+    "ok": true
+   },
+   {
+    "t": "smije da se zaustavi ili parkira",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p25_212.png",
+  "id": 219
+ },
+ {
+  "page": 26,
+  "q": "Putničko vozilo 2 kao na slici:",
+  "opts": [
+   {
+    "t": "ne smije da se zaustavi ili parkira",
+    "ok": true
+   },
+   {
+    "t": "smije da se zaustavi i parkira",
+    "ok": false
+   },
+   {
+    "t": "smije da se zaustavi",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p26_220.png",
+  "id": 220
+ },
+ {
+  "page": 26,
+  "q": "U situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "ne smijem da se zaustavim ili parkiram",
+    "ok": false
+   },
+   {
+    "t": "smijem da se zaustavim ili parkiram",
+    "ok": true
+   },
+   {
+    "t": "ne smijem da se parkiram",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p26_220.png",
+  "id": 221
+ },
+ {
+  "page": 26,
+  "q": "U situaciji prikazanoj na slici vozilo 1 pretiče biciklistu:",
+  "opts": [
+   {
+    "t": "propisno, jer je uključen lijevi pokazivač pravca",
+    "ok": false
+   },
+   {
+    "t": "propisno, jer nema znaka za zabranu preticanja",
+    "ok": false
+   },
+   {
+    "t": "nepropisno zbog prelaska preko neisprekidane linije",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p26_222.png",
+  "id": 222
+ },
+ {
+  "page": 26,
+  "q": "Biciklista u situaciji na slici u naselju kreće se:",
+  "opts": [
+   {
+    "t": "nepropisno, jer treba da se kreće trotoarom",
+    "ok": false
+   },
+   {
+    "t": "nepropisno, jer treba da nosi zaštitnu kacigu",
+    "ok": false
+   },
+   {
+    "t": "propisno uz desnu ivicu kolovoza",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p26_222.png",
+  "id": 223
+ },
+ {
+  "page": 26,
+  "q": "U situaciji na slici, vozim teretno vozilo sa prikolicom i mimoilazim se sa teretnim vozilom 2, zbog nedovoljne širine kolovoza za bezbjedno mimoilažnje:",
+  "opts": [
+   {
+    "t": "treba da se zaustavi teretno vozilo 2 i omogući meni prolaz",
+    "ok": true
+   },
+   {
+    "t": "treba da se zaustavim i omogućim prolazak teretn. vozilu 2",
+    "ok": false
+   },
+   {
+    "t": "treba da se zaustavimo i dogovorimo o redoslijedu prolaska",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p26_224.png",
+  "id": 224
+ },
+ {
+  "page": 26,
+  "q": "Saobraćajni znak na slici znači:",
+  "opts": [
+   {
+    "t": "da je kolovoz u nizbrdici do 6%",
+    "ok": false
+   },
+   {
+    "t": "da je poprečni nagib kolovoza do 6%",
+    "ok": false
+   },
+   {
+    "t": "da je kolovoz u usponu do 6%",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p26_224.png",
+  "id": 225
+ },
+ {
+  "page": 26,
+  "q": "Kako ćete postupiti u situaciji kao na slici, kada se vozilo 2 uključuje sa zemljanog puta na kolovoz:",
+  "opts": [
+   {
+    "t": "prestrojiću se u lijevu kolovoznu traku, kako ne bih ometao vozača vozila 2 da se uključi na kolovoz",
+    "ok": false
+   },
+   {
+    "t": "nastaviću kretanje pravo bez propuštanja vozila 2",
+    "ok": true
+   },
+   {
+    "t": "zaustaviću se i omogućiti uključenje vozila 2 jer mi dolazi . sa desne strane",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p26_226.png",
+  "id": 226
+ },
+ {
+  "page": 26,
+  "q": "U situaciji kao na slici saobraćajni znak važi do:",
+  "opts": [
+   {
+    "t": "prevoja kolovoza",
+    "ok": false
+   },
+   {
+    "t": "narednog znaka ograničenja brzine",
+    "ok": false
+   },
+   {
+    "t": "prve raskrsnice",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p26_226.png",
+  "id": 227
+ },
+ {
+  "page": 27,
+  "q": "U situaciji prikazanoj na slici teretno vozilo 2 je:",
+  "opts": [
+   {
+    "t": "zaustavljeno propisno",
+    "ok": false
+   },
+   {
+    "t": "parkirano ili zaustavljeno nepropisno",
+    "ok": true
+   },
+   {
+    "t": "parkirano ili zaustavljeno propisno",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p27_230.png",
+  "id": 228
+ },
+ {
+  "page": 27,
+  "q": "U situaciji prikazanoj na slici prolazeći pored vozila 2 vršiš radnju:",
+  "opts": [
+   {
+    "t": "mimoilaženja",
+    "ok": false
+   },
+   {
+    "t": "prestrojavanja",
+    "ok": false
+   },
+   {
+    "t": "obilaženja",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p27_230.png",
+  "id": 229
+ },
+ {
+  "page": 27,
+  "q": "U situaciji prikazanoj na slici na putu za saobraćaj u oba smjera vozač vozila 1 smije da koristi:",
+  "opts": [
+   {
+    "t": "obje kolovozne trake",
+    "ok": false
+   },
+   {
+    "t": "desnu kolovoznu traku",
+    "ok": true
+   },
+   {
+    "t": "lijevu kolovoznu traku",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p27_232.png",
+  "id": 230
+ },
+ {
+  "page": 27,
+  "q": "U situaciji prikazanoj na slici vozač vozila 1 u podvožnjaku:",
+  "opts": [
+   {
+    "t": "smije da se parkira",
+    "ok": false
+   },
+   {
+    "t": "ne smije da se zaustavi ili parkira",
+    "ok": true
+   },
+   {
+    "t": "smije da se zaustavi uz desnu ivicu kolovoza",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p27_232.png",
+  "id": 231
+ },
+ {
+  "page": 27,
+  "q": "U situaciji prikazanoj na slici vozilo 1:",
+  "opts": [
+   {
+    "t": "smije da se pretiče",
+    "ok": true
+   },
+   {
+    "t": "ne smije da se pretiče zbog oznaka na kolovozu",
+    "ok": false
+   },
+   {
+    "t": "ne smije da se pretiče sa lijeve strane",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p27_234.png",
+  "id": 232
+ },
+ {
+  "page": 27,
+  "q": "U situaciji prikazanoj na slici oznake na kolovozu znače:",
+  "opts": [
+   {
+    "t": "dozvoljeno preticanje iz suprotnog smjera",
+    "ok": false
+   },
+   {
+    "t": "dozvoljeno preticanje u smjeru kretanja",
+    "ok": true
+   },
+   {
+    "t": "dozvoljeno preticanje samo teretnih vozila",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p27_234.png",
+  "id": 233
+ },
+ {
+  "page": 27,
+  "q": "U situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "nijesam dužan da propustim pješaka",
+    "ok": false
+   },
+   {
+    "t": "dužan sam da uključim sirenu i nastavim kretanje",
+    "ok": false
+   },
+   {
+    "t": "dužan sam da propustim pješaka",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p27_236.png",
+  "id": 234
+ },
+ {
+  "page": 27,
+  "q": "Da bi pješak prešao kolovoz na pješačkom prelazu na bezbjedan način, kao na slici:",
+  "opts": [
+   {
+    "t": "dužan je da podigne ruku, pa stupi na pješački prelaz",
+    "ok": false
+   },
+   {
+    "t": "nije dužan da se uvjeri da ometa ostale učesnike",
+    "ok": false
+   },
+   {
+    "t": "dužan je da se uvjeri da time ne ometa ostale učesnike",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p27_236.png",
+  "id": 235
+ },
+ {
+  "page": 28,
+  "q": "Vozilo 1 u poziciji prikazanoj na slici je:",
+  "opts": [
+   {
+    "t": "parkirano propisno",
+    "ok": false
+   },
+   {
+    "t": "nepropisno zaustavljeno ili parkirano",
+    "ok": true
+   },
+   {
+    "t": "propisno zaustavljeno ili parkirano",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p28_240.png",
+  "id": 236
+ },
+ {
+  "page": 28,
+  "q": "Vozilo 1 u situaciji prikazanoj na slici je:",
+  "opts": [
+   {
+    "t": "na saobraćajnoj traci u smjeru kretanja",
+    "ok": false
+   },
+   {
+    "t": "na saobraćajnoj traci za suprotan smjer kretanja",
+    "ok": true
+   },
+   {
+    "t": "na obilježenom parking mjestu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p28_240.png",
+  "id": 237
+ },
+ {
+  "page": 28,
+  "q": "U situaciji prikazanoj na slici vozila uz desnu ivicu kolovoza su:",
+  "opts": [
+   {
+    "t": "nepropisno zaustavljena ili parkirana",
+    "ok": true
+   },
+   {
+    "t": "propisno zaustavljena ili parkirana",
+    "ok": false
+   },
+   {
+    "t": "zaustavljena propisno",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p28_242.png",
+  "id": 238
+ },
+ {
+  "page": 28,
+  "q": "Uzdužna neisprekidana bijela linija, u situaciji kao na slici, označava:",
+  "opts": [
+   {
+    "t": "ivicu kolovoza",
+    "ok": false
+   },
+   {
+    "t": "razdjelnu liniju",
+    "ok": true
+   },
+   {
+    "t": "ivičnu liniju",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p28_242.png",
+  "id": 239
+ },
+ {
+  "page": 28,
+  "q": "U situaciji prikazanoj na slici putničko vozilo 2:",
+  "opts": [
+   {
+    "t": "polukružno se okreće u skladu sa propisima",
+    "ok": false
+   },
+   {
+    "t": "propisno skreće ulijevo",
+    "ok": false
+   },
+   {
+    "t": "nepropisno se polukružno okreće",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p28_244.png",
+  "id": 240
+ },
+ {
+  "page": 28,
+  "q": "Uzdužna neisprekidana linija dijeli kolovoz:",
+  "opts": [
+   {
+    "t": "na kolovozne trake",
+    "ok": true
+   },
+   {
+    "t": "na saobraćajne trake",
+    "ok": false
+   },
+   {
+    "t": "na dva kolovoza",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p28_244.png",
+  "id": 241
+ },
+ {
+  "page": 28,
+  "q": "U situaciji prikazanoj na slici biciklista se:",
+  "opts": [
+   {
+    "t": "nepropisno kreće jer treba da gura biciklo pored sebe",
+    "ok": false
+   },
+   {
+    "t": "propisno kreće",
+    "ok": true
+   },
+   {
+    "t": "nepropisno kreće pješačkim prelazom",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p28_246.png",
+  "id": 242
+ },
+ {
+  "page": 28,
+  "q": "U situaciji prikazanoj na slici, crvene široke uzdužne linije preko pješačkog prelaza označavaju:",
+  "opts": [
+   {
+    "t": "biciklističke staze",
+    "ok": true
+   },
+   {
+    "t": "biciklističke trake",
+    "ok": false
+   },
+   {
+    "t": "staze za trčanje pješaka",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p28_246.png",
+  "id": 243
+ },
+ {
+  "page": 28,
+  "q": "U situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "nastaviću kretanje ne propuštatjući pješake",
+    "ok": false
+   },
+   {
+    "t": "usporiću kretanje vozila i propustiti pješake",
+    "ok": true
+   },
+   {
+    "t": "ubrzaću kretanje vozila da bih prošao ispred pješaka",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p28_248.png",
+  "id": 244
+ },
+ {
+  "page": 28,
+  "q": "U situaciji prikazanoj na slici, kada pješaci prelaze kolovoz dužni su da:",
+  "opts": [
+   {
+    "t": "kolovoz prelaze najkraćim putem",
+    "ok": true
+   },
+   {
+    "t": "kolovoz prelaze gdje je najmanje učesnika u saobraćaju",
+    "ok": false
+   },
+   {
+    "t": "kolovoz prelaze što sporije",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p28_248.png",
+  "id": 245
+ },
+ {
+  "page": 29,
+  "q": "U situaciji prikazanoj na slici policijsko vozilo 2 je:",
+  "opts": [
+   {
+    "t": "propisno zaustavljeno ili parkirano",
+    "ok": false
+   },
+   {
+    "t": "nepropisno parkirano",
+    "ok": false
+   },
+   {
+    "t": "nepropisno zaustavljeno ili parkirano",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p29_252.png",
+  "id": 246
+ },
+ {
+  "page": 29,
+  "q": "U situaciji prikazanoj na slici:",
+  "opts": [
+   {
+    "t": "ne smijem da se zaustavim ili parkiram iza vozila 2",
+    "ok": true
+   },
+   {
+    "t": "smijem da se zaustavim ili parkiram iza vozila 2",
+    "ok": false
+   },
+   {
+    "t": "smijem da se parkiram pored vozila 2",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p29_252.png",
+  "id": 247
+ },
+ {
+  "page": 29,
+  "q": "U situaciji kao na slici vozač vozila 1:",
+  "opts": [
+   {
+    "t": "smije da se zaustavi ili parkira",
+    "ok": false
+   },
+   {
+    "t": "ne smije da se zaustavi ili parkira",
+    "ok": true
+   },
+   {
+    "t": "ne smije da se parkira, a smije da se zaustavi",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p29_254.png",
+  "id": 248
+ },
+ {
+  "page": 29,
+  "q": "Na odstojanju manjem od pet metara ispred ili iza obilježenog pješačkog prelaza vozač sa vozilom:",
+  "opts": [
+   {
+    "t": "smije da se zaustavi",
+    "ok": false
+   },
+   {
+    "t": "smije da se zaustavi ili parkira",
+    "ok": false
+   },
+   {
+    "t": "ne smije da se zaustavi ili parkira",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p29_254.png",
+  "id": 249
+ },
+ {
+  "page": 30,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "biciklistički prelaz",
+    "ok": false
+   },
+   {
+    "t": "staza za bicikliste",
+    "ok": false
+   },
+   {
+    "t": "biciklisti na putu",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p30_258.png",
+  "id": 250
+ },
+ {
+  "page": 30,
+  "q": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+  "opts": [
+   {
+    "t": "zabrana zaustavljanja",
+    "ok": false
+   },
+   {
+    "t": "zabrana zaustavljanja i parkiranja",
+    "ok": true
+   },
+   {
+    "t": "zabrana parkiranja",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p30_259.png",
+  "id": 251
+ },
+ {
+  "page": 30,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "obavezan smjer",
+    "ok": false
+   },
+   {
+    "t": "put sa jednosmjernim saobraćajem",
+    "ok": true
+   },
+   {
+    "t": "dozvoljeni smjer",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p30_260.png",
+  "id": 252
+ },
+ {
+  "page": 30,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zabrana saobraćaja za vozila čija ukupna masa ne prelazi određenu masu na znaku",
+    "ok": false
+   },
+   {
+    "t": "zabrana soabraćaja za vozila čija nosivost prelazi određenu masu na znaku",
+    "ok": false
+   },
+   {
+    "t": "zabrana saobraćaja za vozila čija ukupna masa prelazi određenu masu na znaku",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p30_261.png",
+  "id": 253
+ },
+ {
+  "page": 30,
+  "q": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+  "opts": [
+   {
+    "t": "obavezan smjer u naznačenom vremenu",
+    "ok": true
+   },
+   {
+    "t": "obavezno skretanje ulijevo u naznačenom vremenu",
+    "ok": false
+   },
+   {
+    "t": "obavezno skretanje ulijevo u periodu od 8 časova pa do 18 časova",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p30_265_266.png",
+  "id": 254
+ },
+ {
+  "page": 30,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "biciklistička traka",
+    "ok": false
+   },
+   {
+    "t": "biciklistička staza",
+    "ok": true
+   },
+   {
+    "t": "traka za kretanje biciklista",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p30_262.png",
+  "id": 255
+ },
+ {
+  "page": 30,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zabrana zaustavljanja vozila",
+    "ok": false
+   },
+   {
+    "t": "zaustavljena vozila na putu",
+    "ok": false
+   },
+   {
+    "t": "kolona zaustavljenih vozila",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p30_263.png",
+  "id": 256
+ },
+ {
+  "page": 30,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "Andrejin krst sa jednim i po kolosjekom",
+    "ok": false
+   },
+   {
+    "t": "Andrejin krst sa dva ili više kolosjeka",
+    "ok": true
+   },
+   {
+    "t": "Andrejin kolosjek sa jednim ili više kolosjeka",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p30_264.png",
+  "id": 257
+ },
+ {
+  "page": 31,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "opasna dionica puta",
+    "ok": true
+   },
+   {
+    "t": "opasnost na putu",
+    "ok": false
+   },
+   {
+    "t": "opasnost od odrona u dužini od 300 m",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p31_269.png",
+  "id": 258
+ },
+ {
+  "page": 31,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "prvenstvo prolaza u odnosu na vozila iz suprotnog smjera",
+    "ok": true
+   },
+   {
+    "t": "vozila iz suprotnog smjera imaju prvenstvo prolaza",
+    "ok": false
+   },
+   {
+    "t": "prvenstvo prolaza vozila koja se kreću niz nagib",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p31_270.png",
+  "id": 259
+ },
+ {
+  "page": 31,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "nailazak na most na autoputu",
+    "ok": false
+   },
+   {
+    "t": "autoput",
+    "ok": true
+   },
+   {
+    "t": "međunarodni put",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p31_271.png",
+  "id": 260
+ },
+ {
+  "page": 31,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "avionska pista",
+    "ok": false
+   },
+   {
+    "t": "blizina avionske piste",
+    "ok": true
+   },
+   {
+    "t": "blizina aerodroma",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p31_272.png",
+  "id": 261
+ },
+ {
+  "page": 31,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "predputokaz",
+    "ok": false
+   },
+   {
+    "t": "prestrojavanje vozila sa nazivima naseljenih mjesta",
+    "ok": true
+   },
+   {
+    "t": "tabla za usmjeravanje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p31_273.png",
+  "id": 262
+ },
+ {
+  "page": 31,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zabrana saobraćaja u oba smjera",
+    "ok": false
+   },
+   {
+    "t": "zabrana saobraćaja u jednom smjeru",
+    "ok": true
+   },
+   {
+    "t": "dozvoljen saobraćaj u oba smjera",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p31_274.png",
+  "id": 263
+ },
+ {
+  "page": 31,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zabrana saobraćaja za bicikle",
+    "ok": false
+   },
+   {
+    "t": "biciklistička staza",
+    "ok": true
+   },
+   {
+    "t": "biciklisti na putu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p31_275.png",
+  "id": 264
+ },
+ {
+  "page": 31,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "pokretni most",
+    "ok": true
+   },
+   {
+    "t": "oštećenje na kolovozu",
+    "ok": false
+   },
+   {
+    "t": "opasan uspon",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p31_276.png",
+  "id": 265
+ },
+ {
+  "page": 31,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "prelaz puta preko željezničke pruge sa branicima ili polubranicima",
+    "ok": false
+   },
+   {
+    "t": "prelaz puta preko željezničke pruge bez branika ili polubranika",
+    "ok": true
+   },
+   {
+    "t": "približavanje tramvajskoj pruzi",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p31_277.png",
+  "id": 266
+ },
+ {
+  "page": 32,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "najveća dozvoljena brzina",
+    "ok": false
+   },
+   {
+    "t": "obavezna brzina",
+    "ok": false
+   },
+   {
+    "t": "brzina koja se preporučuje",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p32_280.png",
+  "id": 267
+ },
+ {
+  "page": 32,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "obavezno zaustavljanje",
+    "ok": false
+   },
+   {
+    "t": "ukrštanje sa putem sa prvenstvom prolaza",
+    "ok": true
+   },
+   {
+    "t": "ukrštanje sa sporednim putem",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p32_282.png",
+  "id": 268
+ },
+ {
+  "page": 32,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "nailaženje na semafor",
+    "ok": true
+   },
+   {
+    "t": "nailaženje na željezničku prugu",
+    "ok": false
+   },
+   {
+    "t": "nailaženje na radove na putu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p32_283.png",
+  "id": 269
+ },
+ {
+  "page": 32,
+  "q": "Na slici, strelice na kolovozu služe za:",
+  "opts": [
+   {
+    "t": "usmjeravanje vozila",
+    "ok": false
+   },
+   {
+    "t": "obilježavanje obaveznog smjera kretanja vozila",
+    "ok": true
+   },
+   {
+    "t": "obilježavanje namjene saobraćajnih traka",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p32_285.png",
+  "id": 270
+ },
+ {
+  "page": 32,
+  "q": "Udvojena puna linija označava:",
+  "opts": [
+   {
+    "t": "ivicu kolovoza",
+    "ok": false
+   },
+   {
+    "t": "biciklističku stazu",
+    "ok": false
+   },
+   {
+    "t": "zabranu prelaska preko te linije ili kretanja po njima",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p32_286.png",
+  "id": 271
+ },
+ {
+  "page": 32,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zabrana preticanja svih motornih vozila osim motocikla bez prikolice i mopeda",
+    "ok": true
+   },
+   {
+    "t": "zabrana preticanja svih motornih vozila",
+    "ok": false
+   },
+   {
+    "t": "zabrana preticanja svih motornih vozila, osim mopeda",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p32_288.png",
+  "id": 272
+ },
+ {
+  "page": 32,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "prelaz puta preko željezničke pruge bez branika",
+    "ok": false
+   },
+   {
+    "t": "prelaz puta preko željezničke pruge sa branicima ili polubranicima",
+    "ok": true
+   },
+   {
+    "t": "prelaz puta preko željezničke pruge bez branika ili polubranika",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p32_289.png",
+  "id": 273
+ },
+ {
+  "page": 32,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "prelaz za životinje na putu",
+    "ok": false
+   },
+   {
+    "t": "životinje na putu",
+    "ok": true
+   },
+   {
+    "t": "divljač na putu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p32_290.png",
+  "id": 274
+ },
+ {
+  "page": 33,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zabrana saobraćaja za vozila koja ne prekoračuju određeno osovinsko opterećenje",
+    "ok": false
+   },
+   {
+    "t": "zabrana saobraćaja za vozila koja prekoračuju određeno osovinsko opterećenje",
+    "ok": true
+   },
+   {
+    "t": "zabrana saobraćaja za vozila koja ne prekoračuju nosivost označenu na znaku",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p33_293.png",
+  "id": 275
+ },
+ {
+  "page": 33,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "put sa jednosmjernim saobraćajem za teretna i priključna vozila",
+    "ok": false
+   },
+   {
+    "t": "obavezan smjer za vrste vozila koje nijesu date na znaku",
+    "ok": true
+   },
+   {
+    "t": "obilaznica za određene vrste vozila",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p33_294.png",
+  "id": 276
+ },
+ {
+  "page": 33,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "kružni tok saobraćaja",
+    "ok": false
+   },
+   {
+    "t": "raskrsnica sa kružnim tokom saobraćaja",
+    "ok": false
+   },
+   {
+    "t": "kružna raskrsnica",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p33_295.png",
+  "id": 277
+ },
+ {
+  "page": 33,
+  "q": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+  "opts": [
+   {
+    "t": "blizinu dionice puta na kojem je snijeg",
+    "ok": false
+   },
+   {
+    "t": "blizinu dionice puta na kome se snijeg čisti mašinski",
+    "ok": true
+   },
+   {
+    "t": "blizinu dionice puta na kojem je poledica i led",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p33_299_300.png",
+  "id": 278
+ },
+ {
+  "page": 33,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "prvenstvo prolaza u odnosu na vozila iz suprotnog smjera",
+    "ok": false
+   },
+   {
+    "t": "prvenstvo prolaza za vozila iz suprotnog smjera",
+    "ok": true
+   },
+   {
+    "t": "saobraćaj u oba smjera",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p33_296.png",
+  "id": 279
+ },
+ {
+  "page": 33,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "prestanak najmanje dozvoljene brzine",
+    "ok": true
+   },
+   {
+    "t": "prestanak ograničenja brzine",
+    "ok": false
+   },
+   {
+    "t": "prestanak brzine koja se preporučuje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p33_297.png",
+  "id": 280
+ },
+ {
+  "page": 33,
+  "q": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+  "opts": [
+   {
+    "t": "zabrana saobraćaja za motorna vozila čija širina prelazi širinu označenu na znaku",
+    "ok": false
+   },
+   {
+    "t": "zabrana saobraćaja za teretna vozila čija dužina prelazi dužinu označenu na znaku",
+    "ok": false
+   },
+   {
+    "t": "zabrana saobraćaja za teretna vozila čija širina prelazi širinu označenu na znaku",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p33_301_302.png",
+  "id": 281
+ },
+ {
+  "page": 33,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zabrana kretanja za pješake po kolovozu",
+    "ok": false
+   },
+   {
+    "t": "zabrana saobraćaja za pješake",
+    "ok": true
+   },
+   {
+    "t": "zabrana kretanja za pješake po kolovozu van naselja",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p33_298.png",
+  "id": 282
+ },
+ {
+  "page": 34,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "tabla za usmjeravanje",
+    "ok": false
+   },
+   {
+    "t": "predznak za obilazak",
+    "ok": false
+   },
+   {
+    "t": "putokaz za obilazak",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p34_305.png",
+  "id": 283
+ },
+ {
+  "page": 34,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "putokaz za izlazak sa auto-puta",
+    "ok": false
+   },
+   {
+    "t": "naziv naseljenog mjesta",
+    "ok": false
+   },
+   {
+    "t": "naziv petlje",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p34_306.png",
+  "id": 284
+ },
+ {
+  "page": 34,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "putokaz za naseljeno mjesto",
+    "ok": false
+   },
+   {
+    "t": "strelasti putokaz",
+    "ok": true
+   },
+   {
+    "t": "usmjeravajuća tabla za naseljeno mjesto",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p34_307.png",
+  "id": 285
+ },
+ {
+  "page": 34,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "prelazak sa dvije saobraćajne trake na jednu u istom smjeru kretanja",
+    "ok": false
+   },
+   {
+    "t": "površina na kolovozu na kojoj se dvije saobraćajne trake spajaju u jednu",
+    "ok": false
+   },
+   {
+    "t": "naizmjenično propuštanje vozila",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p34_308.png",
+  "id": 286
+ },
+ {
+  "page": 34,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "približavanje prelazu puta preko željezničke pruge sa branicima ili polubranicima",
+    "ok": false
+   },
+   {
+    "t": "približavanje prelazu puta preko željezničke pruge",
+    "ok": false
+   },
+   {
+    "t": "približavanje prelazu preko željezničke pruge bez branika ili polubranika",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p34_309.png",
+  "id": 287
+ },
+ {
+  "page": 34,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "prevrtanje ili iskliznuće vozila",
+    "ok": true
+   },
+   {
+    "t": "klizav kolovoz",
+    "ok": false
+   },
+   {
+    "t": "led i poledica na putu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p34_310.png",
+  "id": 288
+ },
+ {
+  "page": 34,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "ograničenje brzine kretanja",
+    "ok": true
+   },
+   {
+    "t": "brzina koja se preporučuje",
+    "ok": false
+   },
+   {
+    "t": "najmanja dozvoljena brzina",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p34_311.png",
+  "id": 289
+ },
+ {
+  "page": 34,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "odronjavanje kamena",
+    "ok": true
+   },
+   {
+    "t": "prštanje kamena na putu",
+    "ok": false
+   },
+   {
+    "t": "klizište na putu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p34_312.png",
+  "id": 290
+ },
+ {
+  "page": 35,
+  "q": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+  "opts": [
+   {
+    "t": "pokretne stepenice na udaljenosti 10 metara",
+    "ok": false
+   },
+   {
+    "t": "podzemni ili nadzemni pješački prelaz na udaljenosti 10 metara",
+    "ok": true
+   },
+   {
+    "t": "ulazak u garažu na udaljenosti do 10 metara",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p35_322_323.png",
+  "id": 291
+ },
+ {
+  "page": 35,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "obavezna upotreba lanaca za snijeg",
+    "ok": false
+   },
+   {
+    "t": "opasnost od snijega",
+    "ok": false
+   },
+   {
+    "t": "opasnost od poledice",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p35_315.png",
+  "id": 292
+ },
+ {
+  "page": 35,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zabrana saobraćaja za sva motorna vozila osim za motocikle",
+    "ok": false
+   },
+   {
+    "t": "zabrana saobraćaja za motocikle",
+    "ok": true
+   },
+   {
+    "t": "zabrana saobraćaja za bicikle sa motorom",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p35_316.png",
+  "id": 293
+ },
+ {
+  "page": 35,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "najmanje odstojanje između parkiranih vozila",
+    "ok": false
+   },
+   {
+    "t": "najmanje odstojanje između vozila",
+    "ok": true
+   },
+   {
+    "t": "potrebno rastojanje da bi se vozila mimoišla",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p35_317.png",
+  "id": 294
+ },
+ {
+  "page": 35,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "predznak za obilazak sa desne strane",
+    "ok": false
+   },
+   {
+    "t": "pretputokaz za izlaz do određenog mjesta",
+    "ok": false
+   },
+   {
+    "t": "putokaz za prestrojavanje za kretanje do određenog mjesta",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p35_318.png",
+  "id": 295
+ },
+ {
+  "page": 35,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "predznak za neposredno regulisanje saobraćaja na mjestu na kome se izvode radovi",
+    "ok": true
+   },
+   {
+    "t": "regulisanje saobraćaja u raskrsnici pomoću zastavice",
+    "ok": false
+   },
+   {
+    "t": "završetak puta zbog izvođenja radova",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p35_319.png",
+  "id": 296
+ },
+ {
+  "page": 35,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zabrana zaustavljanja",
+    "ok": false
+   },
+   {
+    "t": "zabrana saobraćaja u jednom smjeru",
+    "ok": false
+   },
+   {
+    "t": "zabrana parkiranja",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p35_320.png",
+  "id": 297
+ },
+ {
+  "page": 35,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "dvostruka opasna krivina ili više uzastopnih krivina od kojih je prva na desno",
+    "ok": false
+   },
+   {
+    "t": "dvostruka krivina ili više uzastopnih krivina od kojih je prva na desno",
+    "ok": true
+   },
+   {
+    "t": "dvostruka opasna krivina ili više uzastopnih krivina od kojih je prva na lijevo",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p35_321.png",
+  "id": 298
+ },
+ {
+  "page": 35,
+  "q": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+  "opts": [
+   {
+    "t": "najmanje dozvoljenu brzina u dužini puta od 2000 metara",
+    "ok": true
+   },
+   {
+    "t": "brzinu koja se preporučuje u dužini puta od 2000 metara",
+    "ok": false
+   },
+   {
+    "t": "najmanje dozvoljenu brzinu nakon pređenih 2000 metara",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p35_324_325.png",
+  "id": 299
+ },
+ {
+  "page": 36,
+  "q": "Na slici su prikazani saobraćajni znaci koji označavaju zabranu saobraćaja za motorna vozila koja vuku:",
+  "opts": [
+   {
+    "t": "laku prikolicu u naznačenom vremenu",
+    "ok": true
+   },
+   {
+    "t": "poluprikolicu u naznačenom vremenu",
+    "ok": false
+   },
+   {
+    "t": "priključno vozilo u naznačenom vremenu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p36_266_335.png",
+  "id": 300
+ },
+ {
+  "page": 36,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "obavezan izlaz u slučaju opasnosti",
+    "ok": false
+   },
+   {
+    "t": "udaljenost izlaza u slučaju opasnosti",
+    "ok": true
+   },
+   {
+    "t": "putokaz za pješake",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p36_328.png",
+  "id": 301
+ },
+ {
+  "page": 36,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "početak saobraćajne trake za spora vozila",
+    "ok": false
+   },
+   {
+    "t": "završetak saobraćajne trake za spora vozila",
+    "ok": true
+   },
+   {
+    "t": "završetak saobraćajne trake za prinudno zaustavljanje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p36_329.png",
+  "id": 302
+ },
+ {
+  "page": 36,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zabrana saobraćaja za vozila sa ceradom",
+    "ok": false
+   },
+   {
+    "t": "nailazak na neravan kolovoz",
+    "ok": false
+   },
+   {
+    "t": "zabrana saobraćaja za cistijerne",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p36_330.png",
+  "id": 303
+ },
+ {
+  "page": 36,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "najmanja dozvoljena brzina",
+    "ok": false
+   },
+   {
+    "t": "ograničenje brzine",
+    "ok": true
+   },
+   {
+    "t": "brzina koja se preporučuje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p36_331.png",
+  "id": 304
+ },
+ {
+  "page": 36,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "djeca na putu",
+    "ok": true
+   },
+   {
+    "t": "zona škole",
+    "ok": false
+   },
+   {
+    "t": "staza za pješake",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p36_332.png",
+  "id": 305
+ },
+ {
+  "page": 36,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "kamenje pršti",
+    "ok": false
+   },
+   {
+    "t": "neučvršćena bankina",
+    "ok": true
+   },
+   {
+    "t": "oštećen kolovoz",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p36_333.png",
+  "id": 306
+ },
+ {
+  "page": 36,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zabrana saobraćaja za vozila označena simbolom",
+    "ok": true
+   },
+   {
+    "t": "zabrana saobraćaja za teretna vozila",
+    "ok": false
+   },
+   {
+    "t": "dozvoljen saobraćaj za vozila označena simbolom",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p36_334.png",
+  "id": 307
+ },
+ {
+  "page": 37,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "ukrštanje puteva sa prvenstvom prolaza",
+    "ok": false
+   },
+   {
+    "t": "nailazak na put sa prvenstvom prolaza",
+    "ok": false
+   },
+   {
+    "t": "pružanje puta sa prvenstvom prolaza",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p37_338.png",
+  "id": 308
+ },
+ {
+  "page": 37,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "raskrsnica sa kružnim tokom saobraćaja",
+    "ok": true
+   },
+   {
+    "t": "kružni tok saobraćaja",
+    "ok": false
+   },
+   {
+    "t": "obavezno polukružno okretanje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p37_339.png",
+  "id": 309
+ },
+ {
+  "page": 37,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "ukrštanje puteva iste važnosti",
+    "ok": false
+   },
+   {
+    "t": "obavezno zaustavljanje",
+    "ok": false
+   },
+   {
+    "t": "ukrštanje sa putem sa prvenstvom prolaza",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p37_340.png",
+  "id": 310
+ },
+ {
+  "page": 37,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zona usporenog saobraćaja",
+    "ok": true
+   },
+   {
+    "t": "djeca na putu",
+    "ok": false
+   },
+   {
+    "t": "dječje igralište",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p37_341.png",
+  "id": 311
+ },
+ {
+  "page": 37,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "kružna raskrsnica",
+    "ok": false
+   },
+   {
+    "t": "raskrsnica sa kružnim tokom saobraćaja",
+    "ok": false
+   },
+   {
+    "t": "kružni tok saobraćaja",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p37_342.png",
+  "id": 312
+ },
+ {
+  "page": 37,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "radovi na putu",
+    "ok": true
+   },
+   {
+    "t": "otklanjanje odrona na putu",
+    "ok": false
+   },
+   {
+    "t": "radovi na uklanjanju kamena na putu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p37_343.png",
+  "id": 313
+ },
+ {
+  "page": 37,
+  "q": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+  "opts": [
+   {
+    "t": "parkiranje na trotoaru poprečno osi kolovoza",
+    "ok": false
+   },
+   {
+    "t": "parkiranje na trotoaru upravno na podužnu osu kolovoza",
+    "ok": false
+   },
+   {
+    "t": "parkiranje na trotoaru paralelno sa podužnom osom kolovoza",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p37_344_345.png",
+  "id": 314
+ },
+ {
+  "page": 37,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "broj međunarodnog puta",
+    "ok": true
+   },
+   {
+    "t": "broj regionalnog puta",
+    "ok": false
+   },
+   {
+    "t": "broj magistralnog puta",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p37_345.png",
+  "id": 315
+ },
+ {
+  "page": 37,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "putokaz za naseljena mjesta",
+    "ok": true
+   },
+   {
+    "t": "pretputokaz za izlaz",
+    "ok": false
+   },
+   {
+    "t": "tabla za usmjeravanje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p37_346.png",
+  "id": 316
+ },
+ {
+  "page": 38,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zajednička staza za bicikliste i pješake",
+    "ok": false
+   },
+   {
+    "t": "razdvojene staze za bicikliste i pješake",
+    "ok": true
+   },
+   {
+    "t": "zabrana saobraćaja za bicikliste i pješake",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p38_349.png",
+  "id": 317
+ },
+ {
+  "page": 38,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zabrana prolaza bez zaustavljanja",
+    "ok": true
+   },
+   {
+    "t": "zabrana prolaza bez zaustavljanja na carinskom prelazu",
+    "ok": false
+   },
+   {
+    "t": "zabrana prolaza zbog naplate putarine",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p38_350.png",
+  "id": 318
+ },
+ {
+  "page": 38,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "ukrštanje sa putem sa prvenstvom prolaza",
+    "ok": false
+   },
+   {
+    "t": "ukrštanje sa sporednim putem",
+    "ok": false
+   },
+   {
+    "t": "obavezno zaustavljanje",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p38_351.png",
+  "id": 319
+ },
+ {
+  "page": 38,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "prelaz puta preko željezničke pruge sa branicima ili polubranicima",
+    "ok": false
+   },
+   {
+    "t": "prelaz puta preko željezničke pruge bez branika ili polubranika",
+    "ok": true
+   },
+   {
+    "t": "približavanje prelazu puta preko željezničke pruge",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p38_352.png",
+  "id": 320
+ },
+ {
+  "page": 38,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "predputokazna tabla za lijevo skretanje",
+    "ok": false
+   },
+   {
+    "t": "tabla za usmjeravanje",
+    "ok": true
+   },
+   {
+    "t": "putokazna tabla",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p38_353.png",
+  "id": 321
+ },
+ {
+  "page": 38,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zabrana preticanja za teretna vozila",
+    "ok": true
+   },
+   {
+    "t": "zabrana preticanja za sva motorna vozila",
+    "ok": false
+   },
+   {
+    "t": "zabrana preticanja teretnih vozila",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p38_354.png",
+  "id": 322
+ },
+ {
+  "page": 38,
+  "q": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+  "opts": [
+   {
+    "t": "dozvoljeno skretanje ulijevo u naznačenom vremenu",
+    "ok": false
+   },
+   {
+    "t": "zabrana polukružnog okretanja u naznačenom vremenu",
+    "ok": false
+   },
+   {
+    "t": "zabrana skretanja ulijevo u naznačenom vremenu",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p38_357_358.png",
+  "id": 323
+ },
+ {
+  "page": 38,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "obavezan smjer prvo udesno, pa ulijevo i izlazak iz raskrsnice",
+    "ok": false
+   },
+   {
+    "t": "put sa jednosmjernim saobraćajem uz obavezno skretanje udesno pa ulijevo",
+    "ok": false
+   },
+   {
+    "t": "smjer kretanja vozila koje namjerava da skrene ulijevo na raskrsnici na kojoj je skretanje ulijevo zabranjeno",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p38_355.png",
+  "id": 324
+ },
+ {
+  "page": 38,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "put sa prvenstvom prolaza",
+    "ok": false
+   },
+   {
+    "t": "završetak puta sa prvenstvom prolaza",
+    "ok": true
+   },
+   {
+    "t": "pružanje puta sa prvenstvom prolaza",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p38_356.png",
+  "id": 325
+ },
+ {
+  "page": 39,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "trolejbuska pruga",
+    "ok": false
+   },
+   {
+    "t": "tramvajska pruga",
+    "ok": true
+   },
+   {
+    "t": "šinsko vozilo na putu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p39_361.png",
+  "id": 326
+ },
+ {
+  "page": 39,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "suženje puta sa desne strane",
+    "ok": true
+   },
+   {
+    "t": "suženje puta sa lijeve strane",
+    "ok": false
+   },
+   {
+    "t": "desna kolovozna traka nije u pravcu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p39_362.png",
+  "id": 327
+ },
+ {
+  "page": 39,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "zabrana saobraćaja za vozila koja ne prekoračuju određenu dužinu",
+    "ok": false
+   },
+   {
+    "t": "zabrana saobraćaja za vozila koja prekoračuju određenu dužinu",
+    "ok": true
+   },
+   {
+    "t": "zabrana saobraćaja za teretna motorna vozila čija je dužina do 10 metara",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p39_363.png",
+  "id": 328
+ },
+ {
+  "page": 39,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "gradsko područje",
+    "ok": false
+   },
+   {
+    "t": "industrijska zona",
+    "ok": false
+   },
+   {
+    "t": "naseljeno mjesto",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p39_364.png",
+  "id": 329
+ },
+ {
+  "page": 39,
+  "q": "Na slici je prikazan saobraćajni znak:",
+  "opts": [
+   {
+    "t": "traka za kretanje teretnih vozila",
+    "ok": false
+   },
+   {
+    "t": "način korišćenja saobraćajne trake",
+    "ok": true
+   },
+   {
+    "t": "obavezno kretanje teretnih vozila",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p39_365.png",
+  "id": 330
+ },
+ {
+  "page": 40,
+  "q": "Svijetla na semaforu kao na slici imaju značenje:",
+  "opts": [
+   {
+    "t": "skori prestanak dozvoljeng kretanja vozila u pravcu strelica",
+    "ok": false
+   },
+   {
+    "t": "skori prestanak zabrane kretanja vozaču i priprema za slobodno kretanje vozilom u pravcu strelica",
+    "ok": true
+   },
+   {
+    "t": "dozvoljeno kretanje vozaču u pravcu strelica",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p40_368.png",
+  "id": 331
+ },
+ {
+  "page": 40,
+  "q": "Strelice koje označavaju dozvoljeni smjer kretanja su:",
+  "opts": [
+   {
+    "t": "crne na zelenoj podlozi",
+    "ok": false
+   },
+   {
+    "t": "zelene boje na crnoj podlozi",
+    "ok": true
+   },
+   {
+    "t": "crvene boje na zelenoj podlozi",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p40_368.png",
+  "id": 332
+ },
+ {
+  "page": 40,
+  "q": "Horizontalno predručena ruka, kao na slici obavezuje:",
+  "opts": [
+   {
+    "t": "vozača u čijem se smjeru daje znak da zaustavi vozilo",
+    "ok": false
+   },
+   {
+    "t": "sve učesnike u saobraćaju da ubrzaju kretanje",
+    "ok": false
+   },
+   {
+    "t": "vozača u čijem smjeru se daje ovaj znak da ubrza kretanje vozila",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p40_369.png",
+  "id": 333
+ },
+ {
+  "page": 40,
+  "q": "Znak koji daje policijski službenik na slici:",
+  "opts": [
+   {
+    "t": "može se davati samo na raskrsnici",
+    "ok": false
+   },
+   {
+    "t": "može se davati na raskrsnici i na otvorenom putu",
+    "ok": true
+   },
+   {
+    "t": "može se davati samo na otvorenom putu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p40_369.png",
+  "id": 334
+ },
+ {
+  "page": 40,
+  "q": "Na slici je prikazan graničnik koji označava dio kolovoza na kojem je:",
+  "opts": [
+   {
+    "t": "zabranjen saobraćaj zbog prepreke na putu",
+    "ok": false
+   },
+   {
+    "t": "zabranjen saobraćaj zbog ulivanja sa prilaznog puta",
+    "ok": true
+   },
+   {
+    "t": "zabranjen saobraćaj zbog završetka saobraćajne trake",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p40_371.png",
+  "id": 335
+ },
+ {
+  "page": 40,
+  "q": "Na slici je prikazan:",
+  "opts": [
+   {
+    "t": "semafor za regulisanje obilaženja sa desne strane",
+    "ok": false
+   },
+   {
+    "t": "semafor za regulisanje prolaska šinskih vozila",
+    "ok": false
+   },
+   {
+    "t": "semafor za regulisanje promjene saobraćajne trake",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p40_373.png",
+  "id": 336
+ },
+ {
+  "page": 40,
+  "q": "Ako policijski službenik kao na slici lagano maše rukom, to znači da vozač u čijem se smjeru daje taj znak:",
+  "opts": [
+   {
+    "t": "treba da smanji brzinu kretanja",
+    "ok": true
+   },
+   {
+    "t": "treba da se zaustavi",
+    "ok": false
+   },
+   {
+    "t": "treba da ubrza kretanje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p40_374.png",
+  "id": 337
+ },
+ {
+  "page": 40,
+  "q": "Znak koji daje policijski službenik na slici je obavezujući:",
+  "opts": [
+   {
+    "t": "samo van naselja vozaču u čujem smjeru se daje taj znak",
+    "ok": false
+   },
+   {
+    "t": "za vozača u čijem smjeru se daje taj znak",
+    "ok": true
+   },
+   {
+    "t": "samo u naselju vozaču u čijem smjeru se daje taj znak",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p40_374.png",
+  "id": 338
+ },
+ {
+  "page": 41,
+  "q": "Svjetlosna strelica zelene boje označava:",
+  "opts": [
+   {
+    "t": "da vozač treba da obrati pažnju na visinu vozila",
+    "ok": false
+   },
+   {
+    "t": "da vozač zaustavi vozilo",
+    "ok": false
+   },
+   {
+    "t": "da je vozaču dozvoljeno kretanje",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p41_378.png",
+  "id": 339
+ },
+ {
+  "page": 41,
+  "q": "Svjetlosni znaci kao na slici se koriste za regulisanje:",
+  "opts": [
+   {
+    "t": "saobraćaja na naplatnim rampama",
+    "ok": false
+   },
+   {
+    "t": "saobraćaja na trakama sa promjenljivim smjerom kretanja",
+    "ok": true
+   },
+   {
+    "t": "prolaska kroz tunel",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p41_378.png",
+  "id": 340
+ },
+ {
+  "page": 41,
+  "q": "Verikalno podignuta ruka sa položajem šake policijskog službenika kao na slici znači:",
+  "opts": [
+   {
+    "t": "slobodan prolaz za sva vozila",
+    "ok": false
+   },
+   {
+    "t": "slobodan prolaz za vozila koja dolaze sa boka",
+    "ok": false
+   },
+   {
+    "t": "obavezno zaustvljanje za sve učesnike",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p41_380.png",
+  "id": 341
+ },
+ {
+  "page": 41,
+  "q": "Znak koji daje policijski službenik na slici:",
+  "opts": [
+   {
+    "t": "može se davati iz vozila",
+    "ok": false
+   },
+   {
+    "t": "može se davati iz vozila, ali samo sa tablicom STOP",
+    "ok": false
+   },
+   {
+    "t": "ne može se davati iz vozila",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p41_380.png",
+  "id": 342
+ },
+ {
+  "page": 41,
+  "q": "Svjetlosni saobraćajni znak koji je dat na slici, kada se naizmjenično uključuju dva okrugla crvena svijetla znači:",
+  "opts": [
+   {
+    "t": "zabranu kretanja vozaču na mjestu prelaza puta preko pruge",
+    "ok": true
+   },
+   {
+    "t": "zabranu kretanju šinskog vozila",
+    "ok": false
+   },
+   {
+    "t": "zabranu kretanja svih učesnika u saobraćaju",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p41_381.png",
+  "id": 343
+ },
+ {
+  "page": 41,
+  "q": "Na slici je prikazan semafor za regulisanje kretanja:",
+  "opts": [
+   {
+    "t": "bicikala samo po biciklističkim trakama",
+    "ok": false
+   },
+   {
+    "t": "bicikala i mopeda samo po biciklističkim stazama",
+    "ok": false
+   },
+   {
+    "t": "bicikala i mopeda po biciklističkim trakama",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p41_383.png",
+  "id": 344
+ },
+ {
+  "page": 41,
+  "q": "Znak koji daje policijski službenik, kao na slici može se davati:",
+  "opts": [
+   {
+    "t": "na raskrsnici, ali samo sa stop tablicom",
+    "ok": false
+   },
+   {
+    "t": "na rasksnici i na otvorenom putu",
+    "ok": true
+   },
+   {
+    "t": "na otvorenom putu, ali samo sa stop tablicom",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p41_384.png",
+  "id": 345
+ },
+ {
+  "page": 41,
+  "q": "Znak koji daje policijski službenik na slici znači da vozači vozila:",
+  "opts": [
+   {
+    "t": "koja dolaze sa njegovih bočnih strana imaju pravo prvenstva",
+    "ok": true
+   },
+   {
+    "t": "kojima su okrenuta leđa imaju pravo prvenstva",
+    "ok": false
+   },
+   {
+    "t": "nastave kretanje u skladu sa značenjem svijetala na semaforu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p41_384.png",
+  "id": 346
+ },
+ {
+  "page": 41,
+  "q": "Na slici je prikazan kosnik koji:",
+  "opts": [
+   {
+    "t": "označava traku za spora vozila",
+    "ok": false
+   },
+   {
+    "t": "označava mjesto otvaranja trake",
+    "ok": false
+   },
+   {
+    "t": "označava mjesto zatvaranja trake",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p41_386.png",
+  "id": 347
+ },
+ {
+  "page": 42,
+  "q": "Na slici je prikazan:",
+  "opts": [
+   {
+    "t": "uređaj za regulisanje kretanja tramvaja",
+    "ok": true
+   },
+   {
+    "t": "uređaj za regulisanje kretanja pješaka",
+    "ok": false
+   },
+   {
+    "t": "uređaj za označavanje usmjerenosti kolosijeka",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p42_390.png",
+  "id": 348
+ },
+ {
+  "page": 42,
+  "q": "Hrizontalno odručena ruka policijskog službenika, kao na slici znači da:",
+  "opts": [
+   {
+    "t": "vozač tog vozila smanji brzinu kretanja",
+    "ok": false
+   },
+   {
+    "t": "vozač tog vozila uspori vozilo i nastavi kretanje ulijevo",
+    "ok": false
+   },
+   {
+    "t": "je vozač tog vozila obavezan da zaustavi vozilo",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p42_395.png",
+  "id": 349
+ },
+ {
+  "page": 42,
+  "q": "Znak koji daje policijski službenik na slici:",
+  "opts": [
+   {
+    "t": "može se davati i na raskrsnici i na otvorenom putu",
+    "ok": true
+   },
+   {
+    "t": "može se davati samo u naseljenom mjestu",
+    "ok": false
+   },
+   {
+    "t": "može se davati samo na otvorenom putu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p42_395.png",
+  "id": 350
+ },
+ {
+  "page": 42,
+  "q": "Privremena saobraćajna signalizacija data na slici označava:",
+  "opts": [
+   {
+    "t": "zapreku na putu",
+    "ok": false
+   },
+   {
+    "t": "vertikalnu zapreku",
+    "ok": false
+   },
+   {
+    "t": "usmjeravajući branik",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p42_391.png",
+  "id": 351
+ },
+ {
+  "page": 42,
+  "q": "Prikazana svjetlosna signalizacija treba da je uključena:",
+  "opts": [
+   {
+    "t": "noću i u uslovima smanjene vidljivosti",
+    "ok": true
+   },
+   {
+    "t": "ako je veliki protok saobraćaja",
+    "ok": false
+   },
+   {
+    "t": "samo na lokalnim putevima",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p42_391.png",
+  "id": 352
+ },
+ {
+  "page": 42,
+  "q": "Položaj tijela policijskog službenika sa rukama horizontalno odručenim, znači da vozila:",
+  "opts": [
+   {
+    "t": "kojima su okrenuta leđa imaju pravo prolaska",
+    "ok": false
+   },
+   {
+    "t": "koja dolaze sa njegove bočne strana imaju pravo prolaska",
+    "ok": true
+   },
+   {
+    "t": "da su svi vozači obavezni da zaustave vozilo",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p42_397.png",
+  "id": 353
+ },
+ {
+  "page": 42,
+  "q": "Znak koji daje policijski službenik na slici:",
+  "opts": [
+   {
+    "t": "može se davati samo na raskrsnici",
+    "ok": false
+   },
+   {
+    "t": "može se davati i na raskrsnici i na otvorenom putu",
+    "ok": true
+   },
+   {
+    "t": "može se davati samo na otvorenom putu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p42_397.png",
+  "id": 354
+ },
+ {
+  "page": 42,
+  "q": "Poprečne oznake na kolovozu predstavljaju:",
+  "opts": [
+   {
+    "t": "poprečnu ivicu kolovoza",
+    "ok": false
+   },
+   {
+    "t": "graničnu liniju kolovoza",
+    "ok": false
+   },
+   {
+    "t": "liniju zaustavljanja",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p42_392.png",
+  "id": 355
+ },
+ {
+  "page": 42,
+  "q": "Ako vozila javnog gradskog prevoza koriste istu saobraćajnu traku kojom se kreću i šinska vozila, uređaj koji je prikazan na slici koristi se za regulisanje kretanja:",
+  "opts": [
+   {
+    "t": "tramvaja i autobusa",
+    "ok": false
+   },
+   {
+    "t": "samo autobusa",
+    "ok": false
+   },
+   {
+    "t": "samo tramvaja",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p42_394.png",
+  "id": 356
+ },
+ {
+  "page": 43,
+  "q": "Kombinovani znak podizanje ruke i upotreba pištaljke, kao na slici, predstavlja:",
+  "opts": [
+   {
+    "t": "zabranu prolaza za sve vozače",
+    "ok": true
+   },
+   {
+    "t": "slobodan prolaz za vozila koja dolaze samo sa bočne strane",
+    "ok": false
+   },
+   {
+    "t": "zabranu prolaza za vozila koja dolaze samo sa bočne strane",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p43_401.png",
+  "id": 357
+ },
+ {
+  "page": 43,
+  "q": "Znak koji daje policijski službenik na slici:",
+  "opts": [
+   {
+    "t": "ne može se davati sa pištaljkom u raskrsnici",
+    "ok": true
+   },
+   {
+    "t": "može se davati sa pištaljkom u raskrsnici",
+    "ok": false
+   },
+   {
+    "t": "ne može se davati sa STOP tablicom",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p43_401.png",
+  "id": 358
+ },
+ {
+  "page": 43,
+  "q": "Na slici su prikazana svjetla na semaforu, a redoslijed uključenja svjetala je:",
+  "opts": [
+   {
+    "t": "1-2-3-4",
+    "ok": false
+   },
+   {
+    "t": "1-4-3-2",
+    "ok": false
+   },
+   {
+    "t": "1-3-2-4",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p43_403.png",
+  "id": 359
+ },
+ {
+  "page": 43,
+  "q": "Na semaforima sa trobojnim svijetlima:",
+  "opts": [
+   {
+    "t": "zeleno svijetlo može biti trepćuće",
+    "ok": true
+   },
+   {
+    "t": "zeleno svijetlo ne može biti trepćuće",
+    "ok": false
+   },
+   {
+    "t": "zeleno svijetlo može biti uključeno sa crvenim svijetlom",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p43_403.png",
+  "id": 360
+ },
+ {
+  "page": 43,
+  "q": "Položaj tijela policijskog službenika kao na slici, znači da vozila:",
+  "opts": [
+   {
+    "t": "koja dolaze sa njegove bočne strane nemaju pravo prolaska",
+    "ok": false
+   },
+   {
+    "t": "da su svi vozači obavezni da zaustave vozilo",
+    "ok": false
+   },
+   {
+    "t": "koja dolaze sa njegove bočne strane imaju pravo prolaska",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p43_404.png",
+  "id": 361
+ },
+ {
+  "page": 43,
+  "q": "Znak koji daje policijski službenik na slici:",
+  "opts": [
+   {
+    "t": "može se davati samo na raskrsnici",
+    "ok": false
+   },
+   {
+    "t": "može se davati samo na otvorenom putu",
+    "ok": false
+   },
+   {
+    "t": "može se davati i na raskrsnici i na otvorenom putu",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p43_404.png",
+  "id": 362
+ },
+ {
+  "page": 43,
+  "q": "Na slici je prikazan:",
+  "opts": [
+   {
+    "t": "usmjeravajući branik",
+    "ok": true
+   },
+   {
+    "t": "čeoni branik",
+    "ok": false
+   },
+   {
+    "t": "zapreka na putu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p43_405.png",
+  "id": 363
+ },
+ {
+  "page": 43,
+  "q": "Na slici je prikazan:",
+  "opts": [
+   {
+    "t": "semafor za regulisanje kretanja svih učesnika",
+    "ok": false
+   },
+   {
+    "t": "semafor za regulisanje kretanja biciklista",
+    "ok": false
+   },
+   {
+    "t": "semafor za regulisanje kretanja pješaka",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p43_406.png",
+  "id": 364
+ },
+ {
+  "page": 43,
+  "q": "Vetikalno podignuta ruka, kao na slici znači:",
+  "opts": [
+   {
+    "t": "prestanak važenja naredbi koje daje policijski službenik",
+    "ok": false
+   },
+   {
+    "t": "zabranu prolaza za sve vozače u saobraćaju",
+    "ok": true
+   },
+   {
+    "t": "da vozila koja dolaze sa boka imaju slobodan prolaz",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p43_407.png",
+  "id": 365
+ },
+ {
+  "page": 43,
+  "q": "Znak koji daje policijski službenik na slici:",
+  "opts": [
+   {
+    "t": "može se davati samo na raskrsnici",
+    "ok": true
+   },
+   {
+    "t": "može se davati samo na otvorenom putu",
+    "ok": false
+   },
+   {
+    "t": "ne može se davati na raskrsnici",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p43_407.png",
+  "id": 366
+ },
+ {
+  "page": 44,
+  "q": "Na obilježenom stajalištu, kao na slici, smije da se zaustavi vozač:",
+  "opts": [
+   {
+    "t": "putničkog vozila radi ulaska ili izlaska putnika",
+    "ok": false
+   },
+   {
+    "t": "teretnog vozila samo radi utovara ili istovara",
+    "ok": false
+   },
+   {
+    "t": "vozila za javni prevoz putnika",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p44_411.png",
+  "id": 367
+ },
+ {
+  "page": 44,
+  "q": "Uključena svijetla na semaforu, kao na slici, znače:",
+  "opts": [
+   {
+    "t": "da vozač može da se kreće u pravcu strelice pri čemu ne ometa druge učesnike u saobraćaju",
+    "ok": true
+   },
+   {
+    "t": "da vozač može da se kreće u pravcu strelice ne obraćajući pažnju na druge učesnike u saobraćaju",
+    "ok": false
+   },
+   {
+    "t": "zabranjeno kretanje u smjeru označenom dopunskom zelenom strelicom",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p44_413.png",
+  "id": 368
+ },
+ {
+  "page": 44,
+  "q": "Policijski službenik daje znak iz vozila, kao na slici:",
+  "opts": [
+   {
+    "t": "u skladu sa propisima",
+    "ok": true
+   },
+   {
+    "t": "suprotno propisima",
+    "ok": false
+   },
+   {
+    "t": "u skladu sa propisima samo u naseljenom mjestu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p44_415.png",
+  "id": 369
+ },
+ {
+  "page": 44,
+  "q": "U situaciji prikazanoj na slici, znak koji daje policijski službenik vozaču znači:",
+  "opts": [
+   {
+    "t": "da ubrza kretanje vozila",
+    "ok": false
+   },
+   {
+    "t": "da izvrši preticanje sa desne strane",
+    "ok": false
+   },
+   {
+    "t": "da zaustavi vozilo",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": "p44_415.png",
+  "id": 370
+ },
+ {
+  "page": 44,
+  "q": "Radno kočenje ne mora da ima:",
+  "opts": [
+   {
+    "t": "poluprikolica sa tri osovine",
+    "ok": false
+   },
+   {
+    "t": "putničko vozilo do 750 kg sopstvene mase",
+    "ok": false
+   },
+   {
+    "t": "laka prikolica",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 371
+ },
+ {
+  "page": 44,
+  "q": "Svijetlo za maglu na zadnjoj strani vozila je:",
+  "opts": [
+   {
+    "t": "crvene boje",
+    "ok": true
+   },
+   {
+    "t": "žute boje",
+    "ok": false
+   },
+   {
+    "t": "bijele boje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 372
+ },
+ {
+  "page": 44,
+  "q": "Blatobrani na motornom vozilu moraju da budu postavljeni tako da pokrivaju širinu:",
+  "opts": [
+   {
+    "t": "samo zadnjih točkova",
+    "ok": false
+   },
+   {
+    "t": "samo prednjih točkova",
+    "ok": false
+   },
+   {
+    "t": "svih točkova",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 373
+ },
+ {
+  "page": 44,
+  "q": "Učesnika u saobraćajnoj nezgodi koji je zadobio povrede grudnog koša postavljamo:",
+  "opts": [
+   {
+    "t": "u ležeći položaj",
+    "ok": false
+   },
+   {
+    "t": "na bočnu stranu",
+    "ok": false
+   },
+   {
+    "t": "u polusjedeći položaj",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 374
+ },
+ {
+  "page": 44,
+  "q": "Pod opekotinom podrazumijevamo povredu nastalu od:",
+  "opts": [
+   {
+    "t": "upale kože",
+    "ok": false
+   },
+   {
+    "t": "djelovanja toplote",
+    "ok": true
+   },
+   {
+    "t": "uboda črvstog predmeta",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 375
+ },
+ {
+  "page": 45,
+  "q": "Pod uređajem na vozilu koji omogućava normalnu vidljivost smatra se:",
+  "opts": [
+   {
+    "t": "svijetlo za maglu",
+    "ok": false
+   },
+   {
+    "t": "poziciono svijetlo",
+    "ok": false
+   },
+   {
+    "t": "vjetrobran",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 376
+ },
+ {
+  "page": 45,
+  "q": "Svjetlost pokazivača pravca mora da bude:",
+  "opts": [
+   {
+    "t": "žute boje",
+    "ok": true
+   },
+   {
+    "t": "bijele boje",
+    "ok": false
+   },
+   {
+    "t": "crvene boje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 377
+ },
+ {
+  "page": 45,
+  "q": "Protiv blokirajući sistem (ABS) je dio sistema za:",
+  "opts": [
+   {
+    "t": "osvjetljavanje kolovoza",
+    "ok": false
+   },
+   {
+    "t": "prenos snage",
+    "ok": false
+   },
+   {
+    "t": "za kočenje",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 378
+ },
+ {
+  "page": 45,
+  "q": "Pod imobilizacijom podrazumijevamo:",
+  "opts": [
+   {
+    "t": "stavljanje sterilne gaze na povrijeđeni dio tijela",
+    "ok": false
+   },
+   {
+    "t": "stavljanje povrijeđenog dijela tijela u stanje mirovanja",
+    "ok": true
+   },
+   {
+    "t": "vraćanje povrijeđenog u stanje svijesti",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 379
+ },
+ {
+  "page": 45,
+  "q": "Koliki je broj otkucaja srca kod normalne zdrave osobe:",
+  "opts": [
+   {
+    "t": "do 60 otkucaja u jednoj sekundi",
+    "ok": false
+   },
+   {
+    "t": "60 do 80 otkucaja u jednom minutu",
+    "ok": true
+   },
+   {
+    "t": "preko 100 otkucaja u jednom minutu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 380
+ },
+ {
+  "page": 45,
+  "q": "Slobodan hod točka upravljača na vozilu na motorni pogon ne smije biti veći od:",
+  "opts": [
+   {
+    "t": "20 stepeni",
+    "ok": false
+   },
+   {
+    "t": "30 stepeni",
+    "ok": true
+   },
+   {
+    "t": "40 stepeni",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 381
+ },
+ {
+  "page": 45,
+  "q": "Na motornom vozilu se serijski ugrađuju:",
+  "opts": [
+   {
+    "t": "radna, pomoćna i parkirna kočnica",
+    "ok": true
+   },
+   {
+    "t": "radna i pomoćna kočnica i trajni usporivač",
+    "ok": false
+   },
+   {
+    "t": "radna i parkirna kočnica i trajni usporivač",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 382
+ },
+ {
+  "page": 45,
+  "q": "Najveća dozvoljena dužina motornog vozila osim autobusa je:",
+  "opts": [
+   {
+    "t": "8 metara",
+    "ok": false
+   },
+   {
+    "t": "10 metara",
+    "ok": false
+   },
+   {
+    "t": "12 metara",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 383
+ },
+ {
+  "page": 45,
+  "q": "Kada dodje do umora tokom vožnje potrebno je:",
+  "opts": [
+   {
+    "t": "usporenim kretanjem nastaviti vožnju",
+    "ok": false
+   },
+   {
+    "t": "konzumirati energetske napitke i nastaviti vožnju",
+    "ok": false
+   },
+   {
+    "t": "napraviti pauzu za odmor",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 384
+ },
+ {
+  "page": 45,
+  "q": "Krvarenje kod povrijeđenog je:",
+  "opts": [
+   {
+    "t": "isticanje krvi iz krvnih sudova",
+    "ok": true
+   },
+   {
+    "t": "zatvoreni prelom podkoljenice",
+    "ok": false
+   },
+   {
+    "t": "zgrušavanje krvi u krvnom sudu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 385
+ },
+ {
+  "page": 46,
+  "q": "Od određene opreme u autobusu mora da postoje:",
+  "opts": [
+   {
+    "t": "tri kutije prve pomoći",
+    "ok": false
+   },
+   {
+    "t": "dvije kutije prve pomoći",
+    "ok": false
+   },
+   {
+    "t": "jedna kutija prve pomoći",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 386
+ },
+ {
+  "page": 46,
+  "q": "Pod uređajima za davanje svjetlosnih znakova ne smatraju se:",
+  "opts": [
+   {
+    "t": "stop-svijetla",
+    "ok": false
+   },
+   {
+    "t": "pokazivači pravca",
+    "ok": false
+   },
+   {
+    "t": "katadiopteri",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 387
+ },
+ {
+  "page": 46,
+  "q": "Parkirnu kočnicu kod vozila vozač koristi:",
+  "opts": [
+   {
+    "t": "da zaustavi vozilo kada naiđe na iznenadnu prepreku",
+    "ok": false
+   },
+   {
+    "t": "da spriječi pokretanje zaustavljenog vozila",
+    "ok": true
+   },
+   {
+    "t": "da spriječi pokretanje vozila samo dok je parkirano u garaži",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 388
+ },
+ {
+  "page": 46,
+  "q": "Arterijsko krvarenje kod povrijeđenog prepoznaje se po:",
+  "opts": [
+   {
+    "t": "laganom isticanju krvi i zgrušavanju na povrijeđenom dijela tijela",
+    "ok": false
+   },
+   {
+    "t": "krvi u mlazevima",
+    "ok": true
+   },
+   {
+    "t": "otoku i modrim podlivima povrijeđenog dijela tijela",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 389
+ },
+ {
+  "page": 46,
+  "q": "Ako je licu u saobraćajnoj nezgodi povrijeđena glava i vrat:",
+  "opts": [
+   {
+    "t": "povrijeđenog što manje pomjerati",
+    "ok": false
+   },
+   {
+    "t": "postaviti ga u sjedeći položaj",
+    "ok": true
+   },
+   {
+    "t": "postaviti ga na bok u ležeći položaj",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 390
+ },
+ {
+  "page": 46,
+  "q": "Sastavni dio motora sa unutrašnjim sagorijevanjem je:",
+  "opts": [
+   {
+    "t": "koljenasto vratilo",
+    "ok": true
+   },
+   {
+    "t": "kardansko vratilo",
+    "ok": false
+   },
+   {
+    "t": "poluvratilo",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 391
+ },
+ {
+  "page": 46,
+  "q": "Servo uređaj za upravljanje:",
+  "opts": [
+   {
+    "t": "smanjuje ugao zakretanja upravljačkih točkova",
+    "ok": false
+   },
+   {
+    "t": "smanjuje ukupnu silu djelovanja vozača kod zakretanja točka upravljača i obezbjeđuje lakoću upravljanja",
+    "ok": true
+   },
+   {
+    "t": "smanjuje prečnik putanje pri skretanja vozila",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 392
+ },
+ {
+  "page": 46,
+  "q": "Svijetla glavnih svjetala treba da budu:",
+  "opts": [
+   {
+    "t": "bijele boje",
+    "ok": true
+   },
+   {
+    "t": "žute boje",
+    "ok": false
+   },
+   {
+    "t": "crvene boje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 393
+ },
+ {
+  "page": 46,
+  "q": "Neposredno nakon saobraćaje nezgode, lice koje je učestvovalo u saobraćajnoj nezgodi:",
+  "opts": [
+   {
+    "t": "smije da konzumira alkoholno piće",
+    "ok": false
+   },
+   {
+    "t": "smije da konzumira sedative za smirenje",
+    "ok": false
+   },
+   {
+    "t": "ne smije da konzumira alkoholno piće",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 394
+ },
+ {
+  "page": 46,
+  "q": "Ako je lice koje je povrijeđeno u saobraćajnoj nezgodi bez svijesti treba ga:",
+  "opts": [
+   {
+    "t": "postaviti u ležeći položaj na leđa",
+    "ok": false
+   },
+   {
+    "t": "postaviti u ležeći položaj na stomak",
+    "ok": false
+   },
+   {
+    "t": "postaviti u bočni položaj",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 395
+ },
+ {
+  "page": 47,
+  "q": "Pod opremom motornih i priključnih vozila ne smatra se:",
+  "opts": [
+   {
+    "t": "bočni retrovizor",
+    "ok": true
+   },
+   {
+    "t": "rezervni točak",
+    "ok": false
+   },
+   {
+    "t": "rezervne sijalice",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 396
+ },
+ {
+  "page": 47,
+  "q": "Svjetlost dnevnog svijetla treba da bude:",
+  "opts": [
+   {
+    "t": "žute boje",
+    "ok": false
+   },
+   {
+    "t": "plave boje",
+    "ok": false
+   },
+   {
+    "t": "bijele boje",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 397
+ },
+ {
+  "page": 47,
+  "q": "Minimalna dubina šare na gazećoj površini pneumatika za zimsku upotrebu treba da bude:",
+  "opts": [
+   {
+    "t": "2 mm",
+    "ok": false
+   },
+   {
+    "t": "4 mm",
+    "ok": true
+   },
+   {
+    "t": "1,6 mm",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 398
+ },
+ {
+  "page": 47,
+  "q": "Broj policije je:",
+  "opts": [
+   {
+    "t": "124",
+    "ok": false
+   },
+   {
+    "t": "112",
+    "ok": false
+   },
+   {
+    "t": "122",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 399
+ },
+ {
+  "page": 47,
+  "q": "Kod povrijeđenog lica na ranu se prvo stavlja:",
+  "opts": [
+   {
+    "t": "alkohol",
+    "ok": false
+   },
+   {
+    "t": "voda",
+    "ok": false
+   },
+   {
+    "t": "sterilna gaza",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 400
+ },
+ {
+  "page": 47,
+  "q": "Vozila koja imaju ugrađene brisače vjetrobrana moraju imati i:",
+  "opts": [
+   {
+    "t": "sunđer za pranje stakala",
+    "ok": false
+   },
+   {
+    "t": "perače vjetrobrana",
+    "ok": true
+   },
+   {
+    "t": "uređaj za zagrijavanje vjetrobrana",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 401
+ },
+ {
+  "page": 47,
+  "q": "Svjetlosni snop oborenog svijetla treba da bude:",
+  "opts": [
+   {
+    "t": "izveden kao lijevi asimetrični",
+    "ok": false
+   },
+   {
+    "t": "simetričan",
+    "ok": false
+   },
+   {
+    "t": "izveden kao desni asimetrični",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 402
+ },
+ {
+  "page": 47,
+  "q": "Uređaji za odvođenje i ispuštanje izduvnih gasova ne smiju da prelaze dimenzije vozila:",
+  "opts": [
+   {
+    "t": "po dužini ili širini",
+    "ok": true
+   },
+   {
+    "t": "po visini",
+    "ok": false
+   },
+   {
+    "t": "više od 0,1 metar po dužini",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 403
+ },
+ {
+  "page": 47,
+  "q": "Mrtvačke pjege i hladno tijelo su:",
+  "opts": [
+   {
+    "t": "stanja povrijeđnog usled gubljenja svijesti zbog hladnoće",
+    "ok": false
+   },
+   {
+    "t": "sigurni znak smrti",
+    "ok": true
+   },
+   {
+    "t": "sigurni znak umora",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 404
+ },
+ {
+  "page": 47,
+  "q": "Broj telefona vatrogasne službe je:",
+  "opts": [
+   {
+    "t": "123",
+    "ok": true
+   },
+   {
+    "t": "122",
+    "ok": false
+   },
+   {
+    "t": "124",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 405
+ },
+ {
+  "page": 48,
+  "q": "Svijetla za vožnju unazad kod motornih vozila moraju biti:",
+  "opts": [
+   {
+    "t": "bijele boje",
+    "ok": true
+   },
+   {
+    "t": "crvene boje",
+    "ok": false
+   },
+   {
+    "t": "žute boje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 406
+ },
+ {
+  "page": 48,
+  "q": "Radna kočnica motornih vozila treba da djeluje:",
+  "opts": [
+   {
+    "t": "na sve točkove",
+    "ok": true
+   },
+   {
+    "t": "samo na prednje točkove",
+    "ok": false
+   },
+   {
+    "t": "samo na zadnje točkove",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 407
+ },
+ {
+  "page": 48,
+  "q": "Motorno vozilo koje pored sjedišta za vozača ima još najviše osam sjedišta je:",
+  "opts": [
+   {
+    "t": "autobus",
+    "ok": false
+   },
+   {
+    "t": "teretno vozilo",
+    "ok": false
+   },
+   {
+    "t": "putničko vozilo",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 408
+ },
+ {
+  "page": 48,
+  "q": "U pružanju prve pomoći u saobraćajnoj nezgodi ranu kod povrijeđenog:",
+  "opts": [
+   {
+    "t": "treba isprati vodom",
+    "ok": false
+   },
+   {
+    "t": "treba isprati alkoholom",
+    "ok": false
+   },
+   {
+    "t": "ne treba ispirati tečnošću",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 409
+ },
+ {
+  "page": 48,
+  "q": "Pod dejstvom alkohola je vozač:",
+  "opts": [
+   {
+    "t": "ako se u organizmu utvrdi sadržaj alkohola veći od 0,3 g/kg",
+    "ok": true
+   },
+   {
+    "t": "ako se u organizmu utvrdi sadržaj alkohola do 0,3 g/kg",
+    "ok": false
+   },
+   {
+    "t": "ako se u organizmu utvrdi sadržaj alkohola do 0,2 g/kg",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 410
+ },
+ {
+  "page": 48,
+  "q": "Sastavni dio uređaja za upravljanje je:",
+  "opts": [
+   {
+    "t": "pneumatik",
+    "ok": false
+   },
+   {
+    "t": "točak upravljača",
+    "ok": true
+   },
+   {
+    "t": "amortizer",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 411
+ },
+ {
+  "page": 48,
+  "q": "Sastavni dio uređaja za osvjetljavanje puta na motornim vozilima je:",
+  "opts": [
+   {
+    "t": "stop svijetlo",
+    "ok": false
+   },
+   {
+    "t": "gabaritno svijetlo",
+    "ok": false
+   },
+   {
+    "t": "svijetlo za vožnju unazad",
+    "ok": true
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 412
+ },
+ {
+  "page": 48,
+  "q": "Sastavni dio prenosnika snage kod motornog vozila je:",
+  "opts": [
+   {
+    "t": "mjenjač",
+    "ok": true
+   },
+   {
+    "t": "točak upravljača",
+    "ok": false
+   },
+   {
+    "t": "ručica parkirne kočnice",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 413
+ },
+ {
+  "page": 48,
+  "q": "Prilikom imobilizacije povrijeđenog lica osnovno pravilo je:",
+  "opts": [
+   {
+    "t": "imobilisati cijelo tijelo povrijeđenog",
+    "ok": false
+   },
+   {
+    "t": "imobilisati dva susjedna zgloba",
+    "ok": true
+   },
+   {
+    "t": "imobilisati samo zglob koji je najbliži povrijeđenom mjestu",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 414
+ },
+ {
+  "page": 48,
+  "q": "Povrijeđeno lice koje izgubi dosta krvi ima:",
+  "opts": [
+   {
+    "t": "dosta povišen krvni pritisak",
+    "ok": false
+   },
+   {
+    "t": "dosta usporen puls",
+    "ok": true
+   },
+   {
+    "t": "ubrzano i nepravilno disanje",
+    "ok": false
+   }
+  ],
+  "ans": null,
+  "order": null,
+  "img": null,
+  "id": 415
+ }
+]
