@@ -9,3 +9,4 @@
 - `index.html`, `sw.js`, `manifest.webmanifest`, `icon-*.png` — приложение (PWA)
 - `data/` — база вопросов и переводы (источник для сборки)
 - `tools/` — извлечение из PDF и сборка
+- `docs/` — [архитектура](docs/ARCHITECTURE.md), [решения ADR](docs/adr/), [дорожная карта](docs/ROADMAP.md), [анализ аналогов](docs/COMPETITORS.md)
