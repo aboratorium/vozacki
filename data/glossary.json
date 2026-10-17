@@ -1,0 +1,202 @@
+[
+ {
+  "p": "pretic|preticanj|pretek|pretič",
+  "w": "preticanje",
+  "ru": "обгон (выезд на соседнюю полосу, чтобы опередить движущееся ТС)"
+ },
+ {
+  "p": "obilaž|obilaz|obiđ",
+  "w": "obilaženje",
+  "ru": "объезд стоящего ТС или препятствия"
+ },
+ {
+  "p": "mimoilaž|mimoilaz|mimoiđ|mimoiš",
+  "w": "mimoilaženje",
+  "ru": "встречный разъезд (проезд мимо встречного ТС)"
+ },
+ {
+  "p": "prestroj",
+  "w": "prestrojavanje",
+  "ru": "перестроение из полосы в полосу"
+ },
+ {
+  "p": "kolovozn",
+  "w": "kolovozna traka",
+  "ru": "половина проезжей части для одного направления (может быть из нескольких полос)"
+ },
+ {
+  "p": "saobraćajn[a-z]* trak",
+  "w": "saobraćajna traka",
+  "ru": "полоса движения (одна полоса)"
+ },
+ {
+  "p": "kolovoz",
+  "w": "kolovoz",
+  "ru": "проезжая часть"
+ },
+ {
+  "p": "raskrsnic|raskrnic|rasksnic",
+  "w": "raskrsnica",
+  "ru": "перекрёсток"
+ },
+ {
+  "p": "prvenstv",
+  "w": "prvenstvo prolaza",
+  "ru": "преимущество в проезде, приоритет"
+ },
+ {
+  "p": "naselj",
+  "w": "naselje",
+  "ru": "населённый пункт"
+ },
+ {
+  "p": "zaustav",
+  "w": "zaustavljanje",
+  "ru": "остановка (до 5 минут)"
+ },
+ {
+  "p": "parkir",
+  "w": "parkiranje",
+  "ru": "стоянка, парковка (дольше 5 минут)"
+ },
+ {
+  "p": "pješačk[a-z]* prelaz",
+  "w": "pješački prelaz",
+  "ru": "пешеходный переход"
+ },
+ {
+  "p": "pješa|pješak",
+  "w": "pješak",
+  "ru": "пешеход"
+ },
+ {
+  "p": "putničk",
+  "w": "putničko vozilo",
+  "ru": "легковой автомобиль"
+ },
+ {
+  "p": "teretn",
+  "w": "teretno vozilo",
+  "ru": "грузовой автомобиль"
+ },
+ {
+  "p": "priključn",
+  "w": "priključno vozilo",
+  "ru": "прицеп (прицепное ТС)"
+ },
+ {
+  "p": "pokazivač[a-z]* pravca",
+  "w": "pokazivač pravca",
+  "ru": "указатель поворота, поворотник"
+ },
+ {
+  "p": "zadržava[a-z]* pravac",
+  "w": "zadržava pravac kretanja",
+  "ru": "едет прямо, не меняет направления"
+ },
+ {
+  "p": "skreć|skretanj|skrenu",
+  "w": "skretanje",
+  "ru": "поворот"
+ },
+ {
+  "p": "ulijevo|lijev",
+  "w": "lijevo",
+  "ru": "налево / левый"
+ },
+ {
+  "p": "udesno|desn",
+  "w": "desno",
+  "ru": "направо / правый"
+ },
+ {
+  "p": "razdjeln",
+  "w": "razdjelna linija",
+  "ru": "разделительная линия (разметка между встречными потоками)"
+ },
+ {
+  "p": "ivičn",
+  "w": "ivična linija",
+  "ru": "краевая линия разметки"
+ },
+ {
+  "p": "ivic",
+  "w": "ivica",
+  "ru": "край (проезжей части)"
+ },
+ {
+  "p": "ovlašćen",
+  "w": "ovlašćeni službenik",
+  "ru": "уполномоченный сотрудник (регулировщик, полиция)"
+ },
+ {
+  "p": "propust|propuštaj|propuštanj",
+  "w": "propustiti",
+  "ru": "пропустить, уступить дорогу"
+ },
+ {
+  "p": "ne smij",
+  "w": "ne smije",
+  "ru": "нельзя, не имеет права"
+ },
+ {
+  "p": "smij",
+  "w": "smije",
+  "ru": "можно, имеет право"
+ },
+ {
+  "p": "dužan",
+  "w": "dužan je",
+  "ru": "обязан"
+ },
+ {
+  "p": "magistraln",
+  "w": "magistralni put",
+  "ru": "магистральная дорога (между городами)"
+ },
+ {
+  "p": "autoput",
+  "w": "autoput",
+  "ru": "автомагистраль"
+ },
+ {
+  "p": "unazad",
+  "w": "unazad",
+  "ru": "задним ходом"
+ },
+ {
+  "p": "nepregledn",
+  "w": "nepregledan",
+  "ru": "без обзора (о повороте, участке)"
+ },
+ {
+  "p": "semafor",
+  "w": "semafor",
+  "ru": "светофор"
+ },
+ {
+  "p": "tramvaj",
+  "w": "tramvaj",
+  "ru": "трамвай"
+ },
+ {
+  "p": "vozač",
+  "w": "vozač",
+  "ru": "водитель"
+ },
+ {
+  "p": "vozil",
+  "w": "vozilo",
+  "ru": "транспортное средство (ТС)"
+ },
+ {
+  "p": "nastavi|nastaviti",
+  "w": "nastaviti kretanje",
+  "ru": "продолжить движение"
+ },
+ {
+  "p": "naznačen",
+  "w": "naznačen",
+  "ru": "указанный"
+ }
+]

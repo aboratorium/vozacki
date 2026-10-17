@@ -1,7 +1,13 @@
+"""Extracts questions, answer key and images from the GAS ticket PDF (docs/adr/0003).
+
+Usage: python3 tools/extract.py <tickets.pdf> [out_dir]
+Writes <out_dir>/questions_raw.json and <out_dir>/img/*.png (default out_dir: build/raw).
+The canonical database is data/questions.json; merging a new extraction into it is a separate, reviewed step.
+"""
 import pymupdf as fitz, json, re, sys, os
 
-SRC = sys.argv[1] if len(sys.argv) > 1 else 'src.pdf'
-OUT = 'data'
+SRC = sys.argv[1]
+OUT = sys.argv[2] if len(sys.argv) > 2 else 'build/raw'
 os.makedirs(f'{OUT}/img', exist_ok=True)
 doc = fitz.open(SRC)
 

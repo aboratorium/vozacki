@@ -1,5 +1,13 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Vozački test</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#1f5fae">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Vozački">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
@@ -17,20 +25,13 @@
   --bg:#12171e; --surface:#1b222c; --fg:#e7ecf2; --muted:#93a0b0; --line:#2c3643;
   --accent:#5b9be6; --accent-ink:#0b1420; --ok:#5cc58b; --ok-bg:#16301f; --bad:#ef7a6f; --bad-bg:#3a1c19;
   --hint:#3a3212; --hint-ink:#f2dc8a; color-scheme:dark}
-body{background:var(--bg);color:var(--fg);
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .g{border-bottom:1.5px dotted var(--accent);cursor:pointer}
 </style>
-<script src="https://cdn.tailwindcss.com/3.4.17"></script>
-<script>
-tailwind.config = { theme: { extend: {
-  colors: { bg:'var(--bg)', surface:'var(--surface)', fg:'var(--fg)', muted:'var(--muted)', line:'var(--line)',
-    accent:'var(--accent)', 'accent-ink':'var(--accent-ink)', ok:'var(--ok)', 'ok-bg':'var(--ok-bg)',
-    bad:'var(--bad)', 'bad-bg':'var(--bad-bg)', hint:'var(--hint)', 'hint-ink':'var(--hint-ink)' },
-  fontFamily: { display:['"Roboto Condensed"','"Arial Narrow"','system-ui','sans-serif'],
-    body:['"IBM Plex Sans"','system-ui','-apple-system','"Segoe UI"','sans-serif'] } } } };
-</script>
-
+<style>/*TAILWIND*/</style>
+</head><body>
 <div class="font-body text-[15px] leading-relaxed py-3 pb-10">
 <div class="max-w-xl mx-auto grid gap-3">
   <header class="flex items-baseline justify-between gap-2 flex-wrap">
@@ -51,44 +52,42 @@ const DATA = /*DATA*/[];
 const GLOSS = /*GLOSS*/[];
 const META = /*META*/{};
 
-// ---- progress store: local cache + cloud (artifact db, private per user) ----
-let st = {}, exams = [], ruAlways = false;
+// ---- progress store: on this device only (localStorage), see docs/adr/0006 ----
+let st = {}, exams = [], ruAlways = false, persisted = null;
 try { st = JSON.parse(localStorage.getItem('vt-stats') || '{}'); exams = JSON.parse(localStorage.getItem('vt-exams') || '[]'); ruAlways = localStorage.getItem('vt-ru') === '1'; } catch(e) {}
-let cloud = null, sync = 'local', saveTimer = null, writing = false, dirty = false;
-const localSave = () => { try { localStorage.setItem('vt-stats', JSON.stringify(st)); localStorage.setItem('vt-exams', JSON.stringify(exams)); localStorage.setItem('vt-ru', ruAlways ? '1' : '0'); } catch(e) {} };
-async function flush() {
-  if (!cloud || writing) { dirty = true; return; }
-  writing = true; dirty = false;
-  try { await cloud.set({ v: 1, stats: st, exams: exams.slice(-50), ru: ruAlways, updatedAt: Date.now() }); sync = 'cloud'; }
-  catch (e) { sync = e && e.code === 'invalid_argument' ? 'local' : 'error'; if (sync === 'local') cloud = null; }
-  writing = false; syncBadge();
-  if (dirty) flush();
+const save = () => { try { localStorage.setItem('vt-stats', JSON.stringify(st)); localStorage.setItem('vt-exams', JSON.stringify(exams)); localStorage.setItem('vt-ru', ruAlways ? '1' : '0'); } catch(e) {} };
+
+// v1.0 keyed stats by PDF order number; v1.1 uses a stable hash id (docs/adr/0010)
+function migrateIds(obj) {
+  const byLegacy = {}; DATA.forEach(q => { if (q.legacy != null) byLegacy[q.legacy] = q.id; });
+  const out = {}; let moved = 0;
+  for (const k in obj) { if (/^\d+$/.test(k) && byLegacy[k]) { out[byLegacy[k]] = obj[k]; moved++; } else out[k] = obj[k]; }
+  return [out, moved];
 }
-const save = () => { localSave(); clearTimeout(saveTimer); saveTimer = setTimeout(flush, 1200); };
-function merge(remote) {
-  const rs = remote.stats || {};
+{ const [m, moved] = migrateIds(st); if (moved) { st = m; save(); } }
+
+if (navigator.storage && navigator.storage.persist) navigator.storage.persist().then(v => { persisted = v; }).catch(() => {});
+
+// ---- backup: export to a file / restore from a file ----
+async function exportProgress() {
+  const body = JSON.stringify({ app: 'vozacki', v: 2, at: Date.now(), stats: st, exams, ru: ruAlways }, null, 1);
+  const name = 'vozacki-progress-' + new Date().toISOString().slice(0, 10) + '.json';
+  const file = new File([body], name, { type: 'application/json' });
+  try { if (navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], title: 'Прогресс Vozački' }); return 'ok'; } }
+  catch (e) { if (e && e.name === 'AbortError') return 'cancel'; }
+  const a = document.createElement('a'); a.href = URL.createObjectURL(file); a.download = name; document.body.appendChild(a); a.click();
+  setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000); return 'ok';
+}
+function importProgress(text) {
+  const d = JSON.parse(text);
+  if (!d || d.app !== 'vozacki' || typeof d.stats !== 'object') throw new Error('Это не файл прогресса Vozački.');
+  const [rs] = migrateIds(d.stats);
   for (const id in rs) if (!st[id] || (rs[id].t || 0) > (st[id].t || 0)) st[id] = rs[id];
   const seen = new Set(exams.map(e => e.at));
-  (remote.exams || []).forEach(e => { if (!seen.has(e.at)) exams.push(e); });
-  exams.sort((a, b) => a.at - b.at);
-  if (typeof remote.ru === 'boolean') ruAlways = remote.ru;
-}
-async function connectCloud() {
-  try {
-    const db = await window.claude?.use?.('db'); const user = await window.claude?.use?.('user');
-    const uid = db && user ? await user.id() : null;
-    if (!uid) { sync = 'local'; syncBadge(); return; }
-    cloud = db.doc('data/users/' + uid + '/progress');
-    const snap = await cloud.get();
-    if (snap.exists) merge(snap.data());
-    localSave(); sync = 'cloud'; syncBadge();
-    await flush(); if (mode === 'stats') render(); else chrome();
-  } catch (e) { cloud = null; sync = 'local'; syncBadge(); }
-}
-function syncBadge() {
-  const el = document.getElementById('sync'); if (!el) return;
-  const m = { cloud: ['Сохраняется в облаке', 'text-ok'], local: ['Только на этом устройстве', 'text-muted'], error: ['Нет связи, сохранено локально', 'text-bad'] }[sync];
-  el.textContent = m[0]; el.className = 'text-xs ' + m[1];
+  (d.exams || []).forEach(e => { if (!seen.has(e.at)) exams.push(e); });
+  exams.sort((x, y) => x.at - y.at);
+  save();
+  return Object.keys(rs).length;
 }
 
 const SECTIONS = [...new Set(DATA.map(q => q.sec))];
@@ -157,7 +156,7 @@ function chrome() {
 function render() {
   chrome();
   const v = $('#view');
-  if (mode === 'stats') { v.innerHTML = statsView(); syncBadge(); return; }
+  if (mode === 'stats') { v.innerHTML = statsView(); wireBackup(); return; }
   if (mode === 'gloss') {
     v.innerHTML = `<div class="${CARD}"><div class="grid gap-2.5 text-sm">${GLOSS.map(g =>
       `<div class="border-l-[3px] border-accent pl-2"><b>${esc(g.w)}</b> — ${esc(g.ru)}</div>`).join('')}</div></div>`;
@@ -211,7 +210,7 @@ function statsView() {
   const worst = DATA.filter(q => st[q.id] && st[q.id].wrong > 0).sort((a, b) => st[b.id].wrong - st[a.id].wrong).slice(0, 5);
   return `<div class="grid gap-3">
   <div class="${CARD}">
-    <div class="flex justify-between items-baseline gap-2 flex-wrap"><span class="font-display font-medium text-xs uppercase tracking-widest text-muted">Общий прогресс</span><span id="sync"></span></div>
+    <div class="flex justify-between items-baseline gap-2 flex-wrap"><span class="font-display font-medium text-xs uppercase tracking-widest text-muted">Общий прогресс</span><span class="text-xs text-muted">на этом устройстве</span></div>
     <div class="grid grid-cols-3 gap-2 text-center">
       <div><div class="font-display font-bold text-3xl tabular-nums">${tot}</div><div class="text-xs text-muted">выучено из ${DATA.length}</div></div>
       <div><div class="font-display font-bold text-3xl tabular-nums">${seen}</div><div class="text-xs text-muted">видел</div></div>
@@ -226,9 +225,24 @@ function statsView() {
     ${last.length ? `<div class="grid gap-1.5">${last.map(e => `<div class="flex justify-between text-sm tabular-nums border-b border-line pb-1"><span class="text-muted">${fmt(e.at)}</span><span class="${e.pass ? 'text-ok' : 'text-bad'} font-semibold">${e.score} / ${META.examPts} · ${e.pass ? 'сдал' : 'не сдал'}</span></div>`).join('')}</div>`
       : '<div class="text-sm text-muted">Пробных экзаменов ещё не было. Начни во вкладке «Экзамен».</div>'}
   </div>
+  <div class="${CARD}">
+    <span class="font-display font-medium text-xs uppercase tracking-widest text-muted">Резервная копия</span>
+    <div class="text-sm text-muted">Прогресс хранится только в этом телефоне. Сохрани копию в «Файлы» перед сменой телефона или очисткой Safari.</div>
+    <div class="flex gap-2 flex-wrap"><button id="bk-save" class="${BTN}">Сохранить в файл</button>
+      <label class="rounded-lg border border-line px-5 py-2.5 font-display font-bold uppercase tracking-wide text-muted cursor-pointer">Восстановить<input id="bk-load" type="file" accept="application/json,.json" class="hidden"></label></div>
+    <div id="bk-msg" class="text-sm" hidden></div>
+  </div>
   ${worst.length ? `<div class="${CARD}"><span class="font-display font-medium text-xs uppercase tracking-widest text-muted">Чаще всего ошибаюсь</span>
     <div class="grid gap-1.5 text-sm">${worst.map(q => `<div class="border-l-[3px] border-bad pl-2">${esc(q.qr || q.q)} <span class="text-muted tabular-nums">· ошибок ${st[q.id].wrong}</span></div>`).join('')}</div></div>` : ''}
   </div>`;
+}
+
+function wireBackup() {
+  const msg = (t, ok) => { const m = $('#bk-msg'); m.textContent = t; m.className = 'text-sm ' + (ok ? 'text-ok' : 'text-bad'); m.hidden = false; };
+  $('#bk-save').onclick = async () => { const r = await exportProgress(); if (r === 'ok') msg('Файл с прогрессом создан.', true); };
+  $('#bk-load').onchange = e => { const f = e.target.files[0]; if (!f) return;
+    f.text().then(t => { const n = importProgress(t); render(); setTimeout(() => msg(`Восстановлено записей: ${n}.`, true), 0); })
+      .catch(err => msg((err && err.message) || 'Не удалось прочитать файл.', false)); };
 }
 
 function setRu(on) {
@@ -294,5 +308,6 @@ $('#modes').onclick = e => { const b = e.target.closest('button'); if (!b) retur
 $('#sections').onclick = e => { const b = e.target.closest('button'); if (!b) return; sec = b.dataset.s; buildQueue(); render(); };
 $('#foot').textContent = META.foot || '';
 buildQueue(); render();
-connectCloud();
 </script>
+<script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});</script>
+</body></html>

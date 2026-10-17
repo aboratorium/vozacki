@@ -1,93 +1,61 @@
-import json, base64, io, sys
-from PIL import Image
+"""Builds the app (index.html, sw.js, manifest) from data/ and tools/template.html.
 
-W = '/home/claude/w'
-Q = json.load(open(f'{W}/data/questions_raw.json'))
-RU = {}
-for f in sys.argv[2:]:
-    RU.update(json.load(open(f)))
-pages = set(map(int, sys.argv[1].split(','))) if sys.argv[1] != 'all' else None
+Run from anywhere:  python3 tools/build.py
+Fails if a data check (T1, T2, T5 in docs/ARCHITECTURE.md) does not pass.
+"""
+import base64, hashlib, json, re, sys
+from pathlib import Path
 
-def section(q):
-    p = q['page']
-    if p <= 9: return 'Правила'
-    if p <= 29: return 'Ситуации'
-    if p <= 39: return 'Знаки'
-    if p <= 43 or (p == 44 and q['img']): return 'Регулировщик и сигналы'
-    return 'Техника и первая помощь'
+ROOT = Path(__file__).resolve().parent.parent
+DATA, TOOLS = ROOT / 'data', ROOT / 'tools'
 
-def img64(fn):
-    im = Image.open(f'{W}/data/img/{fn}').convert('RGB')
-    if im.width > 640: im = im.resize((640, round(im.height * 640 / im.width)), Image.LANCZOS)
-    b = io.BytesIO(); im.save(b, 'WEBP', quality=72)
-    return 'data:image/webp;base64,' + base64.b64encode(b.getvalue()).decode()
+Q = json.loads((DATA / 'questions.json').read_text())
+GLOSS = json.loads((DATA / 'glossary.json').read_text())
+CSS = (TOOLS / 'tailwind' / 'out.css').read_text()
+TPL = (TOOLS / 'template.html').read_text()
+EXAM = {'examN': 43, 'examPts': 80, 'examPass': 68}   # docs/adr/0008
 
-GLOSS = [
- ('pretic|preticanj|pretek|pretič', 'preticanje', 'обгон (выезд на соседнюю полосу, чтобы опередить движущееся ТС)'),
- ('obilaž|obilaz|obiđ', 'obilaženje', 'объезд стоящего ТС или препятствия'),
- ('mimoilaž|mimoilaz|mimoiđ|mimoiš', 'mimoilaženje', 'встречный разъезд (проезд мимо встречного ТС)'),
- ('prestroj', 'prestrojavanje', 'перестроение из полосы в полосу'),
- ('kolovozn', 'kolovozna traka', 'половина проезжей части для одного направления (может быть из нескольких полос)'),
- ('saobraćajn[a-z]* trak', 'saobraćajna traka', 'полоса движения (одна полоса)'),
- ('kolovoz', 'kolovoz', 'проезжая часть'),
- ('raskrsnic|raskrnic|rasksnic', 'raskrsnica', 'перекрёсток'),
- ('prvenstv', 'prvenstvo prolaza', 'преимущество в проезде, приоритет'),
- ('naselj', 'naselje', 'населённый пункт'),
- ('zaustav', 'zaustavljanje', 'остановка (до 5 минут)'),
- ('parkir', 'parkiranje', 'стоянка, парковка (дольше 5 минут)'),
- ('pješačk[a-z]* prelaz', 'pješački prelaz', 'пешеходный переход'),
- ('pješa|pješak', 'pješak', 'пешеход'),
- ('putničk', 'putničko vozilo', 'легковой автомобиль'),
- ('teretn', 'teretno vozilo', 'грузовой автомобиль'),
- ('priključn', 'priključno vozilo', 'прицеп (прицепное ТС)'),
- ('pokazivač[a-z]* pravca', 'pokazivač pravca', 'указатель поворота, поворотник'),
- ('zadržava[a-z]* pravac', 'zadržava pravac kretanja', 'едет прямо, не меняет направления'),
- ('skreć|skretanj|skrenu', 'skretanje', 'поворот'),
- ('ulijevo|lijev', 'lijevo', 'налево / левый'),
- ('udesno|desn', 'desno', 'направо / правый'),
- ('razdjeln', 'razdjelna linija', 'разделительная линия (разметка между встречными потоками)'),
- ('ivičn', 'ivična linija', 'краевая линия разметки'),
- ('ivic', 'ivica', 'край (проезжей части)'),
- ('ovlašćen', 'ovlašćeni službenik', 'уполномоченный сотрудник (регулировщик, полиция)'),
- ('propust|propuštaj|propuštanj', 'propustiti', 'пропустить, уступить дорогу'),
- ('ne smij', 'ne smije', 'нельзя, не имеет права'),
- ('smij', 'smije', 'можно, имеет право'),
- ('dužan', 'dužan je', 'обязан'),
- ('magistraln', 'magistralni put', 'магистральная дорога (между городами)'),
- ('autoput', 'autoput', 'автомагистраль'),
- ('unazad', 'unazad', 'задним ходом'),
- ('nepregledn', 'nepregledan', 'без обзора (о повороте, участке)'),
- ('semafor', 'semafor', 'светофор'),
- ('tramvaj', 'tramvaj', 'трамвай'),
- ('vozač', 'vozač', 'водитель'),
- ('vozil', 'vozilo', 'транспортное средство (ТС)'),
- ('nastavi|nastaviti', 'nastaviti kretanje', 'продолжить движение'),
- ('naznačen', 'naznačen', 'указанный'),
-]
-GL = [{'p': p, 'w': w, 'ru': r} for p, w, r in GLOSS]
+# ---- data checks ----
+errors = []
+ids = [q['id'] for q in Q]
+if len(ids) != len(set(ids)): errors.append('T0: duplicate ids')
+for q in Q:
+    tag = f"{q['id']} (p.{q['page']})"
+    if not q.get('order') and sum(o['ok'] for o in q['o']) != 1: errors.append(f'T1 key: {tag}')
+    if not q.get('order') and len(q['o']) != 3: errors.append(f'T1 options: {tag}')
+    if not q.get('qr') or any(not o.get('r') for o in q['o']): errors.append(f'T2 translation: {tag}')
+    if re.search(r'na slic|kao na slici|prikazan', q['q'], re.I) and not q.get('img'): errors.append(f'T5 image missing: {tag}')
+    if q.get('img') and not (DATA / 'img' / q['img']).exists(): errors.append(f"T5 image file: {q['img']}")
+if errors:
+    print('BUILD FAILED\n  ' + '\n  '.join(errors)); sys.exit(1)
+
+# ---- assemble ----
+def b64(name):
+    return 'data:image/webp;base64,' + base64.b64encode((DATA / 'img' / name).read_bytes()).decode()
 
 out = []
 for q in Q:
-    if pages and q['page'] not in pages: continue
-    r = RU.get(str(q['id']), {})
-    d = {'id': q['id'], 'sec': section(q), 'q': q['q'], 'qr': r.get('q', ''),
-         'o': [{'t': o['t'], 'ok': o['ok'], 'r': (r.get('o') or [''] * 3)[i] if i < len(r.get('o') or []) else ''} for i, o in enumerate(q['opts'])]}
-    if q['order']: d['order'] = q['order'].replace(' ', '')
-    if q['img']: d['img'] = img64(q['img'])
-    if r.get('n'): d['n'] = r['n']
-    if r.get('flag'): d['f'] = r['flag']
+    d = {k: q[k] for k in ('id', 'legacy', 'sec', 'q', 'qr', 'o') }
+    for k in ('order', 'n', 'f'):
+        if q.get(k): d[k] = q[k]
+    if q.get('img'): d['img'] = b64(q['img'])
     out.append(d)
 
-# drop exact duplicates
-seen, uniq = set(), []
-for d in out:
-    k = (d['q'], tuple(o['t'] for o in d['o']), d.get('img', '')[:200])
-    if k in seen: continue
-    seen.add(k); uniq.append(d)
+meta = dict(EXAM, foot=f'Официальный каталог вопросов, Ministarstvo prosvjete, maj 2023. Ключ ответов — GAS auto škola. Вопросов: {len(out)}. Прогресс хранится на этом устройстве.')
+html = (TPL.replace('/*TAILWIND*/', CSS)
+           .replace('/*DATA*/[]', json.dumps(out, ensure_ascii=False))
+           .replace('/*GLOSS*/[]', json.dumps(GLOSS, ensure_ascii=False))
+           .replace('/*META*/{}', json.dumps(meta, ensure_ascii=False)))
+for marker in ('/*TAILWIND*/', '/*DATA*/', '/*GLOSS*/', '/*META*/'):
+    assert marker not in html, marker
+(ROOT / 'index.html').write_text(html)
 
-meta = {'examN': 43, 'examPts': 80, 'examPass': 68, 'foot': f'Источник: билеты GAS auto škola. Вопросов: {len(uniq)}. Прогресс хранится только в этом браузере.'}
-html = open(f'{W}/template.html').read()
-html = html.replace('/*DATA*/[]', json.dumps(uniq, ensure_ascii=False)).replace('/*GLOSS*/[]', json.dumps(GL, ensure_ascii=False)).replace('/*META*/{}', json.dumps(meta, ensure_ascii=False))
-name = sys.argv[1].replace(',', '-')
-open(f'{W}/vozacki.html', 'w').write(html)
-print(len(uniq), 'questions', round(len(html) / 1e6, 2), 'MB')
+ver = hashlib.sha1(html.encode()).hexdigest()[:10]
+manifest = {'name': 'Vozački test — тренажёр B', 'short_name': 'Vozački', 'start_url': './', 'scope': './',
+            'display': 'standalone', 'background_color': '#eef1f5', 'theme_color': '#1f5fae', 'lang': 'ru',
+            'icons': [{'src': 'icon-192.png', 'sizes': '192x192', 'type': 'image/png'},
+                      {'src': 'icon-512.png', 'sizes': '512x512', 'type': 'image/png'},
+                      {'src': 'icon-512.png', 'sizes': '512x512', 'type': 'image/png', 'purpose': 'maskable'}]}
+(ROOT / 'manifest.webmanifest').write_text(json.dumps(manifest, ensure_ascii=False, indent=1))
+(ROOT / 'sw.js').write_text((TOOLS / 'sw.template.js').read_text().replace('__VERSION__', ver))
+print(f'OK: {len(out)} questions, index.html {len(html)/1e6:.2f} MB, cache vozacki-{ver}')
