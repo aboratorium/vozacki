@@ -66,6 +66,19 @@ function migrateIds(obj) {
 }
 { const [m, moved] = migrateIds(st); if (moved) { st = m; save(); } }
 
+// ---- spaced repetition (docs/adr/0012): box 0..3, next review after 0 / 1 / 3 / 7 days ----
+const DAY = 864e5, GAPS = [0, 1, 3, 7];
+const dayStart = t => { const d = new Date(t); d.setHours(0, 0, 0, 0); return d.getTime(); };
+const dueAt = (box, t) => box === 0 ? t : dayStart(t) + GAPS[box] * DAY;
+function upgradeSR(rec) {               // v1.1 records have no box/due yet
+  if (rec.box == null) { rec.box = Math.min(rec.streak || 0, 3); rec.due = dueAt(rec.box, rec.t || Date.now()); }
+  return rec;
+}
+{ let n = 0; for (const id in st) if (st[id].box == null) { upgradeSR(st[id]); n++; } if (n) save(); }
+const isDue = q => { const r = st[q.id]; return !!r && r.right + r.wrong > 0 && r.due <= Date.now(); };
+const isFlag = q => !!(st[q.id] && st[q.id].flag);
+const seenQ = q => { const r = st[q.id]; return !!r && r.right + r.wrong > 0; };
+
 if (navigator.storage && navigator.storage.persist) navigator.storage.persist().then(v => { persisted = v; }).catch(() => {});
 
 // ---- backup: export to a file / restore from a file ----
@@ -82,7 +95,7 @@ function importProgress(text) {
   const d = JSON.parse(text);
   if (!d || d.app !== 'vozacki' || typeof d.stats !== 'object') throw new Error('Это не файл прогресса Vozački.');
   const [rs] = migrateIds(d.stats);
-  for (const id in rs) if (!st[id] || (rs[id].t || 0) > (st[id].t || 0)) st[id] = rs[id];
+  for (const id in rs) if (!st[id] || (rs[id].t || 0) > (st[id].t || 0)) st[id] = upgradeSR(rs[id]);
   const seen = new Set(exams.map(e => e.at));
   (d.exams || []).forEach(e => { if (!seen.has(e.at)) exams.push(e); });
   exams.sort((x, y) => x.at - y.at);
@@ -91,7 +104,7 @@ function importProgress(text) {
 }
 
 const SECTIONS = [...new Set(DATA.map(q => q.sec))];
-const MODES = [['learn','Учёба'],['mist','Ошибки'],['exam','Экзамен'],['stats','Прогресс'],['gloss','Словарь']];
+const MODES = [['learn','Учёба'],['due','Повтор'],['flag','Сложные'],['exam','Экзамен'],['stats','Прогресс'],['gloss','Словарь']];
 let mode = 'learn', sec = 'all', queue = [], idx = 0, exam = null;
 
 const $ = s => document.querySelector(s);
@@ -123,9 +136,12 @@ function gloss(text) {
 
 function buildQueue() {
   let pool = DATA.filter(q => sec === 'all' || q.sec === sec);
-  if (mode === 'mist') pool = pool.filter(isMistake);
-  if (mode === 'learn') { const nl = pool.filter(q => !learned(q)); pool = nl.length ? nl : pool; }
-  queue = mode === 'learn' ? pool : shuffle(pool.slice());
+  if (mode === 'due') pool = pool.filter(isDue).sort((a, b) => st[a.id].box - st[b.id].box);
+  if (mode === 'flag') pool = pool.filter(isFlag);
+  if (mode === 'learn') {      // new questions + not yet learned ones whose review time has come
+    const nl = pool.filter(q => !seenQ(q) || (!learned(q) && isDue(q))); pool = nl.length ? nl : pool;
+  }
+  queue = mode === 'learn' || mode === 'due' ? pool : shuffle(pool.slice());
   if (mode === 'exam') {
     // proportional sample across sections, like the real ticket mix
     const N = Math.min(META.examN, pool.length), by = {};
@@ -139,14 +155,30 @@ function buildQueue() {
   idx = 0;
 }
 
+// ---- readiness (docs/adr/0013): last 5 exams + share of learned questions ----
+function readiness() {
+  const last = exams.slice(-5), n = last.length, passed = last.filter(e => e.pass).length;
+  const avg = n ? Math.round(last.reduce((a, e) => a + e.score, 0) / n) : 0;
+  const learnedPct = Math.round(DATA.filter(learned).length / DATA.length * 100);
+  let level, text;
+  if (n < 3) { level = 'none'; text = 'Мало данных'; }
+  else if (passed >= 4 && avg >= 72 && learnedPct >= 80) { level = 'ready'; text = 'Готов'; }
+  else if (passed >= 3) { level = 'almost'; text = 'Почти готов'; }
+  else { level = 'early'; text = 'Рано'; }
+  return { n, passed, avg, learnedPct, level, text };
+}
+const LEVEL_CLS = { none: 'text-muted', early: 'text-bad', almost: 'text-hint-ink bg-hint', ready: 'text-ok bg-ok-bg' };
+
 function chrome() {
   const pool = DATA.filter(q => sec === 'all' || q.sec === sec);
   const n = pool.filter(learned).length;
-  $('#stat').textContent = `выучено ${n} / ${pool.length}`;
+  const rd = readiness();
+  $('#stat').innerHTML = `выучено ${n} / ${pool.length} · <button id="rd-chip" class="rounded px-1.5 ${LEVEL_CLS[rd.level]}">${rd.text}</button>`;
+  $('#rd-chip').onclick = () => { mode = 'stats'; render(); };
   $('#prog').style.width = (pool.length ? n / pool.length * 100 : 0) + '%';
-  const mc = DATA.filter(isMistake).length;
+  const cnt = { due: DATA.filter(isDue).length, flag: DATA.filter(isFlag).length };
   $('#modes').innerHTML = MODES.map(([k, t]) =>
-    `<button data-m="${k}" aria-pressed="${k === mode}" class="${pill(k === mode)} text-sm">${k === 'mist' && mc ? `${t} · ${mc}` : t}</button>`).join('');
+    `<button data-m="${k}" aria-pressed="${k === mode}" class="${pill(k === mode)} text-sm">${cnt[k] ? `${t} · ${cnt[k]}` : t}</button>`).join('');
   const box = $('#sections');
   box.hidden = mode === 'gloss' || mode === 'stats';
   box.innerHTML = ['all', ...SECTIONS].map(s =>
@@ -173,7 +205,8 @@ function render() {
         ${exam.wrong.length ? `<div class="grid gap-1.5 text-sm">${exam.wrong.map(q => `<div class="border-l-[3px] border-bad pl-2">${esc(q.q)}<div class="text-muted">${esc(q.qr || '')}</div></div>`).join('')}</div>` : '<div>Без ошибок.</div>'}
         <div><button class="${BTN}" id="again">Новый экзамен</button></div></div>`;
     } else {
-      v.innerHTML = `<div class="${CARD} text-center text-muted py-8">${mode === 'mist' ? 'Ошибок нет — всё отработано.' : 'Раздел пройден.'}
+      const empty = { due: 'На сегодня повторять нечего. Следующие вопросы вернутся по расписанию.', flag: 'Отмеченных вопросов нет. Нажми ☆ на вопросе, чтобы добавить его сюда.' }[mode] || 'Раздел пройден.';
+      v.innerHTML = `<div class="${CARD} text-center text-muted py-8">${empty}
         <div><button class="${BTN}" id="again">Ещё раз</button></div></div>`;
     }
     $('#again').onclick = () => { buildQueue(); render(); };
@@ -181,8 +214,9 @@ function render() {
   }
   const q = queue[idx];
   const showRu = ruAlways && mode !== 'exam';
-  const opts = q.order ? '' : `<div class="grid gap-2">${q.o.map((o, i) =>
-    `<button class="${OPT}" data-i="${i}"><b class="font-display font-bold text-muted">${'ABC'[i]}</b><span>${gloss(o.t)}<div class="${RUC}" ${showRu ? '' : 'hidden'}>${esc(o.r || '')}</div></span></button>`).join('')}</div>`;
+  const perm = shuffle(q.o.map((_, i) => i));      // option order changes on every showing (docs/adr/0012)
+  const opts = q.order ? '' : `<div class="grid gap-2">${perm.map((oi, pos) => { const o = q.o[oi];
+    return `<button class="${OPT}" data-i="${oi}"><b class="font-display font-bold text-muted">${'ABC'[pos]}</b><span>${gloss(o.t)}<div class="${RUC}" ${showRu ? '' : 'hidden'}>${esc(o.r || '')}</div></span></button>`; }).join('')}</div>`;
   const nums = q.order ? [...q.order].sort() : [];
   const order = q.order ? `<div class="text-muted text-sm">Нажимайте номера ТС в порядке проезда</div>
     <div id="seq" class="font-display font-bold text-2xl tracking-[.2em] min-h-[28px] tabular-nums">&nbsp;</div>
@@ -191,7 +225,8 @@ function render() {
   v.innerHTML = `<div class="${CARD}">
     <div class="flex justify-between items-center gap-2 font-display font-medium text-xs uppercase tracking-widest text-muted">
       <span>${esc(q.sec)} · ${idx + 1} / ${queue.length}</span>
-      ${mode === 'exam' ? '' : `<button id="ru" aria-pressed="${showRu}" class="rounded-md border border-accent px-2.5 py-1 font-bold text-[13px] tracking-wider ${showRu ? 'bg-accent text-accent-ink' : 'text-accent'}">RU</button>`}</div>
+      <span class="flex gap-1.5"><button id="flag" aria-pressed="${isFlag(q)}" aria-label="Отметить как сложный" class="rounded-md border border-line px-2 py-1 text-[15px] leading-none ${isFlag(q) ? 'text-hint-ink bg-hint' : 'text-muted'}">${isFlag(q) ? '★' : '☆'}</button>
+      ${mode === 'exam' ? '' : `<button id="ru" aria-pressed="${showRu}" class="rounded-md border border-accent px-2.5 py-1 font-bold text-[13px] tracking-wider ${showRu ? 'bg-accent text-accent-ink' : 'text-accent'}">RU</button>`}</span></div>
     ${q.img ? `<div class="flex justify-center bg-white rounded-md overflow-hidden"><img src="${q.img}" alt="Иллюстрация к вопросу" class="max-h-[300px] object-contain"></div>` : ''}
     <div><p class="font-semibold text-[17px] leading-snug m-0">${gloss(q.q)}</p><div id="qru" class="${RUC}" ${showRu ? '' : 'hidden'}>${esc(q.qr || 'перевод появится в полной версии')}</div></div>
     <div id="gl" class="${NOTE} py-1.5" hidden></div>
@@ -202,13 +237,22 @@ function render() {
 
 function statsView() {
   const secs = SECTIONS.map(s => { const p = DATA.filter(q => q.sec === s); const l = p.filter(learned).length;
-    const seen = p.filter(q => st[q.id]).length; return { s, n: p.length, l, seen, pct: Math.round(l / p.length * 100) }; });
-  const tot = DATA.filter(learned).length, seen = DATA.filter(q => st[q.id]).length, mist = DATA.filter(isMistake).length;
+    const seen = p.filter(seenQ).length; return { s, n: p.length, l, seen, pct: Math.round(l / p.length * 100) }; });
+  const tot = DATA.filter(learned).length, seen = DATA.filter(seenQ).length, mist = DATA.filter(isMistake).length;
   const last = exams.slice(-10).reverse();
   const passN = exams.filter(e => e.pass).length;
   const fmt = t => new Date(t).toLocaleString('ru-RU', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
   const worst = DATA.filter(q => st[q.id] && st[q.id].wrong > 0).sort((a, b) => st[b.id].wrong - st[a.id].wrong).slice(0, 5);
+  const rd = readiness();
+  const rdLine = rd.n < 3 ? `Пройди ещё ${3 - rd.n} ${3 - rd.n === 1 ? 'пробный экзамен' : 'пробных экзамена'} — после трёх появится оценка.`
+    : `Сдано ${rd.passed} из последних ${rd.n}, средний балл ${rd.avg} / ${META.examPts}, выучено ${rd.learnedPct}% вопросов.`;
   return `<div class="grid gap-3">
+  <div class="${CARD}">
+    <div class="flex justify-between items-baseline gap-2 flex-wrap"><span class="font-display font-medium text-xs uppercase tracking-widest text-muted">Готовность к экзамену</span>
+      <span class="font-display font-bold uppercase tracking-wide rounded px-2 py-0.5 ${LEVEL_CLS[rd.level]}">${rd.text}</span></div>
+    <div class="text-sm">${rdLine}</div>
+    <div class="text-xs text-muted">«Готов» = сдано 4 из 5 последних экзаменов, средний балл от 72 и выучено от 80% вопросов. «Почти» = сдано 3 из 5.</div>
+  </div>
   <div class="${CARD}">
     <div class="flex justify-between items-baseline gap-2 flex-wrap"><span class="font-display font-medium text-xs uppercase tracking-widest text-muted">Общий прогресс</span><span class="text-xs text-muted">на этом устройстве</span></div>
     <div class="grid grid-cols-3 gap-2 text-center">
@@ -218,7 +262,7 @@ function statsView() {
     </div>
     <div class="grid gap-2">${secs.map(x => `<div class="grid gap-1"><div class="flex justify-between text-sm"><span>${esc(x.s)}</span><span class="tabular-nums text-muted">${x.l} / ${x.n}</span></div>
       <div class="h-1.5 bg-line rounded overflow-hidden"><i class="block h-full bg-ok" style="width:${x.pct}%"></i></div></div>`).join('')}</div>
-    <div class="text-xs text-muted">Вопрос считается выученным после двух верных ответов подряд.</div>
+    <div class="text-xs text-muted">Вопрос считается выученным после двух верных ответов подряд. Повтор: ошибка — сегодня, верный ответ — через 1, 3, затем 7 дней.</div>
   </div>
   <div class="${CARD}">
     <div class="flex justify-between items-baseline"><span class="font-display font-medium text-xs uppercase tracking-widest text-muted">Экзамены</span><span class="text-sm tabular-nums text-muted">сдано ${passN} из ${exams.length}</span></div>
@@ -254,16 +298,17 @@ function setRu(on) {
 
 function finish(q, ok, picked) {
   const s = st[q.id] || (st[q.id] = { right: 0, wrong: 0, streak: 0 });
-  if (ok) { s.right++; s.streak++; } else { s.wrong++; s.streak = 0; }
-  s.t = Date.now();
+  upgradeSR(s);
+  if (ok) { s.right++; s.streak++; s.box = Math.min(s.box + 1, 3); } else { s.wrong++; s.streak = 0; s.box = 0; }
+  s.t = Date.now(); s.due = dueAt(s.box, s.t);
   if (mode === 'exam' && idx === queue.length - 1) {
     const w = q.sec === 'Ситуации' ? 2 : 1, pts = exam.pts + (ok ? w : 0), max = exam.max + w;
     const score = Math.round(pts / max * META.examPts); exams.push({ at: Date.now(), score, pass: score >= META.examPass, n: queue.length });
   }
   save();
   if (mode === 'exam') { const w = q.sec === 'Ситуации' ? 2 : 1; exam.max += w; if (ok) { exam.right++; exam.pts += w; } else exam.wrong.push(q); }
-  if (!q.order) document.querySelectorAll('.opt').forEach((b, i) => {
-    b.disabled = true;
+  if (!q.order) document.querySelectorAll('.opt').forEach(b => {
+    const i = +b.dataset.i; b.disabled = true;
     if (q.o[i].ok) { b.classList.remove('border-line', 'bg-surface'); b.classList.add('border-ok', 'bg-ok-bg'); }
     else if (i === picked) { b.classList.remove('border-line', 'bg-surface'); b.classList.add('border-bad', 'bg-bad-bg'); }
   });
@@ -272,6 +317,8 @@ function finish(q, ok, picked) {
   $('#after').innerHTML = `<div class="grid gap-2.5">
     ${mode === 'exam' ? '' : `<div class="font-display font-bold uppercase tracking-wide ${ok ? 'text-ok' : 'text-bad'}">${ok ? 'Верно' : 'Неверно'}</div>${right}`}
     ${q.n && mode !== 'exam' ? `<div class="${NOTE}">${esc(q.n)}</div>` : ''}
+    ${q.s && mode !== 'exam' ? `<div class="${NOTE}"><b>Правилник, ${esc(q.s.code)} «${esc(q.s.name)}».</b> ${esc(q.s.ru)}</div>` : ''}
+    ${mode !== 'exam' ? `<div class="text-xs text-muted">${ok ? `Повторим ${['сегодня', 'завтра', 'через 3 дня', 'через неделю'][st[q.id].box]}.` : 'Вопрос вернётся в «Повтор» сегодня.'}</div>` : ''}
     ${q.f && mode !== 'exam' ? `<div class="${NOTE}"><b>Спорный ключ.</b> На экзамене отвечай как в ключе. ${esc(q.f)}</div>` : ''}
     <div class="flex justify-end"><button class="${BTN}" id="next">Дальше</button></div></div>`;
   $('#next').onclick = () => { idx++; render(); window.scrollTo({ top: 0 }); };
@@ -282,6 +329,13 @@ function finish(q, ok, picked) {
 function wire(q) {
   const ru = $('#ru');
   if (ru) ru.onclick = () => { ruAlways = ru.getAttribute('aria-pressed') !== 'true'; save(); setRu(ruAlways); };
+  $('#flag').onclick = () => {
+    const r = upgradeSR(st[q.id] || (st[q.id] = { right: 0, wrong: 0, streak: 0, t: Date.now() }));
+    r.flag = !r.flag; save();
+    const b = $('#flag'); b.textContent = r.flag ? '★' : '☆'; b.setAttribute('aria-pressed', r.flag);
+    b.classList.toggle('text-hint-ink', r.flag); b.classList.toggle('bg-hint', r.flag); b.classList.toggle('text-muted', !r.flag);
+    chrome();
+  };
   document.querySelectorAll('#view .g').forEach(el => {
     const show = ev => { ev.stopPropagation(); const g = GLOSS[el.dataset.g]; const box = $('#gl');
       box.innerHTML = `<b>${esc(g.w)}</b> — ${esc(g.ru)}`; box.hidden = false; };

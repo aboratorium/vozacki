@@ -36,7 +36,7 @@ def b64(name):
 out = []
 for q in Q:
     d = {k: q[k] for k in ('id', 'legacy', 'sec', 'q', 'qr', 'o') }
-    for k in ('order', 'n', 'f'):
+    for k in ('order', 'n', 'f', 's'):
         if q.get(k): d[k] = q[k]
     if q.get('img'): d['img'] = b64(q['img'])
     out.append(d)
