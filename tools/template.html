@@ -320,6 +320,7 @@ function finish(q, ok, picked) {
     ${q.s && mode !== 'exam' ? `<div class="${NOTE}"><b>Правилник, ${esc(q.s.code)} «${esc(q.s.name)}».</b> ${esc(q.s.ru)}</div>` : ''}
     ${mode !== 'exam' ? `<div class="text-xs text-muted">${ok ? `Повторим ${['сегодня', 'завтра', 'через 3 дня', 'через неделю'][st[q.id].box]}.` : 'Вопрос вернётся в «Повтор» сегодня.'}</div>` : ''}
     ${q.f && mode !== 'exam' ? `<div class="${NOTE}"><b>Спорный ключ.</b> На экзамене отвечай как в ключе. ${esc(q.f)}</div>` : ''}
+    ${q.sch != null && mode !== 'exam' ? `<div class="${NOTE}"><b>Автошкола отмечает:</b> «${esc(q.o[q.sch].t)}» — ${esc(q.o[q.sch].r)}. Ключ выше — из билетов GAS; какой вариант засчитывают на экзамене, уточни у инструктора.</div>` : ''}
     <div class="flex justify-end"><button class="${BTN}" id="next">Дальше</button></div></div>`;
   $('#next').onclick = () => { idx++; render(); window.scrollTo({ top: 0 }); };
   $('#next').focus({ preventScroll: true });
