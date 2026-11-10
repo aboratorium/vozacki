@@ -2,201 +2,241 @@
  {
   "p": "pretic|preticanj|pretek|pretič",
   "w": "preticanje",
-  "ru": "обгон (выезд на соседнюю полосу, чтобы опередить движущееся ТС)"
+  "ru": "обгон (выезд на соседнюю полосу, чтобы опередить движущееся ТС)",
+  "en": "overtaking"
  },
  {
   "p": "obilaž|obilaz|obiđ",
   "w": "obilaženje",
-  "ru": "объезд стоящего ТС или препятствия"
+  "ru": "объезд стоящего ТС или препятствия",
+  "en": "going around (a stationary vehicle or obstacle)"
  },
  {
   "p": "mimoilaž|mimoilaz|mimoiđ|mimoiš",
   "w": "mimoilaženje",
-  "ru": "встречный разъезд (проезд мимо встречного ТС)"
+  "ru": "встречный разъезд (проезд мимо встречного ТС)",
+  "en": "passing an oncoming vehicle"
  },
  {
   "p": "prestroj",
   "w": "prestrojavanje",
-  "ru": "перестроение из полосы в полосу"
+  "ru": "перестроение из полосы в полосу",
+  "en": "changing lanes"
  },
  {
   "p": "kolovozn",
   "w": "kolovozna traka",
-  "ru": "половина проезжей части для одного направления (может быть из нескольких полос)"
+  "ru": "половина проезжей части для одного направления (может быть из нескольких полос)",
+  "en": "half of the carriageway (one direction of traffic)"
  },
  {
   "p": "saobraćajn[a-z]* trak",
   "w": "saobraćajna traka",
-  "ru": "полоса движения (одна полоса)"
+  "ru": "полоса движения (одна полоса)",
+  "en": "traffic lane"
  },
  {
   "p": "kolovoz",
   "w": "kolovoz",
-  "ru": "проезжая часть"
+  "ru": "проезжая часть",
+  "en": "carriageway (roadway)"
  },
  {
   "p": "raskrsnic|raskrnic|rasksnic",
   "w": "raskrsnica",
-  "ru": "перекрёсток"
+  "ru": "перекрёсток",
+  "en": "intersection"
  },
  {
   "p": "prvenstv",
   "w": "prvenstvo prolaza",
-  "ru": "преимущество в проезде, приоритет"
+  "ru": "преимущество в проезде, приоритет",
+  "en": "right of way (priority)"
  },
  {
   "p": "naselj",
   "w": "naselje",
-  "ru": "населённый пункт"
+  "ru": "населённый пункт",
+  "en": "built-up area"
  },
  {
   "p": "zaustav",
   "w": "zaustavljanje",
-  "ru": "остановка (до 5 минут)"
+  "ru": "остановка (до 5 минут)",
+  "en": "stopping (up to 5 minutes)"
  },
  {
   "p": "parkir",
   "w": "parkiranje",
-  "ru": "стоянка, парковка (дольше 5 минут)"
+  "ru": "стоянка, парковка (дольше 5 минут)",
+  "en": "parking (over 5 minutes)"
  },
  {
   "p": "pješačk[a-z]* prelaz",
   "w": "pješački prelaz",
-  "ru": "пешеходный переход"
+  "ru": "пешеходный переход",
+  "en": "pedestrian crossing"
  },
  {
   "p": "pješa|pješak",
   "w": "pješak",
-  "ru": "пешеход"
+  "ru": "пешеход",
+  "en": "pedestrian"
  },
  {
   "p": "putničk",
   "w": "putničko vozilo",
-  "ru": "легковой автомобиль"
+  "ru": "легковой автомобиль",
+  "en": "passenger car"
  },
  {
   "p": "teretn",
   "w": "teretno vozilo",
-  "ru": "грузовой автомобиль"
+  "ru": "грузовой автомобиль",
+  "en": "goods vehicle (truck)"
  },
  {
   "p": "priključn",
   "w": "priključno vozilo",
-  "ru": "прицеп (прицепное ТС)"
+  "ru": "прицеп (прицепное ТС)",
+  "en": "trailer"
  },
  {
   "p": "pokazivač[a-z]* pravca",
   "w": "pokazivač pravca",
-  "ru": "указатель поворота, поворотник"
+  "ru": "указатель поворота, поворотник",
+  "en": "direction indicator"
  },
  {
   "p": "zadržava[a-z]* pravac",
   "w": "zadržava pravac kretanja",
-  "ru": "едет прямо, не меняет направления"
+  "ru": "едет прямо, не меняет направления",
+  "en": "goes straight on (keeps the direction of travel)"
  },
  {
   "p": "skreć|skretanj|skrenu",
   "w": "skretanje",
-  "ru": "поворот"
+  "ru": "поворот",
+  "en": "turning"
  },
  {
   "p": "ulijevo|lijev",
   "w": "lijevo",
-  "ru": "налево / левый"
+  "ru": "налево / левый",
+  "en": "left"
  },
  {
   "p": "udesno|desn",
   "w": "desno",
-  "ru": "направо / правый"
+  "ru": "направо / правый",
+  "en": "right"
  },
  {
   "p": "razdjeln",
   "w": "razdjelna linija",
-  "ru": "разделительная линия (разметка между встречными потоками)"
+  "ru": "разделительная линия (разметка между встречными потоками)",
+  "en": "dividing line (centre line)"
  },
  {
   "p": "ivičn",
   "w": "ivična linija",
-  "ru": "краевая линия разметки"
+  "ru": "краевая линия разметки",
+  "en": "edge line"
  },
  {
   "p": "ivic",
   "w": "ivica",
-  "ru": "край (проезжей части)"
+  "ru": "край (проезжей части)",
+  "en": "edge (of the carriageway)"
  },
  {
   "p": "ovlašćen",
   "w": "ovlašćeni službenik",
-  "ru": "уполномоченный сотрудник (регулировщик, полиция)"
+  "ru": "уполномоченный сотрудник (регулировщик, полиция)",
+  "en": "authorised officer (traffic police)"
  },
  {
   "p": "propust|propuštaj|propuštanj",
   "w": "propustiti",
-  "ru": "пропустить, уступить дорогу"
+  "ru": "пропустить, уступить дорогу",
+  "en": "give way to, let pass"
  },
  {
   "p": "ne smij",
   "w": "ne smije",
-  "ru": "нельзя, не имеет права"
+  "ru": "нельзя, не имеет права",
+  "en": "must not"
  },
  {
   "p": "smij",
   "w": "smije",
-  "ru": "можно, имеет право"
+  "ru": "можно, имеет право",
+  "en": "may"
  },
  {
   "p": "dužan",
   "w": "dužan je",
-  "ru": "обязан"
+  "ru": "обязан",
+  "en": "is obliged to"
  },
  {
   "p": "magistraln",
   "w": "magistralni put",
-  "ru": "магистральная дорога (между городами)"
+  "ru": "магистральная дорога (между городами)",
+  "en": "main road"
  },
  {
   "p": "autoput",
   "w": "autoput",
-  "ru": "автомагистраль"
+  "ru": "автомагистраль",
+  "en": "motorway"
  },
  {
   "p": "unazad",
   "w": "unazad",
-  "ru": "задним ходом"
+  "ru": "задним ходом",
+  "en": "reversing"
  },
  {
   "p": "nepregledn",
   "w": "nepregledan",
-  "ru": "без обзора (о повороте, участке)"
+  "ru": "без обзора (о повороте, участке)",
+  "en": "with no visibility (blind)"
  },
  {
   "p": "semafor",
   "w": "semafor",
-  "ru": "светофор"
+  "ru": "светофор",
+  "en": "traffic lights"
  },
  {
   "p": "tramvaj",
   "w": "tramvaj",
-  "ru": "трамвай"
+  "ru": "трамвай",
+  "en": "tram"
  },
  {
   "p": "vozač",
   "w": "vozač",
-  "ru": "водитель"
+  "ru": "водитель",
+  "en": "driver"
  },
  {
   "p": "vozil",
   "w": "vozilo",
-  "ru": "транспортное средство (ТС)"
+  "ru": "транспортное средство (ТС)",
+  "en": "vehicle"
  },
  {
   "p": "nastavi|nastaviti",
   "w": "nastaviti kretanje",
-  "ru": "продолжить движение"
+  "ru": "продолжить движение",
+  "en": "continue driving"
  },
  {
   "p": "naznačen",
   "w": "naznačen",
-  "ru": "указанный"
+  "ru": "указанный",
+  "en": "indicated"
  }
 ]

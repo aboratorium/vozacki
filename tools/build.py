@@ -26,6 +26,7 @@ for q in Q:
     if not q.get('qr') or any(not o.get('r') for o in q['o']): errors.append(f'T2 translation: {tag}')
     if re.search(r'na slic|kao na slici|prikazan', q['q'], re.I) and not q.get('img'): errors.append(f'T5 image missing: {tag}')
     if q.get('img') and not (DATA / 'img' / q['img']).exists(): errors.append(f"T5 image file: {q['img']}")
+    if not q.get('qe') or (not q.get('order') and any(not o.get('e') for o in q['o'])): errors.append(f'T8 English: {tag}')
     if q.get('sch') is not None and not (0 <= q['sch'] < len(q['o'])): errors.append(f'T7 school answer index: {tag}')
 if errors:
     print('BUILD FAILED\n  ' + '\n  '.join(errors)); sys.exit(1)
@@ -36,7 +37,7 @@ def b64(name):
 
 out = []
 for q in Q:
-    d = {k: q[k] for k in ('id', 'legacy', 'sec', 'q', 'qr', 'o') }
+    d = {k: q[k] for k in ('id', 'legacy', 'sec', 'q', 'qr', 'qe', 'o') }
     for k in ('order', 'n', 'f', 's'):
         if q.get(k): d[k] = q[k]
     if q.get('sch') is not None: d['sch'] = q['sch']

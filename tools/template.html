@@ -37,7 +37,7 @@ body{margin:0;background:var(--bg);color:var(--fg);
   <header class="flex items-baseline justify-between gap-2 flex-wrap">
     <h1 class="font-display font-bold text-[22px] leading-none uppercase tracking-wide m-0">Vozački test
       <span class="font-body font-medium text-[13px] text-muted normal-case tracking-normal ml-1">тренажёр, кат. B</span></h1>
-    <span id="stat" class="font-display font-medium text-[13px] text-muted tabular-nums"></span>
+    <span class="flex items-center gap-2"><span id="lang" role="group" aria-label="Язык экзамена" class="inline-flex rounded-md border border-line overflow-hidden"></span><span id="stat" class="font-display font-medium text-[13px] text-muted tabular-nums"></span></span>
   </header>
   <nav id="modes" class="flex gap-1.5 overflow-x-auto pb-0.5"></nav>
   <div id="sections" class="flex gap-1.5 flex-wrap"></div>
@@ -53,9 +53,9 @@ const GLOSS = /*GLOSS*/[];
 const META = /*META*/{};
 
 // ---- progress store: on this device only (localStorage), see docs/adr/0006 ----
-let st = {}, exams = [], ruAlways = false, persisted = null;
-try { st = JSON.parse(localStorage.getItem('vt-stats') || '{}'); exams = JSON.parse(localStorage.getItem('vt-exams') || '[]'); ruAlways = localStorage.getItem('vt-ru') === '1'; } catch(e) {}
-const save = () => { try { localStorage.setItem('vt-stats', JSON.stringify(st)); localStorage.setItem('vt-exams', JSON.stringify(exams)); localStorage.setItem('vt-ru', ruAlways ? '1' : '0'); } catch(e) {} };
+let st = {}, exams = [], ruAlways = false, persisted = null, lang = 'me', altOn = false;  // lang = exam language, docs/adr/0015
+try { st = JSON.parse(localStorage.getItem('vt-stats') || '{}'); exams = JSON.parse(localStorage.getItem('vt-exams') || '[]'); ruAlways = localStorage.getItem('vt-ru') === '1'; lang = localStorage.getItem('vt-lang') === 'en' ? 'en' : 'me'; } catch(e) {}
+const save = () => { try { localStorage.setItem('vt-stats', JSON.stringify(st)); localStorage.setItem('vt-exams', JSON.stringify(exams)); localStorage.setItem('vt-ru', ruAlways ? '1' : '0'); localStorage.setItem('vt-lang', lang); } catch(e) {} };
 
 // v1.0 keyed stats by PDF order number; v1.1 uses a stable hash id (docs/adr/0010)
 function migrateIds(obj) {
@@ -123,6 +123,11 @@ const NOTE = 'bg-hint text-hint-ink rounded-lg px-3 py-2.5 text-sm';
 const RUC = 'ru text-muted text-sm mt-1';
 
 const GRE = GLOSS.map((g, i) => ({ i, re: new RegExp('(^|[^\\p{L}])(' + g.p + '\\p{L}*)', 'giu') }));
+const QT = q => lang === 'en' ? q.qe : q.q;          // question in exam language
+const OT = o => lang === 'en' ? o.e : o.t;           // option in exam language
+const QA = q => lang === 'en' ? q.q : q.qe;          // the other language, shown on request
+const OA = o => lang === 'en' ? o.t : o.e;
+const MAIN = t => lang === 'me' ? gloss(t) : esc(t); // term highlighting works on the Montenegrin text
 function gloss(text) {
   const marks = [];
   GRE.forEach(({ i, re }) => { re.lastIndex = 0; let m;
@@ -175,6 +180,7 @@ function chrome() {
   const rd = readiness();
   $('#stat').innerHTML = `выучено ${n} / ${pool.length} · <button id="rd-chip" class="rounded px-1.5 ${LEVEL_CLS[rd.level]}">${rd.text}</button>`;
   $('#rd-chip').onclick = () => { mode = 'stats'; render(); };
+  $('#lang').innerHTML = ['me', 'en'].map(l => `<button data-l="${l}" aria-pressed="${l === lang}" class="px-2 py-0.5 font-display font-bold text-xs tracking-wider ${l === lang ? 'bg-accent text-accent-ink' : 'text-muted'}">${l.toUpperCase()}</button>`).join('');
   $('#prog').style.width = (pool.length ? n / pool.length * 100 : 0) + '%';
   const cnt = { due: DATA.filter(isDue).length, flag: DATA.filter(isFlag).length };
   $('#modes').innerHTML = MODES.map(([k, t]) =>
@@ -191,7 +197,7 @@ function render() {
   if (mode === 'stats') { v.innerHTML = statsView(); wireBackup(); return; }
   if (mode === 'gloss') {
     v.innerHTML = `<div class="${CARD}"><div class="grid gap-2.5 text-sm">${GLOSS.map(g =>
-      `<div class="border-l-[3px] border-accent pl-2"><b>${esc(g.w)}</b> — ${esc(g.ru)}</div>`).join('')}</div></div>`;
+      `<div class="border-l-[3px] border-accent pl-2"><b>${esc(g.w)}</b> · <i>${esc(g.en || '')}</i> — ${esc(g.ru)}</div>`).join('')}</div></div>`;
     return;
   }
   if (idx >= queue.length) {
@@ -202,7 +208,7 @@ function render() {
           return `<div class="flex items-baseline gap-3 flex-wrap"><span class="font-display font-bold text-5xl tabular-nums ${pass ? 'text-ok' : 'text-bad'}">${sc} / ${META.examPts}</span>
           <span class="font-display font-bold uppercase tracking-wide ${pass ? 'text-ok' : 'text-bad'}">${pass ? 'Сдал' : 'Не сдал'}</span></div>
           <div class="text-sm text-muted">Порог ${META.examPass} из ${META.examPts}. Верных ответов ${exam.right} из ${queue.length}.</div>`; })()}
-        ${exam.wrong.length ? `<div class="grid gap-1.5 text-sm">${exam.wrong.map(q => `<div class="border-l-[3px] border-bad pl-2">${esc(q.q)}<div class="text-muted">${esc(q.qr || '')}</div></div>`).join('')}</div>` : '<div>Без ошибок.</div>'}
+        ${exam.wrong.length ? `<div class="grid gap-1.5 text-sm">${exam.wrong.map(q => `<div class="border-l-[3px] border-bad pl-2">${esc(QT(q))}<div class="text-muted">${esc(q.qr || '')}</div></div>`).join('')}</div>` : '<div>Без ошибок.</div>'}
         <div><button class="${BTN}" id="again">Новый экзамен</button></div></div>`;
     } else {
       const empty = { due: 'На сегодня повторять нечего. Следующие вопросы вернутся по расписанию.', flag: 'Отмеченных вопросов нет. Нажми ☆ на вопросе, чтобы добавить его сюда.' }[mode] || 'Раздел пройден.';
@@ -213,10 +219,11 @@ function render() {
     return;
   }
   const q = queue[idx];
-  const showRu = ruAlways && mode !== 'exam';
+  const showRu = ruAlways && mode !== 'exam', showAlt = altOn && mode !== 'exam';
+  const ALTC = 'alt text-muted text-sm mt-1 italic';
   const perm = shuffle(q.o.map((_, i) => i));      // option order changes on every showing (docs/adr/0012)
   const opts = q.order ? '' : `<div class="grid gap-2">${perm.map((oi, pos) => { const o = q.o[oi];
-    return `<button class="${OPT}" data-i="${oi}"><b class="font-display font-bold text-muted">${'ABC'[pos]}</b><span>${gloss(o.t)}<div class="${RUC}" ${showRu ? '' : 'hidden'}>${esc(o.r || '')}</div></span></button>`; }).join('')}</div>`;
+    return `<button class="${OPT}" data-i="${oi}"><b class="font-display font-bold text-muted">${'ABC'[pos]}</b><span>${MAIN(OT(o))}<div class="${ALTC}" ${showAlt ? '' : 'hidden'}>${esc(OA(o) || '')}</div><div class="${RUC}" ${showRu ? '' : 'hidden'}>${esc(o.r || '')}</div></span></button>`; }).join('')}</div>`;
   const nums = q.order ? [...q.order].sort() : [];
   const order = q.order ? `<div class="text-muted text-sm">Нажимайте номера ТС в порядке проезда</div>
     <div id="seq" class="font-display font-bold text-2xl tracking-[.2em] min-h-[28px] tabular-nums">&nbsp;</div>
@@ -226,9 +233,10 @@ function render() {
     <div class="flex justify-between items-center gap-2 font-display font-medium text-xs uppercase tracking-widest text-muted">
       <span>${esc(q.sec)} · ${idx + 1} / ${queue.length}</span>
       <span class="flex gap-1.5"><button id="flag" aria-pressed="${isFlag(q)}" aria-label="Отметить как сложный" class="rounded-md border border-line px-2 py-1 text-[15px] leading-none ${isFlag(q) ? 'text-hint-ink bg-hint' : 'text-muted'}">${isFlag(q) ? '★' : '☆'}</button>
+      ${mode === 'exam' ? '' : `<button id="alt" aria-pressed="${showAlt}" class="rounded-md border border-line px-2 py-1 font-bold text-[13px] tracking-wider ${showAlt ? 'bg-accent text-accent-ink' : 'text-muted'}">${lang === 'en' ? 'ME' : 'EN'}</button>`}
       ${mode === 'exam' ? '' : `<button id="ru" aria-pressed="${showRu}" class="rounded-md border border-accent px-2.5 py-1 font-bold text-[13px] tracking-wider ${showRu ? 'bg-accent text-accent-ink' : 'text-accent'}">RU</button>`}</span></div>
     ${q.img ? `<div class="flex justify-center bg-white rounded-md overflow-hidden"><img src="${q.img}" alt="Иллюстрация к вопросу" class="max-h-[300px] object-contain"></div>` : ''}
-    <div><p class="font-semibold text-[17px] leading-snug m-0">${gloss(q.q)}</p><div id="qru" class="${RUC}" ${showRu ? '' : 'hidden'}>${esc(q.qr || 'перевод появится в полной версии')}</div></div>
+    <div><p class="font-semibold text-[17px] leading-snug m-0" lang="${lang === 'en' ? 'en' : 'sr-Latn-ME'}">${MAIN(QT(q))}</p><div class="${ALTC}" ${showAlt ? '' : 'hidden'}>${esc(QA(q) || '')}</div><div id="qru" class="${RUC}" ${showRu ? '' : 'hidden'}>${esc(q.qr || 'перевод появится в полной версии')}</div></div>
     <div id="gl" class="${NOTE} py-1.5" hidden></div>
     ${opts}${order}
     <div id="after"></div></div>`;
@@ -320,7 +328,7 @@ function finish(q, ok, picked) {
     ${q.s && mode !== 'exam' ? `<div class="${NOTE}"><b>Правилник, ${esc(q.s.code)} «${esc(q.s.name)}».</b> ${esc(q.s.ru)}</div>` : ''}
     ${mode !== 'exam' ? `<div class="text-xs text-muted">${ok ? `Повторим ${['сегодня', 'завтра', 'через 3 дня', 'через неделю'][st[q.id].box]}.` : 'Вопрос вернётся в «Повтор» сегодня.'}</div>` : ''}
     ${q.f && mode !== 'exam' ? `<div class="${NOTE}"><b>Спорный ключ.</b> На экзамене отвечай как в ключе. ${esc(q.f)}</div>` : ''}
-    ${q.sch != null && mode !== 'exam' ? `<div class="${NOTE}"><b>Автошкола отмечает:</b> «${esc(q.o[q.sch].t)}» — ${esc(q.o[q.sch].r)}. Ключ выше — из билетов GAS; какой вариант засчитывают на экзамене, уточни у инструктора.</div>` : ''}
+    ${q.sch != null && mode !== 'exam' ? `<div class="${NOTE}"><b>Автошкола отмечает:</b> «${esc(OT(q.o[q.sch]))}» — ${esc(q.o[q.sch].r)}. Ключ выше — из билетов GAS; какой вариант засчитывают на экзамене, уточни у инструктора.</div>` : ''}
     <div class="flex justify-end"><button class="${BTN}" id="next">Дальше</button></div></div>`;
   $('#next').onclick = () => { idx++; render(); window.scrollTo({ top: 0 }); };
   $('#next').focus({ preventScroll: true });
@@ -329,6 +337,9 @@ function finish(q, ok, picked) {
 
 function wire(q) {
   const ru = $('#ru');
+  const alt = $('#alt');
+  if (alt) alt.onclick = () => { altOn = !altOn; document.querySelectorAll('#view .alt').forEach(e => e.hidden = !altOn);
+    alt.setAttribute('aria-pressed', altOn); alt.classList.toggle('bg-accent', altOn); alt.classList.toggle('text-accent-ink', altOn); alt.classList.toggle('text-muted', !altOn); };
   if (ru) ru.onclick = () => { ruAlways = ru.getAttribute('aria-pressed') !== 'true'; save(); setRu(ruAlways); };
   $('#flag').onclick = () => {
     const r = upgradeSR(st[q.id] || (st[q.id] = { right: 0, wrong: 0, streak: 0, t: Date.now() }));
@@ -359,6 +370,7 @@ function wire(q) {
   }
 }
 
+$('#lang').onclick = e => { const b = e.target.closest('[data-l]'); if (!b || b.dataset.l === lang) return; lang = b.dataset.l; save(); render(); };
 $('#modes').onclick = e => { const b = e.target.closest('button'); if (!b) return; mode = b.dataset.m; buildQueue(); render(); };
 $('#sections').onclick = e => { const b = e.target.closest('button'); if (!b) return; sec = b.dataset.s; buildQueue(); render(); };
 $('#foot').textContent = META.foot || '';
